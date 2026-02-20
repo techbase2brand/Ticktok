@@ -35,7 +35,7 @@ export default function Header() {
         <div className="logo">
           <a href="/" title="logo">
             <Image
-              className="dark:invert "
+              className=" "
               src="/logo.svg"
               alt="Logo"
               width={250}

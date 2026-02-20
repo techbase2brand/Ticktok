@@ -12,7 +12,7 @@ const Footer = ({copyRight}) => {
                     <div className="logo">
                         <a href="/" title="logo" className="inline-block">
                             <Image 
-                                className="dark:invert" 
+                                className="" 
                                 src="/logo.svg" 
                                 alt="Logo" 
                                 width={220} 
