@@ -30,7 +30,7 @@ const FinaceYourDream = ({title , getStartBtn}) => {
     );
 
     return (
-        <div className='bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] py-12 md:py-[80px] px-4 sm:px-6 lg:px-8'>
+       <div className='bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] md:py-[80px] px-4 sm:px-6 lg:px-8'>
             <div className='max-w-[1440px] mx-auto'>
                 <div className='finace-wrapper grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-4'>
                     {/* Image - Order changes on mobile */}
