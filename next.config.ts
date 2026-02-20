@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
   turbopack: {
-    root: 'C:/Users/b2b/Desktop/tiktock/my-app'
-  }
+    root: path.resolve(__dirname),
+  },
 };
 
 export default nextConfig;
