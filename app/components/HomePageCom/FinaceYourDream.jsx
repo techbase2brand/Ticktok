@@ -28,7 +28,6 @@ const FinaceYourDream = ({title , getStartBtn}) => {
             <path d="M10.3337 4.30573L16.3617 10.3337L10.3337 16.3616" stroke="#154617" strokeWidth="1.7223" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
     );
-
     return (
        <div className='bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] px-4 sm:px-6 lg:px-8'>
             <div className='max-w-[1440px] mx-auto'>
