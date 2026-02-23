@@ -54,7 +54,7 @@ const HowItWork = ({ title, description , applicationBtn }) => {
     );
 
     return (
-        <div className='how-it-work-section bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] py-12 md:py-[80px] px-4 sm:px-6 lg:px-8'>
+        <div className='how-it-work-section bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pb-12 md:pb-[80px] px-4 sm:px-6 lg:px-8'>
             <div className='max-w-[1440px] mx-auto'>
                 {/* Title */}
                 <h2 data-aos="fade-up" data-aos-duration="500"

@@ -54,12 +54,12 @@ const LovedbyThousands = ({ title ,description }) => {
     };
 
     return (
-        <div className='bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] py-12 md:py-[80px] px-4 sm:px-6 lg:px-8'>
+        <div className='bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pb-12 md:pb-[80px] px-4 sm:px-6 lg:px-8'>
             <div className='max-w-[1440px] mx-auto'>
                 <h3 
                     data-aos="fade-up" 
                     data-aos-duration="500" 
-                    className='text-white text-2xl sm:text-3xl md:text-4xl lg:text-[50px] pt-4 sm:pt-6 md:pt-[10px] font-bold text-center leading-tight'
+                    className='text-white text-2xl sm:text-3xl md:text-4xl lg:text-[50px] pt-8 sm:pt-8 md:pt-[10px] font-bold text-center leading-tight'
                 >
                     {title.split(' ').map((word, index) => (
                         <span 
