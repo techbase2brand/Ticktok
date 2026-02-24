@@ -273,7 +273,7 @@ const Footer = ({copyRight}) => {
                 </div>
             </div>
             <div className="max-w-[1440px] mx-auto py-[20px] md:py-[25px] border-t border-[#816f6f40] mt-[40px] md:mt-[50px]">
-                <p className="text-[#bebaba] text-left text-[12px] md:text-[14px]">{copyRight}</p>
+                <p className="text-[#bebaba] text-left text-[12px] md:text-[12px]">{copyRight} <a href="https://base2brand.com" target="_blank" rel="noopener noreferrer" className="text-[#B5FF5F] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">Designed By Base2brand</a></p>
             </div>
         </footer>
     );
