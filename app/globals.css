@@ -93,3 +93,9 @@ body {
     font-style: normal;
     font-display: swap;
 }
+
+/* Header logo color lock */
+.logo a img {
+    filter: none !important;
+    mix-blend-mode: normal !important; 
+  }

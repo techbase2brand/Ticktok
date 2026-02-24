@@ -30,7 +30,7 @@ export default function Header() {
     <header className={`p-4 md:p-4 bg-[#1d361e] shadow-sm transition-all duration-300 ${
       isScrolled ? 'fixed top-0 left-0 w-full z-50' : 'relative'
     }`}> 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-4 md:px-10 flex items-center justify-between">
+      <div className="max-w-[1440px] mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="logo">
           <a href="/" title="logo">

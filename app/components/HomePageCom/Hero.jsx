@@ -46,7 +46,7 @@ const Hero = ({ subheading, heading, description, badge, apply, checkEligibility
             <div className="absolute top-0 left-0 w-full h-full bg-[#000]/40 z-10"></div>
             
             {/* Content with higher z-index */}
-            <div className='relative z-20 max-w-[1440px] mx-auto px-4 sm:px-6 md:px-10 w-full'>
+            <div className='relative z-20 max-w-[1440px] mx-auto w-full'>
                 <div className='banner-wrapper flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 py-8 md:py-12 lg:py-16'>
                     {/* Content Section - Full width on mobile, half on desktop */}
                     <div className='content text-center md:text-left w-full md:w-1/2 order-2 md:order-1'>
@@ -92,13 +92,13 @@ const Hero = ({ subheading, heading, description, badge, apply, checkEligibility
                              className='banner-button flex flex-col sm:flex-row justify-center md:justify-start gap-3 sm:gap-4 md:gap-[20px] mt-6 sm:mt-8 md:mt-[50px] px-4 sm:px-0'>
                             
                             {/* Apply Button - Full width on mobile, auto on larger */}
-                            <button className='cursor-pointer bg-[#B5FF5F] flex items-center justify-center gap-[10px] text-[#154617] px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold hover:bg-white transition-colors duration-300 text-sm sm:text-base w-full sm:w-auto shadow-[0_8px_20px_rgba(181,255,95,0.3)] hover:shadow-[0_8px_25px_rgba(181,255,95,0.5)]'>
-                                {apply} {arrowSvg}
+                            <button className='cursor-pointer bg-[#B5FF5F] flex items-center justify-center gap-[10px] text-[#154617] px-4 sm:px-6 py-2.5 sm:py-3   rounded-full font-bold hover:bg-white transition-colors duration-300 text-sm sm:text-base w-full sm:w-auto shadow-[0_8px_20px_rgba(181,255,95,0.3)] hover:shadow-[0_8px_25px_rgba(181,255,95,0.5)]'>
+                               <span  style={{position: 'relative', top: '-3px'}}>{apply}</span> {arrowSvg}
                             </button>
                             
                             {/* Check Eligibility Button - Full width on mobile, auto on larger */}
-                            <button className='cursor-pointer bg-transparent backdrop-blur-sm border border-white/80 flex items-center justify-center gap-[10px] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold hover:bg-[#B5FF5F] hover:text-[#154617] hover:border-[#B5FF5F] transition-all duration-300 text-sm sm:text-base w-full sm:w-auto shadow-[0_4px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_20px_rgba(181,255,95,0.3)]'>
-                                {checkEligibility}
+                            <button className='cursor-pointer bg-transparent backdrop-blur-sm border border-white/80 flex items-center justify-center gap-[10px] text-white px-4 sm:px-6 py-2.5 sm:py-3   rounded-full font-bold hover:bg-[#B5FF5F] hover:text-[#154617] hover:border-[#B5FF5F] transition-all duration-300 text-sm sm:text-base w-full sm:w-auto shadow-[0_4px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_20px_rgba(181,255,95,0.3)]'>
+                               <span  style={{position: 'relative', top: '-3px'}}>{checkEligibility}</span>
                             </button>
                         </div>
                     </div>
@@ -106,7 +106,7 @@ const Hero = ({ subheading, heading, description, badge, apply, checkEligibility
                     {/* Image Section - Full width on mobile, half on desktop */}
                     <div className='banner-image w-full md:w-1/2 flex justify-center order-1 md:order-2 mb-4 md:mb-0'>
                         <div className="relative drop-shadow-2xl">
-                            <Image 
+                            <img 
                                 data-aos="fade-up" 
                                 data-aos-duration="500"   
                                 src="/loan-ammount.png"

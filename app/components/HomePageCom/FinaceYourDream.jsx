@@ -31,10 +31,10 @@ const FinaceYourDream = ({title , getStartBtn}) => {
     return (
        <div className='bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] px-4 sm:px-6 lg:px-8'>
             <div className='max-w-[1440px] mx-auto'>
-                <div className='finace-wrapper grid grid-cols-1 md:grid-cols-2 items-center gap-6 md:gap-4'>
+                <div className='finace-wrapper grid grid-cols-1 md:grid-cols-2 items-center gap-3 md:gap-4'>
                     {/* Image - Order changes on mobile */}
                     <div className='finace-image order-1 md:order-1 flex justify-center'>
-                        <Image
+                        <img
                             data-aos="fade-up"
                             data-aos-duration="500"
                             src="/finace-your-dream.png"
@@ -42,7 +42,7 @@ const FinaceYourDream = ({title , getStartBtn}) => {
                             width={500}
                             height={500}
                             priority
-                            className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] h-auto"
+                            className="w-full max-w-[600px] sm:max-w-[400px] md:max-w-[500px] h-auto"
                         />
                     </div>
                     
