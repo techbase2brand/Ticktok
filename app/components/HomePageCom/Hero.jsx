@@ -49,7 +49,7 @@ const Hero = ({ subheading, heading, description, badge, apply, checkEligibility
             <div className='relative z-20 max-w-[1440px] mx-auto w-full'>
                 <div className='banner-wrapper flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 py-8 md:py-12 lg:py-16'>
                     {/* Content Section - Full width on mobile, half on desktop */}
-                    <div className='content text-center md:text-left w-full md:w-1/2 order-2 md:order-1'>
+                    <div className='content text-center md:text-left w-full md:w-1/2 order-2 md:order-1 md:p-[20px]'>
                         
                         {/* Badge - Centered on mobile, left on desktop */}
                         <h5 data-aos="fade-up" data-aos-duration="400" 
