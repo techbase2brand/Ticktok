@@ -78,7 +78,7 @@ const HowItWork = ({ title, description , applicationBtn }) => {
                 </p>
 
                 {/* Steps Wrapper - Responsive grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-7 md:gap-6 lg:gap-8 mt-8 sm:mt-10 md:mt-12">
+                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-7 md:gap-6 lg:gap-8 mt-8 sm:mt-10 md:mt-12">
                     {boxData.map((step, index) => (
                         <div 
                             key={index}

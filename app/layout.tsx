@@ -34,21 +34,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
       </head>
       <body className="">
         <Header />
         {children}
         <Footer copyRight="© 2026 TickTock Loans. All rights reserved." />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            AOS.init({
-              duration: 1000,
-              once: true,
-            });
-          `
-        }} />
+       
       </body>
     </html>
   );

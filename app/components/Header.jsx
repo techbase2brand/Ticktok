@@ -30,7 +30,7 @@ export default function Header() {
     <header className={`p-4 md:p-4 bg-[#1d361e] shadow-sm transition-all duration-300 ${
       isScrolled ? 'fixed top-0 left-0 w-full z-50' : 'relative'
     }`}> 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-4 md:px-10 flex items-center justify-between">
+      <div className="max-w-[1440px] mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="logo">
           <a href="/" title="logo">
@@ -47,14 +47,17 @@ export default function Header() {
 
         {/* Desktop Navigation - Hidden on mobile */}
         <nav className="hidden md:flex gap-6">
-          <Link href="/how-it-works" className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
-            How It Works
+          <Link href="/HomeLoans" className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+            Home Loans
           </Link>
-          <Link href="/calculator" className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
-            Calculator
+          <Link href="/Business-Loans" className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+            Business Loans
           </Link>
           <Link href="/about" className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
             About
+          </Link>
+          <Link href="/#" className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+            Tips and Guides
           </Link>
         </nav>
 
