@@ -56,7 +56,7 @@ export default function Header() {
           <Link href="/about" className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
             About
           </Link>
-          <Link href="/#" className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+          <Link href="/" className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
             Tips and Guides
           </Link>
         </nav>
