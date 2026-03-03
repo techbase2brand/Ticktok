@@ -1,13 +1,15 @@
 "use client";
-import { memo } from 'react';
+import { memo, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
 const Footer = ({copyRight}) => {
+    const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
+    const [isLegalOpen, setIsLegalOpen] = useState(false);
 
     return (
-        <footer className='bg-[#154617] pt-[60px] px-4 md:px-6 lg:px-8'>
-            <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-start justify-between gap-10 md:gap-8">
+        <footer className='bg-[#154617] pt-[40px] px-4 md:px-6 lg:px-8'>
+            <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-start justify-between gap-6 md:gap-8">
                 <div className='logo-content w-full md:w-auto'>
                     <div className="logo">
                         <a href="/" title="logo" className="inline-block">
@@ -27,27 +29,50 @@ const Footer = ({copyRight}) => {
                     
                     {/* Social Icons with hover effects */}
                     <div className="social-icons flex flex-wrap gap-4 mt-8">
+                        {/* Facebook Icon */}
+                        <Link
+                            href="#"
+                            className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300"
+                        >
+                            <svg
+                                width={20}
+                                height={20}
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M14.5 4H16.5C17.0523 4 17.5 3.55228 17.5 3V2C17.5 1.44772 17.0523 1 16.5 1H14C10.9624 1 8.5 3.46243 8.5 6.5V9H7C6.44772 9 6 9.44772 6 10V12C6 12.5523 6.44772 13 7 13H8.5V21C8.5 21.5523 8.94772 22 9.5 22H12.5C13.0523 22 13.5 21.5523 13.5 21V13H15.5C16.0523 13 16.5 12.5523 16.5 12V10C16.5 9.44772 16.0523 9 15.5 9H13.5V6.5C13.5 5.67157 14.1716 5 15 5H14.5Z"
+                                    stroke="white"
+                                    strokeOpacity="0.6"
+                                    strokeWidth="1.6"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    className="group-hover:stroke-black transition-all duration-300"
+                                />
+                            </svg>
+                        </Link>
+
                         {/* Twitter/X Icon */}
                         <Link 
                             href="#" 
                             className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300"
                         >
-                            <svg 
-                                width={20} 
-                                height={20} 
-                                viewBox="0 0 24 24" 
-                                fill="none" 
-                                xmlns="http://www.w3.org/2000/svg"
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width={20}
+                            height={20}
+                            fill="none"
                             >
-                                <path 
-                                    d="M21.7018 3.94572C21.7018 3.94572 21.0113 6.01722 19.7289 7.29958C21.3072 17.1639 10.4564 24.3648 1.97314 18.7422C4.14329 18.8408 6.31344 18.1503 7.89173 16.7693C2.95957 15.2897 0.493499 9.46973 2.95957 4.93215C5.12972 7.49687 8.48358 8.97651 11.8374 8.87787C10.9497 4.73486 15.7832 2.36743 18.7425 5.12943C19.8275 5.12943 21.7018 3.94572 21.7018 3.94572Z" 
-                                    stroke="white" 
-                                    strokeOpacity="0.6" 
-                                    strokeWidth="1.97286" 
-                                    strokeLinecap="round" 
-                                    strokeLinejoin="round"
-                                    className="group-hover:stroke-black transition-all duration-300"
-                                />
+                            <path d="M18.244 2H21.5l-7.45 8.52L23 22h-6.828l-5.35-6.993L4.95 22H1.693l7.97-9.11L1 2h6.996l4.837 6.365L18.244 2zM17.05 20h1.904L7.032 4H5.03l12.02 16z"
+                            stroke="white"
+                            strokeOpacity="0.6"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="group-hover:stroke-black transition-all duration-300"
+                            />
                             </svg>
                         </Link>
 
@@ -171,10 +196,30 @@ const Footer = ({copyRight}) => {
                 </div>
                 
                 <div className='quick-links w-full md:w-auto'>
-                    <div className='heading'>
+                    <button
+                        type="button"
+                        className="heading w-full flex items-center justify-between md:block cursor-pointer"
+                        onClick={() => setIsQuickLinksOpen((prev) => !prev)}
+                    >
                         <h3 className='text-white font-bold text-[18px] md:text-[20px] pb-[12px]'>Quick Links</h3>
-                    </div>
-                    <div className='menu-links flex-col flex gap-2 md:gap-3'>
+                        <span className="md:hidden text-white">
+                            <svg
+                                className={`w-5 h-5 transform transition-transform duration-300 ${isQuickLinksOpen ? 'rotate-180' : 'rotate-0'}`}
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6 9L12 15L18 9"
+                                    stroke="currentColor"
+                                    strokeWidth="1.8"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </span>
+                    </button>
+                    <div className={`menu-links flex-col gap-2 md:gap-3 ${isQuickLinksOpen ? 'flex' : 'hidden'} md:flex`}>
                         <Link href="/how-it-works" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
                             How It Works
                         </Link>
@@ -188,10 +233,30 @@ const Footer = ({copyRight}) => {
                 </div>
                 
                 <div className='quick-links w-full md:w-auto'>
-                    <div className='heading'>
+                    <button
+                        type="button"
+                        className="heading w-full flex items-center justify-between cursor-pointer"
+                        onClick={() => setIsLegalOpen((prev) => !prev)}
+                    >
                         <h3 className='text-white font-bold text-[18px] md:text-[20px] pb-[12px]'>Legal</h3>
-                    </div>
-                    <div className='menu-links flex-col flex gap-2 md:gap-3'>
+                        <span className="md:hidden text-white">
+                            <svg
+                                className={`w-5 h-5 transform transition-transform duration-300 ${isLegalOpen ? 'rotate-180' : 'rotate-0'}`}
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6 9L12 15L18 9"
+                                    stroke="currentColor"
+                                    strokeWidth="1.8"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </span>
+                    </button>
+                    <div className={`menu-links flex-col gap-2 md:gap-3 ${isLegalOpen ? 'flex' : 'hidden'} md:flex`}>
                         <Link href="/privacy-policy" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
                             Privacy Policy
                         </Link>
@@ -208,7 +273,7 @@ const Footer = ({copyRight}) => {
                 </div>
             </div>
             <div className="max-w-[1440px] mx-auto py-[20px] md:py-[25px] border-t border-[#816f6f40] mt-[40px] md:mt-[50px]">
-                <p className="text-[#bebaba] text-left text-[12px] md:text-[14px]">{copyRight}</p>
+                <p className="text-[#bebaba] text-left text-[12px] md:text-[12px]">{copyRight} <a href="https://base2brand.com" target="_blank" rel="noopener noreferrer" className="text-[#B5FF5F] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">Designed By Base2brand</a></p>
             </div>
         </footer>
     );
