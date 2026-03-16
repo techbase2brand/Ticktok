@@ -62,7 +62,7 @@ const FinaceYourDream = ({title , getStartBtn}) => {
                             ))}
                         </h2>
                         
-                        <div 
+                        <ol 
                             data-aos="fade-up" 
                             data-aos-duration="500" 
                             className='list-data ml-4 sm:ml-[17px] grid gap-3 md:gap-[10px] my-4 md:my-[20px]'
@@ -75,7 +75,7 @@ const FinaceYourDream = ({title , getStartBtn}) => {
                                     {content.title}
                                 </li>
                             ))}
-                        </div>
+                        </ol>
                         
                         {/* Apply Button - Responsive */}
                         <div 
