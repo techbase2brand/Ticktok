@@ -15,8 +15,8 @@ body {
 
 @font-face {
     font-family: 'FONTSPRING DEMO - Balgin';
-    src: url('../public/fonts/FONTSPRINGDEMO-BalginBold.woff2') format('woff2'),
-        url('../public/fonts/FONTSPRINGDEMO-BalginBold.woff') format('woff');
+    src: url('/fonts/FONTSPRINGDEMO-BalginBold.woff2') format('woff2'),
+        url('/fonts/FONTSPRINGDEMO-BalginBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -24,8 +24,8 @@ body {
 
 @font-face {
     font-family: 'FONTSPRING DEMO - Balgin Display';
-    src: url('../public/fonts/FONTSPRINGDEMO-BalginDisplayBlackBold.woff2') format('woff2'),
-        url('../public/fonts/FONTSPRINGDEMO-BalginDisplayBlackBold.woff') format('woff');
+    src: url('/fonts/FONTSPRINGDEMO-BalginDisplayBlackBold.woff2') format('woff2'),
+        url('/fonts/FONTSPRINGDEMO-BalginDisplayBlackBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -33,8 +33,8 @@ body {
 
 @font-face {
     font-family: 'FONTSPRING DEMO - Balgin Display';
-    src: url('../public/fonts/FONTSPRINGDEMO-BalginDisplayLightRegular.woff2') format('woff2'),
-        url('../public/fonts/FONTSPRINGDEMO-BalginDisplayLightRegular.woff') format('woff');
+    src: url('/fonts/FONTSPRINGDEMO-BalginDisplayLightRegular.woff2') format('woff2'),
+        url('/fonts/FONTSPRINGDEMO-BalginDisplayLightRegular.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -42,8 +42,8 @@ body {
 
 @font-face {
     font-family: 'FONTSPRING DEMO - Balgin Display';
-    src: url('../public/fonts/FONTSPRINGDEMO-BalginDisplayMediumRegular.woff2') format('woff2'),
-        url('../public/fonts/FONTSPRINGDEMO-BalginDisplayMediumRegular.woff') format('woff');
+    src: url('/fonts/FONTSPRINGDEMO-BalginDisplayMediumRegular.woff2') format('woff2'),
+        url('/fonts/FONTSPRINGDEMO-BalginDisplayMediumRegular.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -51,8 +51,8 @@ body {
 
 @font-face {
     font-family: 'FONTSPRING DEMO - Balgin Display';
-    src: url('../public/fonts/FONTSPRINGDEMO-BalginDisplayRegular.woff2') format('woff2'),
-        url('../public/fonts/FONTSPRINGDEMO-BalginDisplayRegular.woff') format('woff');
+    src: url('/fonts/FONTSPRINGDEMO-BalginDisplayRegular.woff2') format('woff2'),
+        url('/fonts/FONTSPRINGDEMO-BalginDisplayRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -60,8 +60,8 @@ body {
 
 @font-face {
     font-family: 'FONTSPRING DEMO - Balgin Display';
-    src: url('../public/fonts/FONTSPRINGDEMO-BalginDisplaySemiBoldRegular.woff2') format('woff2'),
-        url('../public/fonts/FONTSPRINGDEMO-BalginDisplaySemiBoldRegular.woff') format('woff');
+    src: url('/fonts/FONTSPRINGDEMO-BalginDisplaySemiBoldRegular.woff2') format('woff2'),
+        url('/fonts/FONTSPRINGDEMO-BalginDisplaySemiBoldRegular.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -69,8 +69,8 @@ body {
 
 @font-face {
     font-family: 'FONTSPRING DEMO - Balgin';
-    src: url('../public/fonts/FONTSPRINGDEMO-BalginLightRegular.woff2') format('woff2'),
-        url('../public/fonts/FONTSPRINGDEMO-BalginLightRegular.woff') format('woff');
+    src: url('/fonts/FONTSPRINGDEMO-BalginLightRegular.woff2') format('woff2'),
+        url('/fonts/FONTSPRINGDEMO-BalginLightRegular.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -78,8 +78,8 @@ body {
 
 @font-face {
     font-family: 'FONTSPRING DEMO - Balgin';
-    src: url('../public/fonts/FONTSPRINGDEMO-BalginRegular.woff2') format('woff2'),
-        url('../public/fonts/FONTSPRINGDEMO-BalginRegular.woff') format('woff');
+    src: url('/fonts/FONTSPRINGDEMO-BalginRegular.woff2') format('woff2'),
+        url('/fonts/FONTSPRINGDEMO-BalginRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -87,8 +87,8 @@ body {
 
 @font-face {
     font-family: 'FONTSPRING DEMO - Balgin';
-    src: url('../public/fonts/FONTSPRINGDEMO-BalginSemiBoldBold.woff2') format('woff2'),
-        url('../public/fonts/FONTSPRINGDEMO-BalginSemiBoldBold.woff') format('woff');
+    src: url('/fonts/FONTSPRINGDEMO-BalginSemiBoldBold.woff2') format('woff2'),
+        url('/fonts/FONTSPRINGDEMO-BalginSemiBoldBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
