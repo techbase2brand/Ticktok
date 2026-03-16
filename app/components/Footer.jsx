@@ -12,7 +12,7 @@ const Footer = ({copyRight}) => {
             <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-start justify-between gap-6 md:gap-8">
                 <div className='logo-content w-full md:w-auto'>
                     <div className="logo">
-                        <Link href="/" title="logo" className="inline-block">
+                        <Link href="/" title="logo" className="inline-block"  aria-label="Logo">
                             <Image 
                                 className="" 
                                 src="/logo.svg" 
@@ -32,7 +32,9 @@ const Footer = ({copyRight}) => {
                     <div className="social-icons flex flex-wrap gap-4 mt-8">
                         {/* Facebook Icon */}
                         <Link
-                            href="#"
+                            href="#" 
+                            title="Facebook"
+                            aria-label="Facebook"
                             className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                             <svg
                                 width={20}
@@ -56,6 +58,8 @@ const Footer = ({copyRight}) => {
                         {/* Twitter/X Icon */}
                         <Link 
                             href="#" 
+                            title="Twitter"
+                            aria-label="Twitter"
                             className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -78,6 +82,8 @@ const Footer = ({copyRight}) => {
                         {/* LinkedIn Icon */}
                         <Link 
                             href="#" 
+                            title="LinkedIn"
+                            aria-label="LinkedIn"
                              className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                             <svg 
                                 width={20} 
@@ -119,6 +125,8 @@ const Footer = ({copyRight}) => {
                         {/* Instagram Icon */}
                         <Link 
                             href="#" 
+                            title="Instagram"
+                            aria-label="Instagram"
                             className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                             <svg 
                                 width={20} 
@@ -160,6 +168,8 @@ const Footer = ({copyRight}) => {
                         {/* Email Icon */}
                         <Link 
                             href="#" 
+                            title="Email"
+                            aria-label="Email"
                              className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                             <svg 
                                 width={20} 
@@ -216,13 +226,13 @@ const Footer = ({copyRight}) => {
                         </span>
                     </button>
                     <div className={`menu-links flex-col gap-2 md:gap-3 ${isQuickLinksOpen ? 'flex' : 'hidden'} md:flex`}>
-                        <Link href="/how-it-works" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link title="How It Works"  aria-label="How It Works" href="/how-it-works" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
                             How It Works
                         </Link>
-                        <Link href="/calculator" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link title="Calculator" aria-label="Calculator" href="/calculator" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
                             Calculator
                         </Link>
-                        <Link href="/about" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link title="About" aria-label="About" href="/about" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
                             About
                         </Link>
                     </div>
@@ -253,16 +263,16 @@ const Footer = ({copyRight}) => {
                         </span>
                     </button>
                     <div className={`menu-links flex-col gap-2 md:gap-3 ${isLegalOpen ? 'flex' : 'hidden'} md:flex`}>
-                        <Link href="/privacy-policy" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link href="/privacy-policy" title="Privacy Policy" aria-label="Privacy Policy" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
                             Privacy Policy
                         </Link>
-                        <Link href="/terms-of-service" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link href="/terms-of-service" title="Terms of Service" aria-label="Terms of Service" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
                             Terms of Service
                         </Link>
-                        <Link href="/cookie-policy" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link href="/cookie-policy" title="Cookie Policy" aria-label="Cookie Policy" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
                             Cookie Policy
                         </Link>
-                        <Link href="/contact" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link href="/contact" title="Contact" aria-label="Contact" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
                             Contact
                         </Link>
                     </div>

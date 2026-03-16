@@ -28,7 +28,7 @@ export default function Header() {
       <div className="max-w-[1440px] mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="logo">
-          <Link href="/" title="logo">
+          <Link href="/" title="logo" aria-label="Home">
             <Image src="/logo.svg" alt="Logo" width={250} height={30} priority />
           </Link>
         </div>
@@ -36,6 +36,7 @@ export default function Header() {
         <nav className="hidden md:flex gap-6">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}
+            title={link.label} aria-label={link.label}
               className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
               {link.label}
             </Link>
@@ -43,11 +44,11 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:block apply_button">
-          <a href="/apply"
+          <Link href="/apply"
             className="bg-[#B5FF5F] text-[#154617] py-[10px] px-[20px] hover:bg-white flex items-center justify-center rounded-3xl font-bold text-[16px] transition-colors duration-300"
-            title="Apply Now">
+            title="Apply Now" aria-label="Apply Now">
             Apply Now
-          </a>
+          </Link>
         </div>
 
        
@@ -82,6 +83,8 @@ export default function Header() {
         <div className="flex flex-col p-6 pt-20 space-y-4">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}
+            title={link.label}
+            aria-label={link.label}
               className="text-white hover:text-[#B5FF5F] hover:underline py-2 text-lg transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}>
               {link.label}
@@ -90,11 +93,11 @@ export default function Header() {
 
           {/* Mobile Apply Now */}
           <div className="apply_button pt-4">
-            <a href="/apply"
+            <Link href="/apply"
               className="inline-block bg-[#B5FF5F] text-[#154617] px-4 py-2 rounded-3xl hover:bg-white font-bold w-full text-center text-base transition-colors duration-300"
-              title="Apply Now" onClick={() => setIsMenuOpen(false)}>
+              title="Apply Now" aria-label="Apply Now" onClick={() => setIsMenuOpen(false)}>
               Apply Now
-            </a>
+            </Link>
           </div>
         </div>
       </div>

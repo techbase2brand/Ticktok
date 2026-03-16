@@ -40,6 +40,7 @@ export default function RootLayout({
             type="font/woff2"
             href="/fonts/FONTSPRINGDEMO-BalginBold.woff2"
             crossOrigin="anonymous"
+            aria-label="fonts"
           />
           <link 
               rel="preload" 
@@ -47,6 +48,7 @@ export default function RootLayout({
               type="font/woff2"
               href="/fonts/FONTSPRINGDEMO-BalginRegular.woff2"
               crossOrigin="anonymous"
+              aria-label="fonts"
           />
       </head>
       <body className="">
