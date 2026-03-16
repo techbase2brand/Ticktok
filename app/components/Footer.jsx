@@ -33,8 +33,7 @@ const Footer = ({copyRight}) => {
                         {/* Facebook Icon */}
                         <Link
                             href="#"
-                            className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300"
-                        >
+                            className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                             <svg
                                 width={20}
                                 height={20}
@@ -57,8 +56,7 @@ const Footer = ({copyRight}) => {
                         {/* Twitter/X Icon */}
                         <Link 
                             href="#" 
-                            className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300"
-                        >
+                            className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 24 24"
@@ -80,8 +78,7 @@ const Footer = ({copyRight}) => {
                         {/* LinkedIn Icon */}
                         <Link 
                             href="#" 
-                            className="group border border-[#417703] p-2.5 hover:bg-[#b4fe5d] rounded-3xl transition-colors duration-300"
-                        >
+                             className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                             <svg 
                                 width={20} 
                                 height={20} 
@@ -122,8 +119,7 @@ const Footer = ({copyRight}) => {
                         {/* Instagram Icon */}
                         <Link 
                             href="#" 
-                            className="group border border-[#417703] p-2.5 rounded-3xl hover:bg-[#b4fe5d] transition-colors duration-300"
-                        >
+                            className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                             <svg 
                                 width={20} 
                                 height={20} 
@@ -164,8 +160,7 @@ const Footer = ({copyRight}) => {
                         {/* Email Icon */}
                         <Link 
                             href="#" 
-                            className="group border border-[#417703] p-2.5 rounded-3xl transition-colors duration-300 hover:bg-[#b4fe5d]"
-                        >
+                             className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                             <svg 
                                 width={20} 
                                 height={20} 
@@ -274,7 +269,7 @@ const Footer = ({copyRight}) => {
                 </div>
             </div>
             <div className="max-w-[1440px] mx-auto py-[20px] md:py-[25px] border-t border-[#816f6f40] mt-[40px] md:mt-[50px]">
-                <p className="text-gray-300 text-left text-[12px] md:text-[12px]">{copyRight} <a href="https://base2brand.com" target="_blank" rel="noopener noreferrer" className="text-[#B5FF5F] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">Designed By Base2brand</a></p>
+                <p className="text-white text-left text-[12px] md:text-[12px]">{copyRight} <a href="https://base2brand.com" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-[#B5FF5F] transition-colors duration-300">Designed By Base2brand</a></p>
             </div>
         </footer>
     );

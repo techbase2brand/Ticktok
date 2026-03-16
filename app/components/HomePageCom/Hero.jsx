@@ -148,6 +148,7 @@ const Hero = ({ subheading, poster, videoUrl, subheading2, heading, description,
                                     width={500}
                                     height={915}
                                     quality={75}
+                                    fetchPriority="high"
                                     priority
                                     className="relative z-20 w-full h-auto"
                                 />
