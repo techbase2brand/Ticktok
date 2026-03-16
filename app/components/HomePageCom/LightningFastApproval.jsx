@@ -83,9 +83,9 @@ const LightningFastApproval = ({subheading, badge, heading, applyBtn, descriptio
                     {squareList.map((item) => (
                         <div key={item.id} className='text-center'>
                             <ol className='flex items-center gap-2'>
-                                {/* Green Square Bullet Point */}
-                                <span className='w-3 h-3 bg-[#B5FF5F] rounded-sm'></span>
-                                <li className='text-[#878787] text-xs sm:text-sm md:text-[16px] list-none'>
+                                <li className='flex items-center gap-2 text-[#878787] text-xs sm:text-sm md:text-[16px] list-none'>
+                                    {/* Green Square Bullet Point */}
+                                    <span className='w-3 h-3 bg-[#B5FF5F] rounded-sm flex-shrink-0'></span>
                                     {item.title}
                                 </li>
                             </ol>

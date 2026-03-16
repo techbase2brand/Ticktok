@@ -225,14 +225,17 @@ const Footer = ({copyRight}) => {
                             </svg>
                         </span>
                     </button>
-                    <div className={`menu-links flex-col gap-2 md:gap-3 ${isQuickLinksOpen ? 'flex' : 'hidden'} md:flex`}>
-                        <Link title="How It Works"  aria-label="How It Works" href="/how-it-works" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                   <div className={`menu-links flex-col gap-2 md:gap-3 ${isQuickLinksOpen ? 'flex' : 'hidden'} md:flex`}>
+                        <Link title="How It Works" aria-label="How It Works" href="/how-it-works" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
                             How It Works
                         </Link>
-                        <Link title="Calculator" aria-label="Calculator" href="/calculator" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link title="Calculator" aria-label="Calculator" href="/calculator" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
                             Calculator
                         </Link>
-                        <Link title="About" aria-label="About" href="/about" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link title="About" aria-label="About" href="/about" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
                             About
                         </Link>
                     </div>
@@ -263,16 +266,20 @@ const Footer = ({copyRight}) => {
                         </span>
                     </button>
                     <div className={`menu-links flex-col gap-2 md:gap-3 ${isLegalOpen ? 'flex' : 'hidden'} md:flex`}>
-                        <Link href="/privacy-policy" title="Privacy Policy" aria-label="Privacy Policy" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link href="/privacy-policy" title="Privacy Policy" aria-label="Privacy Policy" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
                             Privacy Policy
                         </Link>
-                        <Link href="/terms-of-service" title="Terms of Service" aria-label="Terms of Service" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link href="/terms-of-service" title="Terms of Service" aria-label="Terms of Service" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
                             Terms of Service
                         </Link>
-                        <Link href="/cookie-policy" title="Cookie Policy" aria-label="Cookie Policy" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link href="/cookie-policy" title="Cookie Policy" aria-label="Cookie Policy" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
                             Cookie Policy
                         </Link>
-                        <Link href="/contact" title="Contact" aria-label="Contact" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+                        <Link href="/contact" title="Contact" aria-label="Contact" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
                             Contact
                         </Link>
                     </div>

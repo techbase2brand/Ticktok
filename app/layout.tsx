@@ -53,7 +53,9 @@ export default function RootLayout({
       </head>
       <body className="">
         <Header />
-        {children}
+          <main>
+            {children}
+          </main>
         <Footer copyRight="© 2026 TickTock Loans. All rights reserved." />
        
       </body>
