@@ -2,7 +2,6 @@
 import { memo, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
-
 const Footer = ({copyRight}) => {
     const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
     const [isLegalOpen, setIsLegalOpen] = useState(false);
