@@ -34,14 +34,15 @@ const FinaceYourDream = ({title , getStartBtn}) => {
                 <div className='finace-wrapper grid grid-cols-1 md:grid-cols-2 items-center gap-3 md:gap-4'>
                     {/* Image - Order changes on mobile */}
                     <div className='finace-image order-1 md:order-1 flex justify-center'>
-                        <img
+                        <Image
                             data-aos="fade-up"
                             data-aos-duration="500"
                             src="/finace-your-dream.webp"
                             alt="Finance Your Dreams with the Right Loan"
-                            width={500}
-                            height={500}
-                            priority
+                            width={405}
+                            height={580}
+                            quality={65}
+                            sizes="(max-width: 640px) 400px, (max-width: 768px) 500px, 405px"
                             className="w-full max-w-[600px] sm:max-w-[400px] md:max-w-[500px] h-auto"
                         />
                     </div>

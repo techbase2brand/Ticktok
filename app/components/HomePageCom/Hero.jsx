@@ -40,12 +40,14 @@ const Hero = ({ subheading, poster, videoUrl, subheading2, heading, description,
                 autoPlay 
                 muted 
                 loop 
-                preload="none"
+                preload="auto"
                 playsInline
                 poster={poster || undefined}
+                // @ts-ignore
+                fetchPriority="high"
                 className="absolute top-0 left-0 w-full h-full object-cover z-0"
             >
-                <source src={videoUrl} type="video/mp4" />
+                <source src={videoUrl || undefined} type="video/mp4" />
             </video>
             
         
