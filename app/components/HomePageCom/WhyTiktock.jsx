@@ -66,7 +66,7 @@ const WhyTiktock = ({ title, description }) => {
                 </p>
                 
                 {/* Box Wrapper - Responsive grid */}
-                <div className='box-wrapper grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8 pt-8 md:pt-[40px]'>
+                <div className='box-wrapper grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 lg:gap-8 pt-8 md:pt-[40px]'>
                     {boxData.map((box, index) => (
                         <div 
                             data-aos="fade-up" 

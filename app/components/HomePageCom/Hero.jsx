@@ -144,16 +144,16 @@ const Hero = ({
                     
                     {getImage && (
                         <div className='banner-image w-full md:w-[35%] flex justify-center order-1 md:order-2 mb-4 md:mb-0'>
-                            <div className="relative drop-shadow-2xl">
+                           <div className="relative w-full md:w-[600px] drop-shadow-2xl px-4 md:px-0">
                                 <Image 
                                     data-aos="fade-up" 
                                     data-aos-duration="500"   
                                     src={getImage}
                                     alt="Loan Amount"
-                                    width={405}
+                                    width={1000}
                                     height={580}
                                     quality={65}
-                                    sizes="(max-width: 640px) 400px, (max-width: 768px) 500px, 405px"
+                                    sizes="(max-width:100%) 100%, (max-width: 768px) 100%, 100%"
                                     priority
                                     className="relative z-20 w-full h-auto"
                                 />

@@ -99,3 +99,9 @@ body {
     filter: none !important;
     mix-blend-mode: normal !important; 
   }
+
+@media all and (max-width: 768px) {
+    footer .quick-links button{
+        margin-bottom: 0;
+    }
+}

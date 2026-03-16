@@ -6,6 +6,7 @@ import Link from "next/link";
 const Footer = ({copyRight}) => {
     const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
     const [isLegalOpen, setIsLegalOpen] = useState(false);
+    const [isContactOpen, setIsContactOpen] = useState(false);
 
     return (
         <footer className='bg-[#154617] pt-[40px] px-4 md:px-6 lg:px-8'>
@@ -205,17 +206,15 @@ const Footer = ({copyRight}) => {
                 <div className='quick-links w-full md:w-auto'>
                     <button
                         type="button"
-                        className="heading w-full flex items-center justify-between md:block cursor-pointer"
-                        onClick={() => setIsQuickLinksOpen((prev) => !prev)}
-                    >
-                        <h3 className='text-white font-bold text-[18px] md:text-[20px] pb-0 md:pb-[12px]'>Quick Links</h3>
+                        className="heading w-full flex items-center justify-between md:block cursor-pointer mb-3"
+                        onClick={() => setIsQuickLinksOpen((prev) => !prev)}>
+                        <h3 className='text-white font-semibold text-[16px] md:text-[20px] pb-0 md:pb-[12px] text-left '>Quick Links</h3>
                         <span className="md:hidden text-white">
                             <svg
                                 className={`w-5 h-5 transform transition-transform duration-300 ${isQuickLinksOpen ? 'rotate-180' : 'rotate-0'}`}
                                 viewBox="0 0 24 24"
                                 fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M6 9L12 15L18 9"
                                     stroke="currentColor"
@@ -226,18 +225,22 @@ const Footer = ({copyRight}) => {
                             </svg>
                         </span>
                     </button>
-                   <div className={`menu-links flex-col ${isQuickLinksOpen ? 'flex' : 'hidden'} md:flex`}>
-                        <Link title="How It Works" aria-label="How It Works" href="/how-it-works" 
-                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
-                            How It Works
+                   <div className={`menu-links gap-4 flex-col ${isQuickLinksOpen ? 'flex' : 'hidden'} md:flex`}>
+                        <Link title="Home Loans" aria-label="Home Loans" href="/HomeLoans" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300  flex items-center">
+                            Home Loans
                         </Link>
-                        <Link title="Calculator" aria-label="Calculator" href="/calculator" 
-                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
-                            Calculator
+                        <Link title="Business Loans" aria-label="Business Loans" href="/Business-Loans" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
+                            Business Loans
                         </Link>
                         <Link title="About" aria-label="About" href="/about" 
-                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300  flex items-center">
                             About
+                        </Link>
+                        <Link title="Tips and Guides" aria-label="Tips and Guides" href="/TipsandGuides" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300  flex items-center">
+                            Tips and Guides
                         </Link>
                     </div>
                 </div>
@@ -245,10 +248,10 @@ const Footer = ({copyRight}) => {
                 <div className='quick-links w-full md:w-auto'>
                     <button
                         type="button"
-                        className="heading w-full flex items-center justify-between cursor-pointer"
+                        className="heading w-full flex items-center justify-between cursor-pointer mb-3"
                         onClick={() => setIsLegalOpen((prev) => !prev)}
                     >
-                        <h3 className='text-white font-bold text-[18px] md:text-[20px] pb-0 md:pb-[12px]'>Legal</h3>
+                        <h3 className='text-white font-semibold text-[16px] md:text-[20px] pb-0 md:pb-[12px]'>Legal</h3>
                         <span className="md:hidden text-white">
                             <svg
                                 className={`w-5 h-5 transform transition-transform duration-300 ${isLegalOpen ? 'rotate-180' : 'rotate-0'}`}
@@ -266,23 +269,92 @@ const Footer = ({copyRight}) => {
                             </svg>
                         </span>
                     </button>
-                    <div className={`menu-links flex-col  ${isLegalOpen ? 'flex' : 'hidden'} md:flex`}>
+                    <div className={`menu-links gap-4 flex-col  ${isLegalOpen ? 'flex' : 'hidden'} md:flex`}>
                         <Link href="/privacy-policy" title="Privacy Policy" aria-label="Privacy Policy" 
-                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Privacy Policy
                         </Link>
                         <Link href="/terms-of-service" title="Terms of Service" aria-label="Terms of Service" 
-                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Terms of Service
                         </Link>
                         <Link href="/cookie-policy" title="Cookie Policy" aria-label="Cookie Policy" 
-                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Cookie Policy
                         </Link>
-                        <Link href="/contact" title="Contact" aria-label="Contact" 
-                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
+                        <Link href="/Contact" title="Contact" aria-label="Contact" 
+                            className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Contact
                         </Link>
+                    </div>
+                </div>
+
+                {/* Contact Column - 4th Column with Mobile Accordion */}
+                <div className='contact-info w-full md:w-auto'>
+                    <button
+                        type="button"
+                        className="heading w-full flex items-center justify-between md:block cursor-pointer mb-3"
+                        onClick={() => setIsContactOpen((prev) => !prev)}
+                    >
+                        <h3 className='text-white font-semibold text-[16px] md:text-[20px] pb-0 md:pb-[12px] text-left'>Our Contact</h3>
+                        <span className="md:hidden text-white">
+                            <svg
+                                className={`w-5 h-5 transform transition-transform duration-300 ${isContactOpen ? 'rotate-180' : 'rotate-0'}`}
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M6 9L12 15L18 9"
+                                    stroke="currentColor"
+                                    strokeWidth="1.8"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </span>
+                    </button>
+                    <div className={`contact-items flex flex-col gap-4 ${isContactOpen ? 'flex' : 'hidden'} md:flex`}>
+                        {/* Email */}
+                        <div className='flex items-center gap-3'>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                                <path d="M19.7289 3.94629H3.94601C2.85642 3.94629 1.97314 4.82957 1.97314 5.91915V17.7563C1.97314 18.8459 2.85642 19.7292 3.94601 19.7292H19.7289C20.8185 19.7292 21.7018 18.8459 21.7018 17.7563V5.91915C21.7018 4.82957 20.8185 3.94629 19.7289 3.94629Z" stroke="#B5FF5F" strokeWidth="1.97286" strokeLinecap="round" strokeLinejoin="round"/>
+                                <path d="M21.7018 6.90576L12.8535 12.5284C12.5489 12.7192 12.1968 12.8204 11.8374 12.8204C11.4781 12.8204 11.126 12.7192 10.8214 12.5284L1.97314 6.90576" stroke="#B5FF5F" strokeWidth="1.97286" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                            <a href="mailto:helloralo@gmail.com" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] transition-colors duration-300">
+                                helloralo@gmail.com
+                            </a>
+                        </div>
+
+                        {/* Phone 1 */}
+                        <div className='flex items-center gap-3'>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                            <a href="tel:+48743260239" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] transition-colors duration-300">
+                                + 48 74326 02396
+                            </a>
+                        </div>
+
+                        {/* Hours */}
+                        <div className='flex items-center gap-3'>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                            <span className="text-[#e9e9e9e3] text-[14px]">
+                                Mon to Fri 12:00 - 18:00
+                            </span>
+                        </div>
+
+                        {/* Address */}
+                        <div className='flex items-start gap-3'>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0 mt-0.5">
+                                <path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                            <span className="text-[#e9e9e9e3] text-[14px]">
+                                Hilton, TY56/90 NY, USA
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>

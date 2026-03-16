@@ -83,38 +83,40 @@ export default function Header() {
           onClick={() => setIsMenuOpen(false)} />
       )}
 
-      {/* ✅ Mobile Drawer — active class */}
-      <div className={`fixed top-0 right-0 h-full w-[280px] bg-[#1d361e] shadow-lg z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
-        isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-      }`}>
-        <button 
-          aria-label="Close navigation menu"
-          className="absolute top-5 right-5 text-white focus:outline-none min-w-[48px] min-h-[48px] flex items-center justify-center"
-          onClick={() => setIsMenuOpen(false)}>
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
+   {/* ✅ Mobile Drawer — FIXED spacing */}
+    <div className={`fixed top-0 right-0 h-full w-full bg-[#1d361e] shadow-lg z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+      isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+    }`}>
+      <button 
+        aria-label="Close navigation menu"
+        className="absolute top-5 right-5 text-white focus:outline-none min-w-[48px] min-h-[48px] flex items-center justify-center"
+        onClick={() => setIsMenuOpen(false)}>
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
 
-        <div className="flex flex-col p-6 pt-20 space-y-4">
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href}
-              title={link.label} aria-label={link.label}
-              className={`${getLinkClass(link.href)} py-2 text-lg min-h-[48px] flex items-center`}
-              onClick={() => setIsMenuOpen(false)}>
-              {link.label}
-            </Link>
-          ))}
+      {/* ✅ Padding ONLY on this div - no nested padding */}
+      <div className="flex flex-col px-5 pt-20 pb-5 space-y-3">
+        {navLinks.map((link) => (
+          <Link key={link.href} href={link.href}
+            title={link.label} aria-label={link.label}
+            className={`${getLinkClass(link.href)} py-2.5 text-base min-h-[48px] flex items-center px-3 rounded-lg`}
+            onClick={() => setIsMenuOpen(false)}>
+            {link.label}
+          </Link>
+        ))}
 
-          <div className="apply_button pt-4">
-            <Link href="/Contact"
-              className="inline-block bg-[#B5FF5F] text-[#154617] px-4 py-2 rounded-3xl hover:bg-white font-bold w-full text-center text-base transition-colors duration-300"
-              title="Apply Now" aria-label="Apply Now" onClick={() => setIsMenuOpen(false)}>
-              Apply Now
-            </Link>
-          </div>
+        {/* ✅ Better button spacing */}
+        <div className="apply_button pt-6 mt-4">
+          <Link href="/Contact"
+            className="inline-block bg-[#B5FF5F] text-[#154617] px-4 py-2.5 rounded-full hover:bg-white font-bold w-full text-center text-base transition-colors duration-300"
+            title="Apply Now" aria-label="Apply Now" onClick={() => setIsMenuOpen(false)}>
+            Apply Now
+          </Link>
         </div>
       </div>
+    </div>
     </header>
   );
 }

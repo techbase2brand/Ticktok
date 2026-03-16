@@ -79,15 +79,14 @@ const HowItWork = ({ title, description , applicationBtn }) => {
                 </p>
 
                 {/* Steps Wrapper - Responsive grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-7 sm:gap-7 md:gap-6 lg:gap-8 mt-8 sm:mt-10 md:mt-12">
+                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-7 sm:gap-7 md:gap-6 lg:gap-8 mt-8 sm:mt-10 md:mt-12">
                     {boxData.map((step, index) => (
                         <div 
                             key={index}
                             data-aos="fade-up" 
                             data-aos-delay={index * 100}
                             data-aos-duration="700"
-                            className="transition-all duration-300 group">
-                            {/* Icon with background */}
+                            className="bg-[#0e1e11] cursor-pointer box p-4 sm:p-5 md:p-[20px] border border-[#9EF01A33] rounded-2xl hover:border-[#B4FE5D] hover:shadow-lg hover:shadow-[#B4FE5D]/10 transition-all duration-300">
                             <div className="flex items-center justify-center mb-5 sm:mb-5">
                                 <div className="bg-[#fff] relative shadow-[0px_0px_47.35px_0px_#9EF01A66] p-3 sm:p-4 rounded-full group-hover:bg-[#B4FE5D] transition-colors duration-300">
                                     <div className="w-12 h-12 max-auto flex justify-center items-center sm:w-14 sm:h-14 md:w-16 md:h-16">
