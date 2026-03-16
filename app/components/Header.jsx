@@ -29,7 +29,7 @@ export default function Header() {
         {/* Logo */}
         <div className="logo">
           <Link href="/" title="logo" aria-label="Home">
-            <Image src="/logo.svg" alt="Logo" width={250} height={30} priority />
+            <Image src="/logo.svg" alt="Logo" width={250} height={30} priority  style={{ width: 'auto', height: 'auto' }} />
           </Link>
         </div>
 

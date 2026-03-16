@@ -42,7 +42,7 @@ const Hero = ({ subheading, poster, videoUrl, subheading2, heading, description,
                 loop 
                 preload="none"
                 playsInline
-                poster={poster}
+                poster={poster || undefined}
                 className="absolute top-0 left-0 w-full h-full object-cover z-0"
             >
                 <source src={videoUrl} type="video/mp4" />
@@ -127,7 +127,7 @@ const Hero = ({ subheading, poster, videoUrl, subheading2, heading, description,
                                 <Image 
                                     data-aos="fade-up" 
                                     data-aos-duration="500"   
-                                    src={getImage}
+                                    src={getImage || '/placeholder.png'}
                                     alt="Loan Amount"
                                     width={500}
                                     height={915}

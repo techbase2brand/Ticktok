@@ -21,6 +21,7 @@ const Footer = ({copyRight}) => {
                                 height={20} 
                                 quality={75}
                                 priority
+                                style={{ width: 'auto', height: 'auto' }}
                             />
                         </Link>
                         <p className='text-[#bebaba] max-w-[400px] pt-[17px] text-sm md:text-base'>

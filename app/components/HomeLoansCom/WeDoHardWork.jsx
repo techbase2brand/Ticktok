@@ -115,7 +115,7 @@ const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUs
                    {image && (
                         <div className={`w-full image-hard rounded-2xl md:rounded-3xl ${flexReverse ? 'md:order-2' : 'md:order-1'}`}>
                             <Image
-                                src={image}
+                                src={image || '/placeholder.png'}
                                 alt="Home Loan"
                                 width={500}
                                 height={500}
