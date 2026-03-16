@@ -17,8 +17,10 @@ export default function Home() {
       subheading2="" 
       description="Fast. Secure. Instant Loans." 
       badge="Instant Loan Approval" 
-      checkEligibility="Check Eligibility" 
+      checkEligibility="" 
+      checkEligibilityUrl=""
       apply="Apply Now"
+      applyUrl="/Contact"
     />
     <WhyTiktock 
       title="Why TickTock?"  

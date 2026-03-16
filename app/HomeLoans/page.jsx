@@ -20,6 +20,8 @@ const Page = () => {
           description="Don’t waste time searching for a home loan. As your mortgage broker, we’ll take care of it, doing the legwork to find the right loan that fits your needs." 
           badge="Find the right home loan" 
           checkEligibility="Get Started Today" 
+          checkEligibilityUrl="/Contact"
+          applyUrl="/Contact"
           apply=""
         />
         <WeDoHardWork 
@@ -39,6 +41,7 @@ const Page = () => {
           heading ="Need a Home Loan?"
           description="Whatever your circumstances, we will find the deal that’s right for you. 'Send through a quick enquiry and we will be in touch."
           buttonText="Speak to us today"
+          buttonTextUrl="/Contact"
         />
         <LightningFastApproval 
           applyBtn="Apply Now" 

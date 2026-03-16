@@ -19,6 +19,8 @@ const Page = () => {
       description="We’ll guide you through the options, advocate at every step, and negotiate the right loan to fit your needs. From start to finish, we handle the details so you can focus on what matters most and enjoy a seamless journey to securing your loan." 
       badge="About ticktock" 
       checkEligibility="Booking a meeting" 
+      checkEligibilityUrl=""
+      applyUrl="/Contact"
       apply=""
     />
 
@@ -40,6 +42,7 @@ const Page = () => {
       heading ="Need a Home Loan?"
       description="Whatever your circumstances, we will find the deal that’s right for you. 'Send through a quick enquiry and we will be in touch."
       buttonText="Speak to us today"
+      buttonTextUrl="/Contact"
     />
 
 

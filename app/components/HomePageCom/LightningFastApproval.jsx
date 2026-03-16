@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import { memo } from 'react';
 
 const LightningFastApproval = ({subheading, badge, heading, applyBtn, description}) => {
@@ -65,13 +66,13 @@ const LightningFastApproval = ({subheading, badge, heading, applyBtn, descriptio
                     data-aos="fade-up" 
                     data-aos-duration="800" 
                     className='start-your-application mt-6 sm:mt-8 md:mt-[40px] flex justify-center px-4'>
-                    <a 
-                        href='/application' 
+                    <Link 
+                        href='/Contact' 
                         title={applyBtn} 
                         className='bg-[#B4FE5D] flex items-center gap-[3px] w-full sm:w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300 justify-center text-sm sm:text-base'
                     >
                         {applyBtn} {arrowSvg}
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Square List - Fully Responsive */}

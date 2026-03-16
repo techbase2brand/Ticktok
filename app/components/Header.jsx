@@ -3,23 +3,36 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const navLinks = [
   { href: "/HomeLoans", label: "Home Loans" },
   { href: "/Business-Loans", label: "Business Loans" },
   { href: "/about", label: "About" },
   { href: "/TipsandGuides", label: "Tips and Guides" },
+  { href: "/Contact", label: "Contact" },
 ];
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname(); // ✅ Current page URL
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // ✅ Active class helper
+  const getLinkClass = (href) => {
+    const isActive = pathname === href;
+    return `transition-colors duration-300 hover:text-[#B5FF5F] hover:underline ${
+      isActive 
+        ? 'text-[#B5FF5F] underline font-semibold' 
+        : 'text-white'
+    }`;
+  };
 
   return (
     <header className={`p-4 md:p-4 bg-[#1d361e] shadow-sm transition-all duration-300 ${
@@ -29,31 +42,33 @@ export default function Header() {
         {/* Logo */}
         <div className="logo">
           <Link href="/" title="logo" aria-label="Home">
-            <Image src="/logo.svg" alt="Logo" width={250} height={30} priority  style={{ width: 'auto', height: 'auto' }} />
+            <Image src="/logo.svg" alt="Logo" width={250} height={30} priority style={{ width: 'auto', height: 'auto' }} />
           </Link>
         </div>
 
+        {/* ✅ Desktop Nav — active class */}
         <nav className="hidden md:flex gap-6">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}
-            title={link.label} aria-label={link.label}
-              className="text-white hover:text-[#B5FF5F] hover:underline transition-colors duration-300">
+              title={link.label} aria-label={link.label}
+              className={getLinkClass(link.href)}>
               {link.label}
             </Link>
           ))}
         </nav>
 
         <div className="hidden md:block apply_button">
-          <Link href="/apply"
+          <Link href="/Contact"
             className="bg-[#B5FF5F] text-[#154617] py-[10px] px-[20px] hover:bg-white flex items-center justify-center rounded-3xl font-bold text-[16px] transition-colors duration-300"
             title="Apply Now" aria-label="Apply Now">
             Apply Now
           </Link>
         </div>
 
-       
         {!isMenuOpen && (
-          <button className="md:hidden text-white focus:outline-none z-50"
+          <button 
+            aria-label="Open navigation menu"
+            className="md:hidden text-white focus:outline-none z-50 min-w-[48px] min-h-[48px] flex items-center justify-center"
             onClick={() => setIsMenuOpen(true)}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -68,12 +83,13 @@ export default function Header() {
           onClick={() => setIsMenuOpen(false)} />
       )}
 
-   
+      {/* ✅ Mobile Drawer — active class */}
       <div className={`fixed top-0 right-0 h-full w-[280px] bg-[#1d361e] shadow-lg z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
         isMenuOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
-        {/* Close Button */}
-        <button className="absolute top-5 right-5 text-white focus:outline-none"
+        <button 
+          aria-label="Close navigation menu"
+          className="absolute top-5 right-5 text-white focus:outline-none min-w-[48px] min-h-[48px] flex items-center justify-center"
           onClick={() => setIsMenuOpen(false)}>
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -83,17 +99,15 @@ export default function Header() {
         <div className="flex flex-col p-6 pt-20 space-y-4">
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href}
-            title={link.label}
-            aria-label={link.label}
-              className="text-white hover:text-[#B5FF5F] hover:underline py-2 text-lg transition-colors duration-300"
+              title={link.label} aria-label={link.label}
+              className={`${getLinkClass(link.href)} py-2 text-lg min-h-[48px] flex items-center`}
               onClick={() => setIsMenuOpen(false)}>
               {link.label}
             </Link>
           ))}
 
-          {/* Mobile Apply Now */}
           <div className="apply_button pt-4">
-            <Link href="/apply"
+            <Link href="/Contact"
               className="inline-block bg-[#B5FF5F] text-[#154617] px-4 py-2 rounded-3xl hover:bg-white font-bold w-full text-center text-base transition-colors duration-300"
               title="Apply Now" aria-label="Apply Now" onClick={() => setIsMenuOpen(false)}>
               Apply Now

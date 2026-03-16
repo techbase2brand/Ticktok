@@ -18,6 +18,8 @@ const Page = () => {
         description="Our goal is to make the home loan journey easier for you. With our dedicated team and extensive resources, you can navigate the process with confidence and make informed decisions." 
         badge="Advice and Guidance" 
         checkEligibility="" 
+        checkEligibilityUrl=""
+        applyUrl="/Contact"
         apply=""
       />
 
@@ -67,6 +69,7 @@ const Page = () => {
         heading ="Not sure where to start?"
         description="Our team is here to help every step of the way."
         buttonText="Speak to us today"
+        buttonTextUrl="/Contact"
       />
 
       <LightningFastApproval

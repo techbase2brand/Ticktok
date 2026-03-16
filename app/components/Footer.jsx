@@ -24,7 +24,7 @@ const Footer = ({copyRight}) => {
                                 style={{ width: 'auto', height: 'auto' }}
                             />
                         </Link>
-                        <p className='text-[#bebaba] max-w-[400px] pt-[17px] text-sm md:text-base'>
+                        <p className='text-white max-w-[400px] pt-[17px] text-sm md:text-base'>
                             Fast, secure, and transparent instant loans. Get funded in minutes, not days.
                         </p>
                     </div>
@@ -208,7 +208,7 @@ const Footer = ({copyRight}) => {
                         className="heading w-full flex items-center justify-between md:block cursor-pointer"
                         onClick={() => setIsQuickLinksOpen((prev) => !prev)}
                     >
-                        <h3 className='text-white font-bold text-[18px] md:text-[20px] pb-[12px]'>Quick Links</h3>
+                        <h3 className='text-white font-bold text-[18px] md:text-[20px] pb-0 md:pb-[12px]'>Quick Links</h3>
                         <span className="md:hidden text-white">
                             <svg
                                 className={`w-5 h-5 transform transition-transform duration-300 ${isQuickLinksOpen ? 'rotate-180' : 'rotate-0'}`}
@@ -226,7 +226,7 @@ const Footer = ({copyRight}) => {
                             </svg>
                         </span>
                     </button>
-                   <div className={`menu-links flex-col gap-2 md:gap-3 ${isQuickLinksOpen ? 'flex' : 'hidden'} md:flex`}>
+                   <div className={`menu-links flex-col ${isQuickLinksOpen ? 'flex' : 'hidden'} md:flex`}>
                         <Link title="How It Works" aria-label="How It Works" href="/how-it-works" 
                             className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
                             How It Works
@@ -248,7 +248,7 @@ const Footer = ({copyRight}) => {
                         className="heading w-full flex items-center justify-between cursor-pointer"
                         onClick={() => setIsLegalOpen((prev) => !prev)}
                     >
-                        <h3 className='text-white font-bold text-[18px] md:text-[20px] pb-[12px]'>Legal</h3>
+                        <h3 className='text-white font-bold text-[18px] md:text-[20px] pb-0 md:pb-[12px]'>Legal</h3>
                         <span className="md:hidden text-white">
                             <svg
                                 className={`w-5 h-5 transform transition-transform duration-300 ${isLegalOpen ? 'rotate-180' : 'rotate-0'}`}
@@ -266,7 +266,7 @@ const Footer = ({copyRight}) => {
                             </svg>
                         </span>
                     </button>
-                    <div className={`menu-links flex-col gap-2 md:gap-3 ${isLegalOpen ? 'flex' : 'hidden'} md:flex`}>
+                    <div className={`menu-links flex-col  ${isLegalOpen ? 'flex' : 'hidden'} md:flex`}>
                         <Link href="/privacy-policy" title="Privacy Policy" aria-label="Privacy Policy" 
                             className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 min-h-[48px] flex items-center">
                             Privacy Policy

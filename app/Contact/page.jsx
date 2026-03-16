@@ -5,40 +5,30 @@ import dynamic from "next/dynamic";
 import Hero from "../components/HomePageCom/Hero";
 const LightningFastApproval = dynamic(() => import("../components/HomePageCom/LightningFastApproval"));
 const NeedHomeLoan = dynamic(() => import("../components/HomeLoansCom/NeedHomeLoan"));
-const WeDoHardWork = dynamic(() => import("../components/HomeLoansCom/WeDoHardWork"));
-const SupportForEvery = dynamic(() => import("../components/HomeLoansCom/SupportForEvery"));
 const Page = () => {
   return (
     <>
         <Hero
           videoUrl=""
-          poster="/banner-loan.webp" 
-          getImage="/3d-house-model-with-modern-architecture 1.webp" 
-          subheading="Buying a" 
-          heading="property " 
-          subheading2="is a time to be excited." 
-          description="Don’t waste time searching for a home loan. As your mortgage broker, we’ll take care of it, doing the legwork to find the right loan that fits your needs." 
-          badge="Find the right home loan" 
-          checkEligibility="Get Started Today" 
+          poster="/contact-banner.png" 
+          getImage="/conatct-part.png" 
+          subheading="" 
+          heading="Contact Us" 
+          subheading2="" 
+          description="To learn more about how Lending ticktock can help you find the right loan for your needs, fill out the form below and we’ll get in touch with you." 
+          badge="Advice and Guidance" 
+          checkEligibility="" 
+          checkEligibilityUrl=""
           apply=""
+          applyUrl="/Contact"
         />
-        <WeDoHardWork 
-          image="/homeloan-hard-work.webp"
-          title="We do Hard work"
-          description="We consider a range of options for you. Using our understanding and knowledge of the current market, we look at different loans and quickly narrow them down to the ones that suit your needs. Then we choose together."
-          subtitle="And we help with the whole process."
-          description2="We don’t stop at just finding the right loan. We help with the whole process. That includes completing the paperwork, managing the application, and following it through to approval. You’ll have clear guidance and support every step of the way, so things feel straightforward and under control."
-          whyUseBtn=""
-        />
-        <SupportForEvery
-          title= "What types of finance can Lending Boys SA help you with?"
-          badge="Support for every stage of your property journey"
-        />
+       
         <NeedHomeLoan 
           image= "/living-room.webp"
           heading ="Need a Home Loan?"
           description="Whatever your circumstances, we will find the deal that’s right for you. 'Send through a quick enquiry and we will be in touch."
           buttonText="Speak to us today"
+          buttonTextUrl="/Contact"
         />
         <LightningFastApproval 
           applyBtn="Apply Now" 

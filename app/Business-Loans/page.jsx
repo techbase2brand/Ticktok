@@ -18,6 +18,8 @@ const Page = () => {
         description="One of the biggest opportunities many small businesses struggle with is finding the right business finance to fuel their growth plans." 
         badge="Fuel your business growth" 
         checkEligibility="Discuss option today" 
+        checkEligibilityUrl="/Contact"
+        applyUrl="/Contact"
         apply=""
       />
 
@@ -45,6 +47,7 @@ const Page = () => {
         heading ="Looking for the right business finance?"
         description="Discover the ideal loan option to support your business growth and success. Explore our range of business finance solutions tailored to your specific needs."
         buttonText="Download the guide"
+        buttonTextUrl=""
       />
 
       <LightningFastApproval
