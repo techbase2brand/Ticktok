@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from './components/Header';
-import Footer from './components/Footer';
+import dynamic from "next/dynamic";
 
+const Header = dynamic(() => import("./components/Header"));
+const Footer = dynamic(() => import("./components/Footer"));
 export const metadata: Metadata = {
   title: "TickTock Loans", // Tumhari website ka naam
   description: "Your trusted loan partner",

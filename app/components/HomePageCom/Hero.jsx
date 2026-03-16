@@ -1,3 +1,4 @@
+"use client";
 import { memo } from 'react';
 import Image from "next/image";
 
@@ -39,6 +40,7 @@ const Hero = ({ subheading, poster, videoUrl, subheading2, heading, description,
                 autoPlay 
                 muted 
                 loop 
+                preload="metadata"
                 playsInline
                 poster={poster}
                 className="absolute top-0 left-0 w-full h-full object-cover z-0"

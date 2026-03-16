@@ -1,3 +1,4 @@
+"use client";
 import { memo } from 'react';
 
 const LightningFastApproval = ({subheading, badge, heading, applyBtn, description}) => {

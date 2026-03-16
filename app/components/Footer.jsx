@@ -12,7 +12,7 @@ const Footer = ({copyRight}) => {
             <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-start justify-between gap-6 md:gap-8">
                 <div className='logo-content w-full md:w-auto'>
                     <div className="logo">
-                        <a href="/" title="logo" className="inline-block">
+                        <Link href="/" title="logo" className="inline-block">
                             <Image 
                                 className="" 
                                 src="/logo.svg" 
@@ -22,7 +22,7 @@ const Footer = ({copyRight}) => {
                                 quality={75}
                                 priority
                             />
-                        </a>
+                        </Link>
                         <p className='text-[#bebaba] max-w-[400px] pt-[17px] text-sm md:text-base'>
                             Fast, secure, and transparent instant loans. Get funded in minutes, not days.
                         </p>

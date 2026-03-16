@@ -63,8 +63,7 @@ const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUs
                                 <p
                                     data-aos="fade-up"
                                     data-aos-duration="600"
-                                    className='text-left text-gray-300 text-sm sm:text-base md:text-lg mb-6 md:mb-8 leading-relaxed'
-                                >
+                                    className='text-left text-gray-300 text-sm sm:text-base md:text-lg mb-6 md:mb-8 leading-relaxed'>
                                     {description}
                                 </p>
                             )}

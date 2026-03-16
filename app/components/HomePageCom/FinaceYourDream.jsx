@@ -1,5 +1,5 @@
+"use client";
 import Image from 'next/image';
-import { title } from 'process';
 import { memo } from 'react';
 
 const FinaceYourDream = ({title , getStartBtn}) => {

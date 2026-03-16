@@ -1,5 +1,5 @@
+"use client";
 import { memo } from 'react';
-
 const WhyTiktock = ({ title, description }) => {
     const boxData = [
         {

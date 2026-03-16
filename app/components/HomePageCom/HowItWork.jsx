@@ -1,4 +1,5 @@
-import { count } from 'console';
+"use client";
+import Link from 'next/link';
 import { memo } from 'react';
 
 const HowItWork = ({ title, description , applicationBtn }) => {
@@ -117,9 +118,9 @@ const HowItWork = ({ title, description , applicationBtn }) => {
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="800" className='startr-your-application mt-[60px] flex justify-center'>
-                    <a href='/application' title={applicationBtn} className='bg-[#B4FE5D] flex items-center gap-[3px] w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300'>
+                    <Link href='/application' title={applicationBtn} className='bg-[#B4FE5D] flex items-center gap-[3px] w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300'>
                         {applicationBtn} {arrowSvg}
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

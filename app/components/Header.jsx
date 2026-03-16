@@ -33,7 +33,7 @@ export default function Header() {
       <div className="max-w-[1440px] mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="logo">
-          <a href="/" title="logo">
+          <Link href="/" title="logo">
             <Image
               className=" "
               src="/logo.svg"
@@ -42,7 +42,7 @@ export default function Header() {
               height={30}
               priority
             />
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation - Hidden on mobile */}
