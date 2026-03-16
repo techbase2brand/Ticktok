@@ -1,9 +1,10 @@
 import { memo } from 'react';
+import dynamic from "next/dynamic";
 import Hero from '../components/HomePageCom/Hero';
-import WeDoHardWork from '../components/HomeLoansCom/WeDoHardWork';
-import LightningFastApproval from '../components/HomePageCom/LightningFastApproval';
-import NeedHomeLoan from '../components/HomeLoansCom/NeedHomeLoan';
-import AboutSupport from '../components/AboutCom/AboutSupport';
+const WeDoHardWork = dynamic(() => import('../components/HomeLoansCom/WeDoHardWork'));
+const LightningFastApproval = dynamic(() => import('../components/HomePageCom/LightningFastApproval'));
+const NeedHomeLoan = dynamic(() => import('../components/HomeLoansCom/NeedHomeLoan'));
+const AboutSupport = dynamic(() => import('../components/AboutCom/AboutSupport'));
 
 const Page = () => {
   return (

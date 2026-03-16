@@ -145,6 +145,7 @@ const Hero = ({ subheading, poster, videoUrl, subheading2, heading, description,
                                     alt="Loan Amount"
                                     width={800}
                                     height={800}
+                                    quality={75}
                                     priority
                                     className="relative z-20 w-full h-auto"
                                 />

@@ -1,9 +1,10 @@
-import Hero from "./components/HomePageCom/Hero"
-import WhyTiktock from "./components/HomePageCom/WhyTiktock";
-import HowItWork from "./components/HomePageCom/HowItWork";
-import FinaceYourDream from "./components/HomePageCom/FinaceYourDream";
-import LightningFastApproval from "./components/HomePageCom/LightningFastApproval";
-import LovedbyThousands from "./components/HomePageCom/LovedbyThousands";
+import dynamic from "next/dynamic";
+const Hero = dynamic(() => import("./components/HomePageCom/Hero"));
+const WhyTiktock = dynamic(() => import("./components/HomePageCom/WhyTiktock"));
+const HowItWork = dynamic(() => import("./components/HomePageCom/HowItWork"));
+const FinaceYourDream = dynamic(() => import("./components/HomePageCom/FinaceYourDream"));
+const LightningFastApproval = dynamic(() => import("./components/HomePageCom/LightningFastApproval"));
+const LovedbyThousands = dynamic(() => import("./components/HomePageCom/LovedbyThousands"));
 export default function Home() {
   return (
    <>

@@ -34,7 +34,7 @@ const FinaceYourDream = ({title , getStartBtn}) => {
                 <div className='finace-wrapper grid grid-cols-1 md:grid-cols-2 items-center gap-3 md:gap-4'>
                     {/* Image - Order changes on mobile */}
                     <div className='finace-image order-1 md:order-1 flex justify-center'>
-                        <img
+                        <Image
                             data-aos="fade-up"
                             data-aos-duration="500"
                             src="/finace-your-dream.png"

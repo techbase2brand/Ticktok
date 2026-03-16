@@ -19,6 +19,7 @@ const Footer = ({copyRight}) => {
                                 alt="Logo" 
                                 width={220} 
                                 height={20} 
+                                quality={75}
                                 priority
                             />
                         </a>
