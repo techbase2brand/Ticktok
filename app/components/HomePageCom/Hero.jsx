@@ -40,7 +40,7 @@ const Hero = ({ subheading, poster, videoUrl, subheading2, heading, description,
                 autoPlay 
                 muted 
                 loop 
-                preload="metadata"
+                preload="none"
                 playsInline
                 poster={poster}
                 className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -145,8 +145,8 @@ const Hero = ({ subheading, poster, videoUrl, subheading2, heading, description,
                                     data-aos-duration="500"   
                                     src={getImage}
                                     alt="Loan Amount"
-                                    width={800}
-                                    height={800}
+                                    width={500}
+                                    height={915}
                                     quality={75}
                                     priority
                                     className="relative z-20 w-full h-auto"
