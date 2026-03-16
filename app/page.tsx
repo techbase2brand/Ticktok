@@ -10,8 +10,8 @@ export default function Home() {
    <>
     <Hero 
      videoUrl="/0_Couple_Home_1920x1010.mp4"
-      poster="/banner.png" 
-      getImage="/loan-ammount.png" 
+      poster="/banner.webp" 
+      getImage="/loan-ammount.webp" 
       subheading="Money in" 
       heading="Minutes" 
       subheading2="" 

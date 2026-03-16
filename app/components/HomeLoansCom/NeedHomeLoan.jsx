@@ -58,7 +58,7 @@ const NeedHomeLoan = ({ heading, description, buttonText, image }) => {
           {/* Right Image - Always render? If you want to hide image when no content, add condition */}
           <div className='w-full max-h-[400px] md:w-1/2 flex justify-center md:justify-end'>
             <Image
-              src={image || "/living-room.png"}
+              src={image || "/living-room.webp"}
               alt="Home Loan"
               width={1000}
               height={1000}

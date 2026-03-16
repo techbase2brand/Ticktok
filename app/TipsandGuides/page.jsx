@@ -10,8 +10,8 @@ const Page = () => {
     <>
       <Hero 
         videoUrl=""
-        poster="/our-tip-banner.jpg" 
-        getImage="/our-guids.png" 
+        poster="/our-tip-banner.webp" 
+        getImage="/our-guids.webp" 
         subheading="" 
         heading="Our Guides" 
         subheading2="" 
@@ -23,7 +23,7 @@ const Page = () => {
 
       <WeDoHardWork 
         flexReverse={false}
-        image= "/looking-to-buy.png"
+        image= "/looking-to-buy.webp"
         title="Looking to buy your first home?"
         description="Buying your first home is exciting, but it can feel overwhelming. From saving a deposit to finding the right loan, we’re here to help guide you every step of the way."
         subtitle=""
@@ -33,7 +33,7 @@ const Page = () => {
 
       <WeDoHardWork 
         flexReverse={true}
-        image= "/use-broker.png"
+        image= "/use-broker.webp"
         title="Why use a broker?"
         description="Having the right people to help you is key when it comes to property finance. Although it always pays to do your homework on the property market before you dive in, when the time comes to finance your decision, we’ll be thrilled to help."
         subtitle=""
@@ -43,7 +43,7 @@ const Page = () => {
 
       <WeDoHardWork 
         flexReverse={false}
-        image= "/home-loan-still.png"
+        image= "/home-loan-still.webp"
         title="Is your home loan still right for you?"
         description="As time marches on, situations change. Have you started a new job? Welcomed a new family member? Perhaps you’re looking for a better interest rate or finally ready to kick off that renovation project. Whatever the reason, it’s the perfect time to review your options."
         subtitle=""
@@ -53,7 +53,7 @@ const Page = () => {
 
       <WeDoHardWork 
         flexReverse={true}
-        image= "/explore-option.png"
+        image= "/explore-option.webp"
         title="Looking to invest in property?"
         description="Whether you’re starting up, sustaining success, or wanting to make the most of new opportunities, the right finance can help fund what you’re looking for."
         subtitle=""
@@ -63,7 +63,7 @@ const Page = () => {
 
 
       <NeedHomeLoan 
-        image= "/not-sure.png"
+        image= "/not-sure.webp"
         heading ="Not sure where to start?"
         description="Our team is here to help every step of the way."
         buttonText="Speak to us today"

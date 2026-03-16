@@ -12,8 +12,8 @@ const Page = () => {
     <>
         <Hero
           videoUrl=""
-          poster="/banner-loan.jpg" 
-          getImage="/3d-house-model-with-modern-architecture 1.png" 
+          poster="/banner-loan.webp" 
+          getImage="/3d-house-model-with-modern-architecture 1.webp" 
           subheading="Buying a" 
           heading="property " 
           subheading2="is a time to be excited." 
@@ -23,7 +23,7 @@ const Page = () => {
           apply=""
         />
         <WeDoHardWork 
-          image="/homeloan-hard-work.png"
+          image="/homeloan-hard-work.webp"
           title="We do Hard work"
           description="We consider a range of options for you. Using our understanding and knowledge of the current market, we look at different loans and quickly narrow them down to the ones that suit your needs. Then we choose together."
           subtitle="And we help with the whole process."
@@ -35,7 +35,7 @@ const Page = () => {
           badge="Support for every stage of your property journey"
         />
         <NeedHomeLoan 
-          image= "/living-room.png"
+          image= "/living-room.webp"
           heading ="Need a Home Loan?"
           description="Whatever your circumstances, we will find the deal that’s right for you. 'Send through a quick enquiry and we will be in touch."
           buttonText="Speak to us today"

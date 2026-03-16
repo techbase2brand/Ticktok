@@ -37,7 +37,7 @@ const FinaceYourDream = ({title , getStartBtn}) => {
                         <img
                             data-aos="fade-up"
                             data-aos-duration="500"
-                            src="/finace-your-dream.png"
+                            src="/finace-your-dream.webp"
                             alt="Finance Your Dreams with the Right Loan"
                             width={500}
                             height={500}
