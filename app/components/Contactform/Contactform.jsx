@@ -110,16 +110,16 @@ const ContactPage = () => {
 
   return (
     <div className="bg-gradient-to-r from-black via-[#0b110c] to-[#0b110c] min-h-screen pt-12 pb-20 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
         
         {/* LEFT SIDE - CONTENT */}
-        <div className="pr-0 lg:pr-8">
+        <div className="lg:pr-8">
           {/* Header Section */}
           <div className="mb-8">
             <p className="text-gray-500 text-xs font-semibold tracking-widest uppercase mb-4">
               CONTACT LENDING BOYS SA
             </p>
-            <h1 style={{ color: '#fff' }} className="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
+            <h1 className="text-white text-4xl sm:text-5xl font-bold mb-6 leading-tight">
               We'd love to hear from you!
             </h1>
             <p className="text-gray-400 text-base leading-relaxed">
@@ -129,27 +129,33 @@ const ContactPage = () => {
 
           {/* OFFICE INFO SECTION */}
           <div className="mt-12">
-            <h2 style={{ color: '#B4FE5D' }} className="text-2xl font-bold mb-6">
+            <h2 className="text-lime-400 text-2xl font-bold mb-6">
               Our Office
             </h2>
 
             <div className="mb-6">
-              <p style={{ color: '#B4FE5D' }} className="text-sm font-semibold mb-1">
+              <p className="text-lime-400 text-sm font-semibold mb-1">
                 136 GreenValley Drive
               </p>
-              <p style={{ color: '#B4FE5D' }} className="text-sm font-semibold">
+              <p className="text-lime-400 text-sm font-semibold">
                 Greenwith, SA, 5125
               </p>
             </div>
 
             <div className="mb-4">
-              <a href="tel:0433249678" style={{ color: '#B4FE5D' }} className="text-2xl font-bold hover:opacity-80 transition-opacity">
+              <a 
+                href="tel:0433249678" 
+                className="text-lime-400 text-2xl font-bold hover:opacity-80 transition-opacity"
+              >
                 0433 249 678
               </a>
             </div>
 
             <div>
-              <a href="mailto:sim@ticktockloans.com.au" className="text-white text-sm hover:text-green-400 transition-colors">
+              <a 
+                href="mailto:sim@ticktockloans.com.au" 
+                className="text-white text-sm hover:text-lime-300 transition-colors"
+              >
                 sim@ticktockloans.com.au
               </a>
             </div>
@@ -157,11 +163,11 @@ const ContactPage = () => {
         </div>
 
         {/* RIGHT SIDE - FORM */}
-        <div style={{ backgroundColor: '#384329' }} className="p-8 rounded-xl shadow-2xl">
+        <div className="bg-gradient-to-b from-transparent to-[#9EF01A]/9 p-8">
           {/* Success Message */}
           {success && (
             <div className="mb-6 p-4 bg-green-900 border border-green-500 rounded-lg">
-              <p className="text-green-500 font-medium text-sm">
+              <p className="text-green-400 font-medium text-sm">
                 ✓ Message sent successfully! We'll get back to you soon.
               </p>
             </div>
@@ -170,7 +176,7 @@ const ContactPage = () => {
           {/* Error Message */}
           {error && (
             <div className="mb-6 p-4 bg-red-900 border border-red-500 rounded-lg">
-              <p className="text-red-500 font-medium text-sm">
+              <p className="text-red-400 font-medium text-sm">
                 ⚠ {error}
               </p>
             </div>
@@ -190,18 +196,7 @@ const ContactPage = () => {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First name"
-                  className="w-full px-4 py-3 bg-black text-white border border-gray-700 rounded-lg transition-all outline-none"
-                  style={{
-                    '--tw-ring-color': '#B4FE5D',
-                  }}
-                  onFocus={(e) => {
-                    e.target.style.borderColor = '#B4FE5D';
-                    e.target.style.boxShadow = '0 0 0 3px rgba(180, 254, 93, 0.15)';
-                  }}
-                  onBlur={(e) => {
-                    e.target.style.borderColor = '';
-                    e.target.style.boxShadow = '';
-                  }}
+                  className="w-full px-4 py-3 bg-white text-black border border-gray-700 rounded-lg placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
                 />
               </div>
               <div>
@@ -215,15 +210,7 @@ const ContactPage = () => {
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last name"
-                  className="w-full px-4 py-3 bg-black text-white border border-gray-700 rounded-lg transition-all outline-none"
-                  onFocus={(e) => {
-                    e.target.style.borderColor = '#B4FE5D';
-                    e.target.style.boxShadow = '0 0 0 3px rgba(180, 254, 93, 0.15)';
-                  }}
-                  onBlur={(e) => {
-                    e.target.style.borderColor = '';
-                    e.target.style.boxShadow = '';
-                  }}
+                  className="w-full px-4 py-3 bg-white text-black border border-gray-700 rounded-lg placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
                 />
               </div>
             </div>
@@ -241,15 +228,7 @@ const ContactPage = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter Email"
-                  className="w-full px-4 py-3 bg-black text-white border border-gray-700 rounded-lg transition-all outline-none"
-                  onFocus={(e) => {
-                    e.target.style.borderColor = '#B4FE5D';
-                    e.target.style.boxShadow = '0 0 0 3px rgba(180, 254, 93, 0.15)';
-                  }}
-                  onBlur={(e) => {
-                    e.target.style.borderColor = '';
-                    e.target.style.boxShadow = '';
-                  }}
+                  className="w-full px-4 py-3 bg-white text-black border border-gray-700 rounded-lg placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
                 />
               </div>
               <div>
@@ -263,15 +242,7 @@ const ContactPage = () => {
                   value={formData.confirmEmail}
                   onChange={handleChange}
                   placeholder="Confirm Email"
-                  className="w-full px-4 py-3 bg-black text-white border border-gray-700 rounded-lg transition-all outline-none"
-                  onFocus={(e) => {
-                    e.target.style.borderColor = '#B4FE5D';
-                    e.target.style.boxShadow = '0 0 0 3px rgba(180, 254, 93, 0.15)';
-                  }}
-                  onBlur={(e) => {
-                    e.target.style.borderColor = '';
-                    e.target.style.boxShadow = '';
-                  }}
+                  className="w-full px-4 py-3 bg-white text-black border border-gray-700 rounded-lg placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
                 />
               </div>
             </div>
@@ -288,15 +259,7 @@ const ContactPage = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Your phone number"
-                className="w-full px-4 py-3 bg-black text-white border border-gray-700 rounded-lg transition-all outline-none"
-                onFocus={(e) => {
-                  e.target.style.borderColor = '#B4FE5D';
-                  e.target.style.boxShadow = '0 0 0 3px rgba(180, 254, 93, 0.15)';
-                }}
-                onBlur={(e) => {
-                  e.target.style.borderColor = '';
-                  e.target.style.boxShadow = '';
-                }}
+                className="w-full px-4 py-3 bg-white text-black border border-gray-700 rounded-lg placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
               />
             </div>
 
@@ -312,15 +275,7 @@ const ContactPage = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 placeholder="What is this about?"
-                className="w-full px-4 py-3 bg-black text-white border border-gray-700 rounded-lg transition-all outline-none"
-                onFocus={(e) => {
-                  e.target.style.borderColor = '#B4FE5D';
-                  e.target.style.boxShadow = '0 0 0 3px rgba(180, 254, 93, 0.15)';
-                }}
-                onBlur={(e) => {
-                  e.target.style.borderColor = '';
-                  e.target.style.boxShadow = '';
-                }}
+                className="w-full px-4 py-3 bg-white text-black border border-gray-700 rounded-lg placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
               />
             </div>
 
@@ -336,15 +291,7 @@ const ContactPage = () => {
                 onChange={handleChange}
                 placeholder="Your message here..."
                 rows="5"
-                className="w-full px-4 py-3 bg-black text-white border border-gray-700 rounded-lg transition-all outline-none resize-none"
-                onFocus={(e) => {
-                  e.target.style.borderColor = '#B4FE5D';
-                  e.target.style.boxShadow = '0 0 0 3px rgba(180, 254, 93, 0.15)';
-                }}
-                onBlur={(e) => {
-                  e.target.style.borderColor = '';
-                  e.target.style.boxShadow = '';
-                }}
+                className="w-full px-4 py-3 bg-white text-black border border-gray-700 rounded-lg placeholder-gray-500 focus:border-lime-400 focus:ring-2 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none resize-none"
               />
             </div>
 
@@ -352,23 +299,11 @@ const ContactPage = () => {
             <button
               type="submit"
               disabled={isLoading}
-              style={{
-                backgroundColor: isLoading ? '#7d9a4f' : '#B4FE5D',
-                color: isLoading ? '#ffffff' : '#000000',
-              }}
-              className="w-full py-3 px-6 font-semibold rounded-lg transition-all duration-200"
-              onMouseEnter={(e) => {
-                if (!isLoading) {
-                  e.target.style.backgroundColor = '#9fd46d';
-                  e.target.style.transform = 'translateY(-2px)';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (!isLoading) {
-                  e.target.style.backgroundColor = '#B4FE5D';
-                  e.target.style.transform = 'translateY(0)';
-                }
-              }}
+              className={`w-full py-3 px-6 font-semibold cursor-pointer rounded-lg transition-all duration-200 ${
+                isLoading
+                  ? 'bg-lime-600 opacity-60 cursor-not-allowed text-white'
+                  : 'bg-lime-400 text-black hover:bg-lime-500 active:scale-95'
+              }`}
             >
               {isLoading ? 'Sending...' : 'Send Message'}
             </button>
