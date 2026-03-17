@@ -2,15 +2,18 @@
 import { memo, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import { Inter, Poppins } from "next/font/google";
+const poppins = Inter({ subsets: ["latin"], weight: "400" });
+
 const Footer = ({copyRight}) => {
     const [isQuickLinksOpen, setIsQuickLinksOpen] = useState(false);
     const [isLegalOpen, setIsLegalOpen] = useState(false);
     const [isContactOpen, setIsContactOpen] = useState(false);
 
     return (
-        <footer className='bg-[#154617] pt-[40px] px-4 md:px-6 lg:px-8'>
-            <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-start justify-between gap-6 md:gap-8">
-                <div className='logo-content w-full md:w-auto'>
+<footer className='bg-gradient-to-r from-[#013003] to-[#013811] pt-[40px] px-4 md:px-6 lg:px-8'>
+            <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-start justify-between  md:gap-8">
+                <div className='logo-content w-full md:w-auto mb-5'>
                     <div className="logo">
                         <Link href="/" title="logo" className="inline-block"  aria-label="Logo">
                             <Image 
@@ -24,7 +27,7 @@ const Footer = ({copyRight}) => {
                                 style={{ width: 'auto', height: 'auto' }}
                             />
                         </Link>
-                        <p className='text-white max-w-[400px] pt-[17px] text-sm md:text-base'>
+                        <p className='text-white max-w-[400px] pt-[15px]  md:text-[14px]'>
                             Fast, secure, and transparent instant loans. Get funded in minutes, not days.
                         </p>
                     </div>
@@ -202,12 +205,12 @@ const Footer = ({copyRight}) => {
                     </div>
                 </div>
                 
-                <div className='quick-links w-full md:w-auto'>
+                <div className={poppins.className + ' quick-links w-full md:w-auto'}>
                     <button
                         type="button"
                         className="heading w-full flex items-center justify-between md:block cursor-pointer mb-3"
                         onClick={() => setIsQuickLinksOpen((prev) => !prev)}>
-                        <h3 className='text-white font-semibold text-[16px] md:text-[20px] pb-0 md:pb-[12px] text-left '>Quick Links</h3>
+                        <h3 className='text-white font-semibold text-[16px] md:text-[16px] pb-0 md:pb-[12px] text-left '>Quick Links</h3>
                         <span className="md:hidden text-white">
                             <svg
                                 className={`w-5 h-5 transform transition-transform duration-300 ${isQuickLinksOpen ? 'rotate-180' : 'rotate-0'}`}
@@ -244,13 +247,13 @@ const Footer = ({copyRight}) => {
                     </div>
                 </div>
                 
-                <div className='quick-links w-full md:w-auto'>
+                <div className={poppins.className + ' quick-links w-full md:w-auto'}>
                     <button
                         type="button"
                         className="heading w-full flex items-center justify-between cursor-pointer mb-3"
                         onClick={() => setIsLegalOpen((prev) => !prev)}
                     >
-                        <h3 className='text-white font-semibold text-[16px] md:text-[20px] pb-0 md:pb-[12px]'>Legal</h3>
+                        <h3 className='text-white font-semibold text-[16px] md:text-[16px] pb-0 md:pb-[12px]'>Legal</h3>
                         <span className="md:hidden text-white">
                             <svg
                                 className={`w-5 h-5 transform transition-transform duration-300 ${isLegalOpen ? 'rotate-180' : 'rotate-0'}`}
@@ -289,13 +292,13 @@ const Footer = ({copyRight}) => {
                 </div>
 
                 {/* Contact Column - 4th Column with Mobile Accordion */}
-                <div className='contact-info w-full md:w-auto'>
+                <div className={poppins.className + ' contact-info w-full md:w-auto'}>
                     <button
                         type="button"
                         className="heading w-full flex items-center justify-between md:block cursor-pointer mb-3"
                         onClick={() => setIsContactOpen((prev) => !prev)}
                     >
-                        <h3 className='text-white font-semibold text-[16px] md:text-[20px] pb-0 md:pb-[12px] text-left'>Our Contact</h3>
+                        <h3 className='text-white font-semibold text-[16px] md:text-[16px] pb-0 md:pb-[12px] text-left'>Our Contact</h3>
                         <span className="md:hidden text-white">
                             <svg
                                 className={`w-5 h-5 transform transition-transform duration-300 ${isContactOpen ? 'rotate-180' : 'rotate-0'}`}
@@ -330,7 +333,7 @@ const Footer = ({copyRight}) => {
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                             </svg>
-                            <a href="tel:+48743260239" className="text-[#e9e9e9e3] text-[14px] hover:text-[#B5FF5F] transition-colors duration-300">
+                            <a href="tel:+48743260239" className="text-[#e9e9e9e3] font-poppins text-[14px] hover:text-[#B5FF5F] transition-colors duration-300">
                                 + 48 74326 02396
                             </a>
                         </div>

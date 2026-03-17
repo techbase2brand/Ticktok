@@ -3,6 +3,7 @@
 import { memo } from 'react';
 import dynamic from "next/dynamic";
 import Hero from "../components/HomePageCom/Hero";
+import Contactform from '../components/Contactform/Contactform';
 const LightningFastApproval = dynamic(() => import("../components/HomePageCom/LightningFastApproval"));
 const NeedHomeLoan = dynamic(() => import("../components/HomeLoansCom/NeedHomeLoan"));
 const Page = () => {
@@ -22,7 +23,7 @@ const Page = () => {
           apply=""
           applyUrl="/Contact"
         />
-       
+        <Contactform />
         <NeedHomeLoan 
           image= "/living-room.webp"
           heading ="Need a Home Loan?"

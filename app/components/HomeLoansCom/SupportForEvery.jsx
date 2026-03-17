@@ -94,9 +94,9 @@ const SupportForEvery = ({ title, badge, supportTypes }) => {
             {typesToShow.map(({ id, icon, name }) => (
               <article
                 key={id}
-                className="group rounded-[18px] p-[40px] bg-[linear-gradient(135deg,rgba(31,122,46,0.2)_0%,rgba(15,77,28,0.2)_100%)] hover:bg-white/10 transition-all duration-300 cursor-pointer border border-[#9EF01A33] hover:border-[#B4FE5D]/20"
+                className="cursor-pointer p-12 text-center grid justify-center rounded-2xl border border-[#9EF01A]/20 hover:border-[#B4FE5D]/40 transition-all duration-300 bg-gradient-to-b from-transparent to-[#9EF01A]/9 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#B4FE5D]/10"
                 role="button" tabIndex={0} aria-label={`Learn more about ${name}`}>
-                <div className="flex flex-col items-left text-left">
+                <div className="flex flex-col items-center text-center">
                   <div className="mb-6 bg-[#9EF01A1A] w-fit rounded-2xl p-3">
                     {icon}
                   </div>

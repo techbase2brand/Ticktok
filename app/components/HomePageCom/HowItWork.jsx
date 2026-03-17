@@ -86,7 +86,7 @@ const HowItWork = ({ title, description , applicationBtn }) => {
                             data-aos="fade-up" 
                             data-aos-delay={index * 100}
                             data-aos-duration="700"
-                            className="bg-[#0e1e11] cursor-pointer box p-4 sm:p-5 md:p-[20px] border border-[#9EF01A33] rounded-2xl hover:border-[#B4FE5D] hover:shadow-lg hover:shadow-[#B4FE5D]/10 transition-all duration-300">
+                              className='cursor-pointer p-6 text-center grid justify-center rounded-2xl border border-[#9EF01A]/20 hover:border-[#B4FE5D]/40 transition-all duration-300 bg-gradient-to-b from-transparent to-[#9EF01A]/9 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#B4FE5D]/10'>
                             <div className="flex items-center justify-center mb-5 sm:mb-5">
                                 <div className="bg-[#fff] relative shadow-[0px_0px_47.35px_0px_#9EF01A66] p-3 sm:p-4 rounded-full group-hover:bg-[#B4FE5D] transition-colors duration-300">
                                     <div className="w-12 h-12 max-auto flex justify-center items-center sm:w-14 sm:h-14 md:w-16 md:h-16">

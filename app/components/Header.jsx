@@ -84,7 +84,7 @@ export default function Header() {
       )}
 
    {/* ✅ Mobile Drawer — FIXED spacing */}
-    <div className={`fixed top-0 right-0 h-full w-full bg-[#1d361e] shadow-lg z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
+    <div className={`fixed top-0 right-0 h-full w-full bg-[#002802] shadow-lg z-50 transform transition-transform duration-300 ease-in-out md:hidden ${
       isMenuOpen ? 'translate-x-0' : 'translate-x-full'
     }`}>
       <button 

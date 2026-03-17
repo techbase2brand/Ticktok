@@ -72,11 +72,10 @@ const WhyTiktock = ({ title, description }) => {
                             data-aos="fade-up" 
                             data-aos-delay={index * 100}
                             key={index} 
-                            className='bg-[#0e1e11] cursor-pointer box p-4 sm:p-5 md:p-[20px] border border-[#9EF01A33] rounded-2xl hover:border-[#B4FE5D] hover:shadow-lg hover:shadow-[#B4FE5D]/10 transition-all duration-300'
-                        >
+                            className='cursor-pointer p-6 text-center grid justify-center rounded-2xl border border-[#9EF01A]/20 hover:border-[#B4FE5D]/40 transition-all duration-300 bg-gradient-to-b from-transparent to-[#9EF01A]/9 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#B4FE5D]/10'>
                             {/* Icon - Responsive sizing */}
-                            <div className='icon bg-[#1b3311] w-fit p-3 sm:p-4 rounded-[16.57px] mb-2 sm:mb-3'>
-                                <div className="w-8 h-8 sm:w-10 sm:h-10">
+                            <div className='icon mx-auto bg-[#1b3311] w-fit p-3 sm:p-4 rounded-[16.57px] mb-2 sm:mb-3 grid justify-center'>
+                                <div className="w-8 h-8 sm:w-10 sm:h-10 mx-auto">
                                     {box.svg}
                                 </div>
                             </div>

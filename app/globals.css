@@ -8,9 +8,12 @@
 
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-      font-family: 'FONTSPRING DEMO - Balgin';
+    background: var(--background);
+    color: var(--foreground);
+    font-family:Inter;
+}
+h1,h2,h3{
+    font-family: 'FONTSPRING DEMO - Balgin';
 }
 
 @font-face {
@@ -100,8 +103,3 @@ body {
     mix-blend-mode: normal !important; 
   }
 
-@media all and (max-width: 768px) {
-    footer .quick-links button{
-        margin-bottom: 0;
-    }
-}
