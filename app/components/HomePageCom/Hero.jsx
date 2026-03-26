@@ -15,7 +15,8 @@ const Hero = ({
     checkEligibility, 
     getImage,
     applyUrl = "/Contact",
-    checkEligibilityUrl = "/Contact"
+    checkEligibilityUrl = "/Contact",
+    overlaycolor = ""
 }) => {
     const badgeSvg = (
         <svg width={19} height={19} viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,8 +46,13 @@ const Hero = ({
         return value && typeof value === 'string' && value.trim() !== '';
     };
 
+    // Default overlay: gradient. If overlaycolor is provided, use solid color overlay on top.
+    const overlayStyle = overlaycolor
+        ? { backgroundColor: overlaycolor }
+        : {};
+
     return (
-        <div className='banner w-full relative min-h-[700px] md:min-h-[700px] flex items-center pb-[30px] overflow-hidden'>
+       <div className='banner w-full relative min-h-[600px] max-h-[700px] sm:min-h-[650px] md:min-h-[700px] flex items-center pb-[30px] overflow-hidden'>
             {/* Video Background */}
             {videoUrl && (
                 <video 
@@ -75,8 +81,17 @@ const Hero = ({
                     className="object-cover z-0"
                 />
             )}
-            
+
+            {/* Default gradient overlay */}
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-black/70 via-black/50 to-black/30 z-10"></div>
+
+            {/* Custom color overlay — renders on top of gradient if overlaycolor is provided */}
+            {hasContent(overlaycolor) && (
+                <div
+                    className="absolute top-0 left-0 w-full h-full z-10"
+                    style={overlayStyle}
+                />
+            )}
             
             {/* Content */}
             <div className='relative z-20 max-w-[1440px] mx-auto w-full'>

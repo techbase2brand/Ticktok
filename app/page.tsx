@@ -21,6 +21,7 @@ export default function Home() {
       checkEligibilityUrl=""
       apply="Apply Now"
       applyUrl="/Contact"
+      overlaycolor="rgb(0 0 0 / 41%)"
     />
     <WhyTiktock 
       title="Why TickTock?"  
@@ -44,7 +45,7 @@ export default function Home() {
       subheading="Looking for the Right Loan?" 
       heading="Home. Business. Car." 
       badge="Lightning Fast Approval" 
-      description="Get funded with the right loan solution tailored to your goals.  No confusion. No hidden charges. Just smart financing."
+      description="Get funded with the right loan solution tailored to your goals. No confusion. No hidden charges. Just smart financing."
     />
    </>
   );

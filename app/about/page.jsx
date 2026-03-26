@@ -12,7 +12,7 @@ const Page = () => {
     <Hero 
       videoUrl=""
       poster="/about-banner.jpg" 
-      getImage="/about-right.png" 
+      getImage="/about-right.webp" 
       subheading="" 
       heading="Who we are" 
       subheading2="At ticktock, our mission is to find the right loan for you." 
@@ -22,11 +22,12 @@ const Page = () => {
       checkEligibilityUrl=""
       applyUrl="/Contact"
       apply=""
+      overlaycolor="rgb(0 0 0 / 82%)"
     />
 
     <WeDoHardWork 
       flexReverse={false}
-      image= "/about-part.png"
+      image= "/about-part.webp"
       title="Why use a mortgage broker?"
       description="Whether you’re buying your first home, refinancing, or investing, finding the right loan can be challenging without the right support and expertise."
       subtitle=""
@@ -51,7 +52,7 @@ const Page = () => {
       subheading="Looking for the Right Loan?" 
       heading="Home. Business. Car." 
       badge="Lightning Fast Approval" 
-      description="Get funded with the right loan solution tailored to your goals.  No confusion. No hidden charges. Just smart financing."
+      description="Get funded with the right loan solution tailored to your goals. No confusion. No hidden charges. Just smart financing."
     />
    </>
   );
