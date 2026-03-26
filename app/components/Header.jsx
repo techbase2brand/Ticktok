@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -56,15 +56,27 @@ function ChevronIcon({ isOpen }) {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [hoveredMenu, setHoveredMenu] = useState(null);   // desktop hover state
-  const [openMobileMenu, setOpenMobileMenu] = useState(null); // mobile accordion state
+  const [openDesktopMenu, setOpenDesktopMenu] = useState(null); // label of open dropdown
+  const [openMobileMenu, setOpenMobileMenu] = useState(null);   // label of open accordion
   const pathname = usePathname();
+  const dropdownRef = useRef(null);
 
   // Scroll listener
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Close desktop dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setOpenDesktopMenu(null);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   // Close mobile drawer on route change
@@ -79,6 +91,12 @@ export default function Header() {
       isActive ? "text-[#B5FF5F] underline font-semibold" : "text-white"
     }`;
   };
+
+  const toggleDesktop = (label) =>
+    setOpenDesktopMenu((prev) => (prev === label ? null : label));
+
+  const toggleMobile = (label) =>
+    setOpenMobileMenu((prev) => (prev === label ? null : label));
 
   return (
     <header
@@ -101,40 +119,35 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* ── Desktop Nav ── */}
-        <nav className="hidden md:flex gap-6 items-center">
+        {/* Desktop Nav */}
+        <nav className="hidden md:flex gap-6 items-center" ref={dropdownRef}>
           {navLinks.map((link) =>
             link.submenu ? (
-              // Link WITH hover submenu
-              <div
-                key={link.href}
-                className="relative"
-                onMouseEnter={() => setHoveredMenu(link.label)}
-                onMouseLeave={() => setHoveredMenu(null)}
-              >
-                {/* Trigger button */}
+              // ── Link WITH submenu ──
+              <div key={link.href} className="relative">
                 <button
+                  onClick={() => toggleDesktop(link.label)}
                   aria-haspopup="true"
-                  aria-expanded={hoveredMenu === link.label}
-                  className={`flex items-center cursor-pointer transition-colors duration-300 hover:text-[#B5FF5F] hover:underline ${
+                  aria-expanded={openDesktopMenu === link.label}
+                  className={`flex items-center transition-colors cursor-pointer duration-300 hover:text-[#B5FF5F] hover:underline ${
                     pathname.startsWith(link.href)
                       ? "text-[#B5FF5F] underline font-semibold"
                       : "text-white"
                   }`}
                 >
                   {link.label}
-                  <ChevronIcon isOpen={hoveredMenu === link.label} />
+                  <ChevronIcon isOpen={openDesktopMenu === link.label} />
                 </button>
 
                 {/* Dropdown panel */}
                 <div
                   className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-52 bg-[#002802] rounded-xl shadow-xl border border-[#B5FF5F]/20 z-50 transition-all duration-200 origin-top ${
-                    hoveredMenu === link.label
+                    openDesktopMenu === link.label
                       ? "opacity-100 scale-y-100 pointer-events-auto"
                       : "opacity-0 scale-y-95 pointer-events-none"
                   }`}
                 >
-                  {/* Arrow pointer */}
+                  {/* Small arrow pointer */}
                   <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-[#002802] rotate-45 border-l border-t border-[#B5FF5F]/20" />
 
                   <ul className="py-2">
@@ -147,7 +160,7 @@ export default function Header() {
                               ? "text-[#B5FF5F] font-semibold bg-[#B5FF5F]/10"
                               : "text-white/90"
                           }`}
-                          onClick={() => setHoveredMenu(null)}
+                          onClick={() => setOpenDesktopMenu(null)}
                         >
                           {sub.label}
                         </Link>
@@ -157,7 +170,7 @@ export default function Header() {
                 </div>
               </div>
             ) : (
-              // Plain link
+              // ── Plain link ──
               <Link
                 key={link.href}
                 href={link.href}
@@ -205,7 +218,7 @@ export default function Header() {
         />
       )}
 
-      {/* ── Mobile Drawer ── */}
+      {/* Mobile Drawer */}
       <div
         className={`fixed top-0 left-0 right-0 w-full bg-[#002802] shadow-lg z-50 transform h-full transition-transform duration-300 ease-in-out md:hidden ${
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
@@ -225,13 +238,15 @@ export default function Header() {
         <div className="flex flex-col px-5 pt-20 pb-5 space-y-1 h-full overflow-y-auto">
           {navLinks.map((link) =>
             link.submenu ? (
-              // Mobile accordion (click-based, unchanged)
+              // ── Mobile accordion ──
               <div key={link.href}>
                 <button
-                  onClick={() => setOpenMobileMenu((prev) => (prev === link.label ? null : link.label))}
+                  onClick={() => toggleMobile(link.label)}
                   aria-expanded={openMobileMenu === link.label}
                   className={`w-full flex items-center justify-between py-2.5 text-base min-h-[48px] px-3 rounded-lg transition-colors duration-200 hover:bg-[#B5FF5F]/10 hover:text-[#B5FF5F] ${
-                    pathname.startsWith(link.href) ? "text-[#B5FF5F] font-semibold" : "text-white"
+                    pathname.startsWith(link.href)
+                      ? "text-[#B5FF5F] font-semibold"
+                      : "text-white"
                   }`}
                 >
                   <span>{link.label}</span>
@@ -250,7 +265,9 @@ export default function Header() {
                         <Link
                           href={sub.href}
                           className={`block py-2 px-3 text-sm rounded-lg transition-colors duration-200 hover:bg-[#B5FF5F]/10 hover:text-[#B5FF5F] ${
-                            pathname === sub.href ? "text-[#B5FF5F] font-semibold" : "text-white/80"
+                            pathname === sub.href
+                              ? "text-[#B5FF5F] font-semibold"
+                              : "text-white/80"
                           }`}
                           onClick={() => setIsMenuOpen(false)}
                         >
@@ -262,7 +279,7 @@ export default function Header() {
                 </div>
               </div>
             ) : (
-              // Plain mobile link
+              // ── Plain mobile link ──
               <Link
                 key={link.href}
                 href={link.href}
