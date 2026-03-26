@@ -11,7 +11,7 @@ const Page = () => {
       <Hero 
         videoUrl=""
         poster="/business-loan-banner.jpg" 
-        getImage="/business-loan-right.png" 
+        getImage="/business-loan-right.webp" 
         subheading="There are many different" 
         heading="types of loans" 
         subheading2="to choose from." 
@@ -21,11 +21,12 @@ const Page = () => {
         checkEligibilityUrl="/Contact"
         applyUrl="/Contact"
         apply=""
+        overlaycolor="rgb(0 0 0 / 82%)"
       />
 
       <WeDoHardWork 
         flexReverse={false}
-        image= "/find-the-right .png"
+        image= "/find-the-right.webp"
         title="Find the right finance."
         description="Aligning the right loan to your needs, both short and long-term, isn’t easy. There are many different sorts of loans, with multiple products for each type offered by most lenders. It takes an experienced professional to navigate business finance, and that’s where we come in."
         subtitle=""
@@ -34,7 +35,7 @@ const Page = () => {
      />
       <WeDoHardWork 
         flexReverse={true}
-        image= "/house-on-your.png"
+        image= "/house-on-your.webp"
         title="Don’t bet your house on your business."
         description="Small business owners already put a lot on the line, often you don’t have to put your home on it too. Securing an overdraft or line-of-credit from your bank and using your home as security to finance your business is not the ideal scenario given the risk that this brings."
         subtitle=""
@@ -43,7 +44,7 @@ const Page = () => {
      />
 
       <NeedHomeLoan 
-        image= "/download-guide.png"
+        image= "/image-serious-businessman-black-trendy-suit-looking-through-magnifying-glass-looking-emplo 1.webp"
         heading ="Looking for the right business finance?"
         description="Discover the ideal loan option to support your business growth and success. Explore our range of business finance solutions tailored to your specific needs."
         buttonText="Download the guide"

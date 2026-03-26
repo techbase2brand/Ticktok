@@ -78,7 +78,7 @@ const LovedbyThousands = ({ title ,description }) => {
                     {description}
                 </p>
 
-                <div className='customer max-w-[1000px] border border-[4px] shadow-xl shadow-[#203b01] border-[#313030]  mx-auto mt-8 sm:mt-10 md:mt-[50px] bg-gradient-to-r from-[#203b01] via-[#1F7A2E33] to-[#1F7A2E33] rounded-[16px] sm:rounded-[20px] md:rounded-[28px] py-6 sm:py-8 md:py-[30px] px-4 sm:px-6 md:px-[40px]'>
+                <div className='customer max-w-[1000px] border border-[1px] shadow-xl shadow-[#203b01] border-[#313030]  mx-auto mt-8 sm:mt-10 md:mt-[50px] bg-gradient-to-r from-[#203b01] via-[#1F7A2E33] to-[#1F7A2E33] rounded-[16px] sm:rounded-[20px] md:rounded-[28px] py-6 sm:py-8 md:py-[30px] px-4 sm:px-6 md:px-[40px]'>
                     {customerData.map((customer, index) => {
                         const initials = getInitials(customer.name); 
                         
