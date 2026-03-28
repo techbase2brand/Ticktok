@@ -49,7 +49,7 @@ const Page = () => {
           subheading="Looking for the Right Loan?" 
           heading="Home. Business. Car." 
           badge="Lightning Fast Approval" 
-          description="Get funded with the right loan solution tailored to your goals.  No confusion. No hidden charges. Just smart financing."
+          description="Get funded with the right loan solution tailored to your goals. No confusion. No hidden charges. Just smart financing."
         />
     </>
   );
