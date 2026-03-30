@@ -36,7 +36,7 @@ const navLinks = [
     submenu: [
       { href: "/TipsandGuides/buying-guides", label: "Buying Guides" },
       { href: "/TipsandGuides/loan-calculators", label: "Loan Calculators" },
-      { href: "/TipsandGuides/market-updates", label: "Market Updates" },
+      { href: "/TipsandGuides/checklist-of-loan-document", label: "Checklist of loan document" },
     ],
   },
   { href: "/Contact", label: "Contact" },
