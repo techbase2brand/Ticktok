@@ -37,7 +37,7 @@ const InnerNeedHomeLoan = ({ heading, description, buttonText, buttonTextUrl = "
               )}
 
               {description && (
-                <p className='text-white/70 text-sm sm:text-base max-w-3xl mx-auto text-center mb-1 md:mb-[10px]'>
+                <p className='text-white/70 text-sm md:text-[19px] max-w-3xl mx-auto text-center mb-1 md:mb-[10px]'>
                   {description}
                 </p>
               )}

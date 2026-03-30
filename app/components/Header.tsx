@@ -32,11 +32,13 @@ const navLinks = [
   { href: "/about", label: "About" },
   {
     href: "/TipsandGuides",
-    label: "Tips and Guides",
+    label: "Tips and Guides", 
     submenu: [
-      { href: "/TipsandGuides/buying-guides", label: "Buying Guides" },
-      { href: "/TipsandGuides/loan-calculators", label: "Loan Calculators" },
+      { href: "/TipsandGuides/business-finance-guide", label: "Business Finance Guide" },
+      { href: "/TipsandGuides/investing-in-property-guide", label: "Investing in Property Guide" },
+      { href: "/TipsandGuides/explaining-the-loan-process", label: "Explaining the Loan Process" },
       { href: "/TipsandGuides/checklist-of-loan-document", label: "Checklist of loan document" },
+      
     ],
   },
   { href: "/Contact", label: "Contact" },

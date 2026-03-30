@@ -45,7 +45,6 @@ const Page = () => {
         />
 
         <MeetingYourBroker 
-          flexReverse={true}
           badgeTitle="meeting your broker"
           title="What documents should I bring?"
           description="To keep the process moving forward, bring the documents listed below to your meeting with your broker. This is a general checklist – some may not apply to you and we can help you figure out which ones you need."

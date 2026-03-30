@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { memo } from 'react';
 
 const Banner = ({ badgeTitle, title, description, imageUrl }) => {
@@ -13,7 +14,7 @@ const Banner = ({ badgeTitle, title, description, imageUrl }) => {
 
     );
   return (
-    <div className='inner-banner bg-gradient-to-r from-[#000000] via-[#19240d] to-[#090a09] py-17 md:py-20 px-4 sm:px-6 lg:px-8'>
+    <div className='inner-banner bg-gradient-to-r from-[#000000] via-[#19240d] to-[#090a09] py-12 md:py-20 px-4 sm:px-6 lg:px-8'>
       <div className="mx-auto max-w-[1440px]">
         <div className='banner-wrapper flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-12 lg:gap-20 items-center'>
 
@@ -47,7 +48,7 @@ const Banner = ({ badgeTitle, title, description, imageUrl }) => {
           {/* Image Section */}
           {imageUrl && (
             <div className='image'>
-              <img src={imageUrl} alt="banner" className="max-w-full" />
+              <Image src={imageUrl} alt="banner" className="max-w-full w-full" width={1000} height={1000} priority  quality={75} />
             </div>
           )}
 

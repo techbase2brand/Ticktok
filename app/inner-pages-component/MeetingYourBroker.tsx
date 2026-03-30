@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { memo } from 'react';
 
@@ -7,8 +8,7 @@ const MeetingYourBroker = ({
   description,
   imageUrl,
   buttonText,
-  buttonLink,
-  flexReverse = false  // Add flexReverse prop
+  buttonLink
 }) => {
 
   const buttonIcon = (
@@ -19,85 +19,53 @@ const MeetingYourBroker = ({
   );
 
   return (
-    <div className='inner-banner bg-gradient-to-r from-[#000000] via-[#19240d] to-[#090a09] pb-17 md:pb-20 px-4 sm:px-6 lg:px-8'>
+    <div className='inner-banner bg-gradient-to-r from-[#000000] via-[#19240d] to-[#090a09] pb-12 md:pb-20 px-4 sm:px-6 lg:px-8'>
       <div className="mx-auto max-w-[1440px]">
-        <div className={`banner-wrapper flex flex-col md:grid md:grid-cols-2 gap-4 md:gap-12 lg:gap-20 items-center ${flexReverse ? 'md:flex-row-reverse' : ''}`}>
-          
-          {/* Add flex-direction control */}
-          {flexReverse ? (
-            // When flexReverse is true, render image first then content
-            <>
-              {imageUrl && (
-                <div className='image'>
-                  <img src={imageUrl} alt="banner" className="max-w-full" />
-                </div>
+        <div className='banner-wrapper flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-12 lg:gap-20 items-center'>
+
+          {(badgeTitle || title || description) && (
+            <div className='content text-center md:text-left order-1 md:order-2'>
+
+              {badgeTitle && (
+                <p className="text-[#B5FF5F] bg-[#384329] text-sm font-bold mb-4 px-4 py-2 rounded-3xl w-fit mx-auto md:mx-0">
+                  {badgeTitle}
+                </p>
               )}
-              
-              {(badgeTitle || title || description) && (
-                <div className='content text-center md:text-left'>
-                  {badgeTitle && (
-                    <p className="text-[#B5FF5F] bg-[#384329] text-sm font-bold mb-4 px-4 py-2 rounded-3xl w-fit mx-auto md:mx-0">
-                      {badgeTitle}
-                    </p>
-                  )}
-                  {title && (
-                    <h1 className='text-white text-4xl md:text-[60px] font-bold pb-[15px]'>
-                      {title}
-                    </h1>
-                  )}
-                  {description && (
-                    <p className="text-left text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed pt-4 pb-10">{description}</p>
-                  )}
-                  {buttonText && (
-                    <Link
-                      href={buttonLink || "/contact-us"}
-                      className='border border-[#B5FF5F] text-[#B5FF5F] hover:bg-[#B5FF5F] hover:text-[#154617] px-6 py-3 rounded-full flex items-center gap-2 w-fit mx-auto md:mx-0 transition-all duration-300'
-                    >
-                      {buttonText}
-                      <span>{buttonIcon}</span>
-                    </Link>
-                  )}
-                </div>
+
+              {title && (
+                <h2 className='text-white text-4xl md:text-[45px] font-bold pb-[15px]'>
+                  {title.split(' ').map((word, index) => (
+                            <span
+                                key={index}
+                                className={index === 1 ? 'text-[#B4FE5D]' : 'text-[#fff]'}>
+                                {word}{index < title.split(' ').length - 1 ? ' ' : ''}
+                            </span>
+                        ))}
+                </h2>
               )}
-            </>
-          ) : (
-            // Default order: content then image
-            <>
-              {(badgeTitle || title || description) && (
-                <div className='content text-center md:text-left'>
-                  {badgeTitle && (
-                    <p className="text-[#B5FF5F] bg-[#384329] text-sm font-bold mb-4 px-4 py-2 rounded-3xl w-fit mx-auto md:mx-0">
-                      {badgeTitle}
-                    </p>
-                  )}
-                  {title && (
-                    <h1 className='text-white text-4xl md:text-[60px] font-bold pb-[15px]'>
-                      {title}
-                    </h1>
-                  )}
-                  {description && (
-                    <p className="text-left text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed pt-4 pb-10">{description}</p>
-                  )}
-                  {buttonText && (
-                    <Link
-                      href={buttonLink || "/contact-us"}
-                      className='border border-[#B5FF5F] text-[#B5FF5F] px-6 py-3 rounded-full flex items-center gap-2 w-fit mx-auto md:mx-0'
-                    >
-                      {buttonText}
-                      <span>{buttonIcon}</span>
-                    </Link>
-                  )}
-                </div>
+
+              {description && (
+                <p className="text-white/90 my-2">{description}</p>
               )}
-              
-              {imageUrl && (
-                <div className='image'>
-                  <img src={imageUrl} alt="banner" className="max-w-full" />
-                </div>
+
+              {buttonText && (
+                <Link
+                  href={buttonLink || "/contact-us"}
+                  className='cursor-pointer bg-transparent border border-[#B5FF5F] text-[#B5FF5F] w-fit mx-auto md:mx-0  mt-8  px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-semibold hover:bg-[#B5FF5F] hover:text-[#154617] hover:border-[#B5FF5F] transition-all duration-300 flex items-center gap-2 text-sm'>
+                  {buttonText}
+                  {buttonIcon && <span>{buttonIcon}</span>}
+                </Link>
               )}
-            </>
+
+            </div>
           )}
-          
+
+          {imageUrl && (
+            <div className='image order-2 md:order-1'>
+              <Image src={imageUrl} alt="banner" className="max-w-full w-full" width={1000} height={1000} />
+            </div>
+          )}
+
         </div>
       </div>
     </div>
