@@ -11,6 +11,7 @@ const Page = () => {
             description="Lenders typically require similar documents when assessing loan applications. Having these ready can streamline the process and help you get approved faster."
             imageUrl="/checklist-ofloan.webp"
         />
+        
         <MeetingYourBroker 
             flexReverse={true}
             badgeTitle="meeting your broker"
