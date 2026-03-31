@@ -56,7 +56,7 @@ const Accordion = ({ mainheading, items }) => {
                                 </button>
 
                             {activeIndex === index && (
-                                <div className='px-4 py-3 bg-gradient-to-b from-transparent to-[#9EF01A]/9 text-white text-[13px] md:text-[16px]'>{item.content}</div>
+                                <div className='px-4 py-3 bg-gradient-to-b from-transparent to-[#9EF01A]/9 text-white text-[13px] md:leading-[24px] md:text-[14px]'>{item.content}</div>
                             )}
                         </div>
                     ))}

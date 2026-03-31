@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { memo } from 'react';
 
-const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUseBtn, flexReverse = false }) => {
+const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUseBtn, badeTitle, flexReverse = false }) => {
     // Helper function to check if string has content
     const hasContent = (value) => {
         return value && typeof value === 'string' && value.trim() !== '';
@@ -12,12 +12,13 @@ const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUs
         return hasContent(title) || 
                hasContent(description) || 
                hasContent(subtitle) || 
+               hasAnyContent(badeTitle) ||
                hasContent(description2) ||
                hasContent(whyUseBtn) ||
-               image; // image prop bhi check karo
+               image; 
     };
 
-    // Agar koi content nahi hai toh kuch mat dikhao
+  
     if (!hasAnyContent()) {
         return null;
     }
@@ -35,6 +36,13 @@ const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUs
                     {/* Content - Show only if there's any text content */}
                     {(hasContent(title) || hasContent(description) || hasContent(subtitle) || hasContent(description2)) && (
                         <div className={`content w-full ${flexReverse ? 'md:order-1' : 'md:order-2'}`}>
+                           
+
+                            {hasContent(badeTitle) && (
+                                <p className='flex items-center justify-start md:justify-start gap-[10px] text-[#B5FF5F] bg-[#384329] text-xs sm:text-sm font-bold mb-4 md:mb-2 w-fit  md:mx-0 border border-[#B5FF5F]/20 py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl shadow-[0_4px_15px_rgba(181,255,95,0.15)]'>
+                                    {badeTitle}
+                                </p>
+                            )}
                             {/* Title - Show only if title exists */}
                             {hasContent(title) && (
                                 <h2

@@ -23,10 +23,13 @@ const navLinks = [
     href: "/Business-Loans",
     label: "Business Loans",
     submenu: [
-      { href: "/Business-Loans/sme-loans", label: "SME Loans" },
-      { href: "/Business-Loans/equipment-finance", label: "Equipment Finance" },
-      { href: "/Business-Loans/commercial-property", label: "Commercial Property" },
-      { href: "/Business-Loans/working-capital", label: "Working Capital" },
+      { href: "/Business-Loans/finance-for-my-business", label: "Finance for My Business" },
+      { href: "/Business-Loans/asset-&-equipment-finance", label: "Asset & Equipment Finance" },
+      { href: "/Business-Loans/invoice-finance-or-accounts-receivable", label: "Invoice Finance or Accounts Receivable" },
+      { href: "/Business-Loans/working-capital-finance", label: "Working Capital Finance" },
+      { href: "/Business-Loans/term-loan", label: "Term Loan" },
+      { href: "/Business-Loans/self-managed-super-fund-loan", label: "Self-Managed Super Fund Loan" },
+      { href: "/Business-Loans/unsecured-business-loans", label: "Unsecured Business Loans" },
     ],
   },
   { href: "/about", label: "About" },
@@ -34,8 +37,11 @@ const navLinks = [
     href: "/TipsandGuides",
     label: "Tips and Guides", 
     submenu: [
-      { href: "/TipsandGuides/business-finance-guide", label: "Business Finance Guide" },
+      { href: "/TipsandGuides/why-use-a-broker", label: "Why Use a Broker?" },
+      { href: "/TipsandGuides/first-home-buyer-guide", label: "First Home Buyer Guide" },
+      { href: "/TipsandGuides/looking-for-refinance-your-home", label: "Looking for Refinance Your Home" },
       { href: "/TipsandGuides/investing-in-property-guide", label: "Investing in Property Guide" },
+      { href: "/TipsandGuides/business-finance-guide", label: "Business Finance Guide" },
       { href: "/TipsandGuides/explaining-the-loan-process", label: "Explaining the Loan Process" },
       { href: "/TipsandGuides/checklist-of-loan-document", label: "Checklist of loan document" },
       
@@ -147,7 +153,7 @@ export default function Header() {
 
                 {/* Dropdown panel */}
                 <div
-                  className={`absolute top-full left-1/2 -translate-x-1/2 mt-1 w-52 bg-[#002802] rounded-xl shadow-xl border border-[#B5FF5F]/20 z-50 transition-all duration-200 origin-top ${
+                  className={`absolute top-full left-1/2 -translate-x-1/2 mt-1 w-72 bg-[#002802] rounded-xl shadow-xl border border-[#B5FF5F]/20 z-50 transition-all duration-200 origin-top ${
                     hoveredMenu === link.label
                       ? "opacity-100 scale-y-100 pointer-events-auto visible"
                       : "opacity-0 scale-y-95 pointer-events-none invisible"

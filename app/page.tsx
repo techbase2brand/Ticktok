@@ -3,7 +3,7 @@ const Hero = dynamic(() => import("./components/HomePageCom/Hero"));
 const WhyTiktock = dynamic(() => import("./components/HomePageCom/WhyTiktock"));
 const HowItWork = dynamic(() => import("./components/HomePageCom/HowItWork"));
 const FinaceYourDream = dynamic(() => import("./components/HomePageCom/FinaceYourDream"));
-const LightningFastApproval = dynamic(() => import("./components/HomePageCom/LightningFastApproval"));
+
 const LovedbyThousands = dynamic(() => import("./components/HomePageCom/LovedbyThousands"));
 export default function Home() {
   return (
@@ -40,13 +40,7 @@ export default function Home() {
       title="Loved by Thousands" 
       description="See what our customers say"
     />
-    <LightningFastApproval 
-      applyBtn="Apply Now" 
-      subheading="Looking for the Right Loan?" 
-      heading="Home. Business. Car." 
-      badge="Lightning Fast Approval" 
-      description="Get funded with the right loan solution tailored to your goals. No confusion. No hidden charges. Just smart financing."
-    />
+    
    </>
   );
 }
