@@ -2,7 +2,12 @@
 import Link from 'next/link';
 import { memo } from 'react';
 
-const HowItWork = ({ title, description , applicationBtn }) => {
+type HowItWorkProps = {
+  title?: string;
+  description?: string;
+  applicationBtn?: string;
+};
+const HowItWork = ({ title, description, applicationBtn }: HowItWorkProps) => {
     const boxData = [
         {
             iconSvg: (
@@ -60,11 +65,11 @@ const HowItWork = ({ title, description , applicationBtn }) => {
                 {/* Title */}
                 <h2 data-aos="fade-up" data-aos-duration="500"
                     className='text-3xl sm:text-4xl md:text-[45px] font-bold text-center text-[#B4FE5D] pb-2 md:pb-4 leading-tight'>
-                   {title.split(' ').map((word, index) => (
+                   {title!.split(' ').map((word, index) => (
                         <span 
                             key={index} 
                             className={index === 2 ? 'text-[#B4FE5D]' : 'text-[#fff]'}>
-                            {word}{index < title.split(' ').length - 1 ? ' ' : ''}
+                            {word}{index < title!.split(' ').length - 1 ? ' ' : ''}
                         </span>
                     ))}
                 </h2>
