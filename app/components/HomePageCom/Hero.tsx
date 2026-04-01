@@ -3,21 +3,37 @@ import { memo } from 'react';
 import Image from "next/image";
 import Link from 'next/link';
 
-const Hero = ({ 
-    subheading, 
-    poster, 
-    videoUrl, 
-    subheading2, 
-    heading, 
-    description, 
-    badge, 
-    apply, 
-    checkEligibility, 
-    getImage,
-    applyUrl = "/Contact",
-    checkEligibilityUrl = "/Contact",
-    overlaycolor = ""
-}) => {
+type HeroProps = {
+  subheading?: string;
+  poster?: string;
+  videoUrl?: string;
+  subheading2?: string;
+  heading?: string;
+  description?: string;
+  badge?: string;
+  apply?: string;
+  checkEligibility?: string;
+  getImage?: string;
+  applyUrl?: string;
+  checkEligibilityUrl?: string;
+  overlaycolor?: string;
+};
+
+const Hero = ({
+  subheading,
+  poster,
+  videoUrl,
+  subheading2,
+  heading,
+  description,
+  badge,
+  apply,
+  checkEligibility,
+  getImage,
+  applyUrl = "/Contact",
+  checkEligibilityUrl = "/Contact",
+  overlaycolor = ""
+}: HeroProps) => {
     const badgeSvg = (
         <svg width={19} height={19} viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_31_188)">
