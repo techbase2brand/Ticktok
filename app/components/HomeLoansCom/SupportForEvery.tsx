@@ -1,5 +1,15 @@
 import { memo } from 'react';
+type SupportTypeItem = {
+  title: string;
+  description?: string;
+  icon?: string;
+};
 
+type SupportForEveryProps = {
+  title?: string;
+  badge?: string;
+  supportTypes?: SupportTypeItem[];
+};
 // Move data outside component to prevent recreation on renders
 const SUPPORT_TYPES = [
   { 
@@ -36,7 +46,7 @@ const SUPPORT_TYPES = [
   ];
 
 // Extract title formatter to a separate function for better readability
-const formatTitle = (title) => {
+const formatTitle = (title: string) => {
   if (!title) return null;
   const words = title.split(' ');
   return words.map((word, index) => (
@@ -67,7 +77,11 @@ const badgeSvg = (
   </svg>
 );
 
-const SupportForEvery = ({ title, badge, supportTypes }) => {
+const SupportForEvery = ({
+  title,
+  badge,
+  supportTypes,
+}: SupportForEveryProps) => {
   // Use data from props if available, otherwise use default data
   const typesToShow = supportTypes && supportTypes.length > 0 ? supportTypes : SUPPORT_TYPES;
 
