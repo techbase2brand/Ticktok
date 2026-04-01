@@ -1,7 +1,7 @@
 import { memo } from 'react';
 type SupportTypeItem = {
   id: number;
-  icon: Element;
+  icon: ReactNode;
   name: string;
 };
 
