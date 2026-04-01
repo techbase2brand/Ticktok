@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { memo, ReactNode } from 'react';
 type SupportTypeItem = {
   id: number;
   icon: ReactNode;
