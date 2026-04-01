@@ -3,9 +3,12 @@ import { memo, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 import { Inter, Poppins } from "next/font/google";
-const poppins = Inter({ subsets: ["latin"], weight: "400" });
 
-const Footer = ({ copyRight }) => {
+const poppins = Inter({ subsets: ["latin"], weight: "400" });
+type FooterProps = {
+    copyRight: string;
+};
+const Footer = ({ copyRight }: FooterProps) => {
     const [openAccordion, setOpenAccordion] = useState(null);
 
     // Handle accordion toggle - closes others when opening one
