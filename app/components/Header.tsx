@@ -4,8 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
+type SubMenuItem = {
+  href: string;
+  label: string;
+};
 
-const navLinks = [
+type NavLink = {
+  href: string;
+  label: string;
+  submenu?: SubMenuItem[];
+};
+const navLinks: NavLink[] = [
   {
     href: "/HomeLoans",
     label: "Home Loans",
@@ -69,10 +78,10 @@ function ChevronIcon({ isOpen }: ChevronIconProps) {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [hoveredMenu, setHoveredMenu] = useState(null);
-  const [openMobileMenu, setOpenMobileMenu] = useState(null);
+  const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
+  const [openMobileMenu, setOpenMobileMenu] = useState<string | null>(null);
   const pathname = usePathname();
-  const hoverTimeoutRef = useRef(null);
+  const hoverTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   // Scroll listener
   useEffect(() => {
@@ -98,10 +107,10 @@ export default function Header() {
   const handleMouseLeave = () => {
     hoverTimeoutRef.current = setTimeout(() => {
       setHoveredMenu(null);
-    }, 200);
+    }, 200) 
   };
 
-  const handleMouseEnter = (label) => {
+  const handleMouseEnter = (label: string) => {
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
     }
