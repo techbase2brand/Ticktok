@@ -49,9 +49,11 @@ const navLinks = [
   },
   { href: "/Contact", label: "Contact" },
 ];
-
+type ChevronIconProps = {
+  isOpen: boolean;
+};
 // Chevron icon
-function ChevronIcon({ isOpen }) {
+function ChevronIcon({ isOpen }: ChevronIconProps) {
   return (
     <svg
       className={`w-3.5 h-3.5 ml-1 transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
