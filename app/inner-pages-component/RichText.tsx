@@ -16,7 +16,7 @@ const RichText = ({ title, description, buttonText, buttonlink, nameClass }) => 
                                 className={index === 1 ? 'text-[#B4FE5D]' : 'text-[#fff]'}>
                                 {word}{index < title.split(' ').length - 1 ? ' ' : ''}
                             </span>
-                        ))}
+                ))}
             </h2>}
             {description && <p className='text-white text-base sm:text-base md:text-lg  text-center px-2 sm:px-0 drop-shadow-md'>{description}</p>}
             {buttonText && buttonlink && (
