@@ -112,6 +112,8 @@ const Page = () => {
           nameClass="first-rich-text"
           title="What do you need finance for?"
           description="Why do you need the finance and what are you looking to fund? There are so many different reasons a business needs finance, and there’s often a different product for every single one. But most of them fall into these general areas."
+          buttonText=""     
+          buttonlink=""  
         />
         <Sixtipsforhomebuyers 
           title=""
@@ -122,6 +124,8 @@ const Page = () => {
         />
         <RichText 
           nameClass="second-rich-text"
+          buttonText=""     
+          buttonlink="" 
           title="What type of business are you?"
           description="This is less about what industry you’re in, or how you are different to your competitors, but about how your business is structured – as this can also have an effect on how the lenders assess your applications and the type of finance they can offer you."
         />
