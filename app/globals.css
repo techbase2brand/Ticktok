@@ -109,3 +109,12 @@ h1,h2,h3{
     height: 16px;
 }
 /* accordion css end here */
+
+.second-six-tips{
+    padding-bottom:80px;
+}
+@media all and (max-width: 480px) {
+    .second-six-tips{
+        padding-bottom:50px;
+    }
+}

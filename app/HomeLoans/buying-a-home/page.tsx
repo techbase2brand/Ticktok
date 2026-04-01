@@ -88,7 +88,7 @@ const Page = () => {
         title="Let’s buy a home together"
         description="It’s a big decision, so it’s good to have someone there to help you make the right one."
     /> 
-    <WeDoHardWork 
+    <WeDoHardWork
         flexReverse={false}
         image= "/here-to-help.webp"
         title="We’re here to help"

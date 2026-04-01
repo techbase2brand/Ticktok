@@ -18,7 +18,7 @@ const DownloadGuids = ({ title, description, buttonLable, buttonUrl, image }: Do
   </svg>
   ))
   return (
-    <div className='bg-gradient-to-r from-[#000000] via-[#304419] to-[#000000] py-16 md:py-20 px-4 sm:px-6 lg:px-8 md:mt-0 border-t-[1px] border-[#385e0c]'>
+    <div className='bg-gradient-to-r from-[#000000] via-[#304419] to-[#000000] py-13 md:py-20 px-4 sm:px-6 lg:px-8 md:mt-0 border-t-[1px] border-[#385e0c]'>
       <div className='max-w-5xl mx-auto flex items-center justify-center gap-9 flex-wrap md:flex-nowrap'>
         
         {/* Image Section */}

@@ -72,7 +72,7 @@ const SupportForEvery = ({ title, badge, supportTypes }) => {
   const typesToShow = supportTypes && supportTypes.length > 0 ? supportTypes : SUPPORT_TYPES;
 
   return (
-    <section className="bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-12 md:pt-[80px] px-4 sm:px-6 lg:px-8">
+    <section className="bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-10 md:pt-[80px] px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1440px] mx-auto">
         {/* Only show badge section if badge prop exists */}
         {badge && (

@@ -29,9 +29,9 @@ const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUs
         : 'md:grid-cols-2';
 
     return (
-        <div className='bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-12 md:pt-[80px] px-4 sm:px-6 lg:px-8'>
+        <div className='bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-10 md:pt-[80px] px-4 sm:px-6 lg:px-8'>
             <div className='max-w-[1440px] mx-auto'>
-                <div className={`flex flex-col md:grid ${gridDirectionClass} gap-12 md:gap-12 lg:gap-20 items-center`}>
+                <div className={`flex flex-col md:grid ${gridDirectionClass} gap-8 md:gap-12 lg:gap-20 items-center`}>
                     
                     {/* Content - Show only if there's any text content */}
                     {(hasContent(title) || hasContent(description) || hasContent(subtitle) || hasContent(description2)) && (
@@ -48,8 +48,7 @@ const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUs
                                 <h2
                                     data-aos="fade-up"
                                     data-aos-duration="500"
-                                    className='text-2xl sm:text-3xl md:text-4xl lg:text-[45px] font-bold text-left leading-tight mb-3 md:mb-4'
-                                >
+                                    className='text-2xl sm:text-3xl md:text-4xl lg:text-[35px] font-bold text-left leading-tight mb-3 md:mb-4'>
                                     {title.split(' ').map((word, index) => (
                                         <span
                                             key={index}
@@ -127,7 +126,7 @@ const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUs
                                 alt="Home Loan"
                                 width={500}
                                 height={500}
-                                className='w-full h-auto rounded-2xl md:rounded-3xl'
+                                className='w-full h-auto max-h-[800px] rounded-2xl md:rounded-3xl'
                                 priority
                             />
                         </div>

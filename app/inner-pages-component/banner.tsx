@@ -39,7 +39,7 @@ const Banner = ({ badgeTitle, title, description, imageUrl }) => {
                 </h1>
                 )}
               {description && (
-                <p className="text-white/90 text-base sm:text-base md:text-lg mb-6 md:mb-6 max-w-md mx-auto md:mx-0 px-2 sm:px-0 py-2 drop-shadow-md">{description}</p>
+                <p className="text-white/90 text-base sm:text-base md:text-lg mb-6 md:mb-6 max-w-xl mx-auto md:mx-0 px-2 sm:px-0 py-2 drop-shadow-md">{description}</p>
               )}
 
             </div>

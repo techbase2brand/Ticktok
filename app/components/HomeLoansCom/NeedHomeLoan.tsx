@@ -10,7 +10,7 @@ const NeedHomeLoan = ({ heading, description, buttonText, image, buttonTextUrl =
   }
 
   return (
-    <div className='need_home_loan w-full bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] py-10 md:py-[80px] px-0'>
+    <div className='need_home_loan w-full bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-10 md:pt-[80px] px-0'>
       
       <div
         className='bg-gradient-to-r from-[#1c290e] via-[#1c290e] to-[#0b110c] rounded-l-2xl overflow-hidden'

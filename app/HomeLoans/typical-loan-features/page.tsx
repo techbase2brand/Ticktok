@@ -2,8 +2,63 @@ import Hero from '@/app/inner-pages-component/Hero';
 import { memo } from 'react';
 import Sixtipsforhomebuyers from '../buying-a-home/Sixtipsforhomebuyers';
 import Disclaimer from '@/app/inner-pages-component/Disclaimer';
+import RichText from '@/app/inner-pages-component/RichText';
+import InnerNeedHomeLoan from '@/app/inner-pages-component/InnerNeedHomeLoan';
 
 const Page = () => {
+     const HereisHow  = [
+        {
+            id: 1,
+            icon: (
+               <svg width={67} height={67} viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="66.29" height="66.29" rx={16} fill="#1D4115" /><g clipPath="url(#clip0_2107_26)">
+                    <path d="M33.1445 16.8181C33.9859 16.8181 34.668 16.136 34.668 15.2947V10.2632C34.668 9.42184 33.9859 8.73975 33.1445 8.73975C32.3032 8.73975 31.6211 9.42184 31.6211 10.2632V15.2947C31.6211 16.136 32.3032 16.8181 33.1445 16.8181Z" fill="#B5FF5F"/>
+                    <path d="M40.254 19.4038C40.6439 19.4038 41.0338 19.255 41.3311 18.9575L45.3936 14.895C45.9886 14.3002 45.9886 13.3355 45.3936 12.7406C44.7988 12.1457 43.8341 12.1457 43.2392 12.7406L39.1767 16.8031C38.5817 17.3979 38.5817 18.3626 39.1767 18.9575C39.4742 19.255 39.8641 19.4038 40.254 19.4038Z" fill="#B5FF5F"/>
+                    <path d="M24.958 18.9575C25.2555 19.255 25.6454 19.4038 26.0352 19.4038C26.425 19.4038 26.815 19.255 27.1124 18.9575C27.7073 18.3627 27.7073 17.398 27.1124 16.8031L23.0499 12.7406C22.455 12.1457 21.4904 12.1457 20.8954 12.7406C20.3005 13.3354 20.3005 14.3001 20.8954 14.895L24.958 18.9575Z" fill="#B5FF5F"/>
+                    <path d="M46.828 30.2715L40.9143 24.3576C39.7714 23.2147 38.2214 22.5728 36.6052 22.5728H27.355C25.049 22.5728 22.8811 23.4708 21.2506 25.1013L20.7638 25.588L20.7323 25.6195H8.66797C7.82662 25.6195 7.14453 26.3016 7.14453 27.143V43.393C7.14453 44.2343 7.82662 44.9164 8.66797 44.9164H16.2635L19.8799 48.5326C20.1656 48.8183 20.553 48.9789 20.957 48.9789H22.3365C21.8259 48.1886 21.4972 47.3059 21.3686 46.3817C20.2296 46.0112 19.2048 45.3272 18.4154 44.3864C16.1207 41.6515 16.4787 37.5596 19.2135 35.2648L25.0038 30.4063H36.5651C36.9691 30.4063 37.3566 30.5667 37.6423 30.8525L41.8959 35.1061C43.2621 36.4723 45.5271 36.5014 46.8699 35.1122C48.1743 33.7627 48.1602 31.6037 46.828 30.2715Z" fill="#B5FF5F"/>
+                    <path d="M59.1441 30.2915C59.1441 29.45 58.462 28.768 57.6206 28.7681H49.5499C51.4977 31.3143 51.3096 34.9817 48.9821 37.3094C47.7554 38.536 46.123 39.2115 44.3859 39.2115C42.6487 39.2115 41.0164 38.536 39.7898 37.3094L35.9338 33.4532H25.8272L24.6305 34.4574L20.7655 37.7005C19.3153 38.9173 19.1262 41.0794 20.343 42.5296C21.5598 43.9798 23.7219 44.1689 25.1721 42.9521C23.7219 44.1689 23.5328 46.331 24.7496 47.7812C25.9664 49.2314 28.1285 49.4205 29.5787 48.2037C28.1285 49.4205 27.9394 51.5826 29.1562 53.0328C30.373 54.483 32.5351 54.6721 33.9853 53.4553L36.6833 51.1913L36.3194 51.4967C34.8692 52.7136 34.6801 54.8756 35.8969 56.3258C37.1137 57.776 39.2758 57.9652 40.726 56.7483L51.0746 48.0647H57.6208C58.4622 48.0647 59.1443 47.3826 59.1442 46.5413L59.1441 30.2915Z"fill="#B5FF5F"/></g>
+                <defs> <clipPath id="clip0_2107_26"> <rect width={52} height={52} fill="white"transform="translate(7.14453 7.14502)"/></clipPath></defs>
+                </svg>
+            ),
+            title: "We start with you",
+            description: "We’ll take the time to understand your goals, your situation, and what you’re looking for. No guesswork – just real conversations."
+        },
+        {
+            id: 2,
+            icon: (
+                <svg width={67} height={67} viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="66.29" height="66.29" rx={16} fill="#1D4115" /><g clipPath="url(#clip0_2108_27)"> <path d="M54.5789 49.4895L44.2331 38.913C45.9909 36.0523 47.0111 32.6712 47.0111 29.0425C47.0111 18.7766 38.8698 10.4556 28.8274 10.4556C18.7851 10.4556 10.6445 18.7766 10.6445 29.0425C10.6445 39.3088 18.7847 47.6291 28.8274 47.6291C32.6905 47.6291 36.2687 46.3945 39.213 44.2967L49.4357 54.7474C50.146 55.4727 51.0772 55.834 52.0073 55.834C52.9385 55.834 53.8685 55.4727 54.58 54.7474C55.9995 53.2947 55.9995 50.9417 54.5789 49.4895ZM28.8274 41.6072C22.0397 41.6072 16.5367 35.9823 16.5367 29.0433C16.5367 22.1044 22.0397 16.479 28.8274 16.479C35.6155 16.479 41.1182 22.1044 41.1182 29.0433C41.1182 35.9823 35.6155 41.6072 28.8274 41.6072Z" fill="#B5FF5F"/></g>
+                    <defs> <clipPath id="clip0_2108_27"><rect width={45} height={46} fill="white"transform="translate(10.6445 10.145)"/></clipPath></defs>
+                </svg>
+            ),
+            title: "We search the market for you",
+            description: "Using what we learn, we’ll explore the market and shortlist the options that suit you best. We’re here to save you time and find the right fit."
+        },
+        {
+            id: 3,
+            icon: (
+                <svg width={67} height={67} viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="66.29" height="66.29" rx={16} fill="#1D4115" />
+                    <path d="M21.4785 47.1449H44.8119C46.6667 47.1393 48.4439 46.4 49.7555 45.0885C51.067 43.7769 51.8063 41.9997 51.8119 40.1449V16.8115C51.8063 14.9567 51.067 13.1795 49.7555 11.8679C48.4439 10.5563 46.6667 9.81706 44.8119 9.81152H21.4785C19.6237 9.81706 17.8464 10.5563 16.5349 11.8679C15.2233 13.1795 14.4841 14.9567 14.4785 16.8115V49.4782C14.4785 51.3347 15.216 53.1152 16.5288 54.4279C17.8415 55.7407 19.622 56.4782 21.4785 56.4782H49.4785C50.0974 56.4782 50.6908 56.2324 51.1284 55.7948C51.566 55.3572 51.8119 54.7637 51.8119 54.1449C51.8119 53.526 51.566 52.9325 51.1284 52.4949C50.6908 52.0574 50.0974 51.8115 49.4785 51.8115H21.4785C20.8597 51.8115 20.2662 51.5657 19.8286 51.1281C19.391 50.6905 19.1452 50.097 19.1452 49.4782C19.1452 48.8594 19.391 48.2659 19.8286 47.8283C20.2662 47.3907 20.8597 47.1449 21.4785 47.1449ZM33.1452 16.8115C33.6067 16.8115 34.0578 16.9484 34.4415 17.2048C34.8252 17.4612 35.1243 17.8256 35.3009 18.2519C35.4775 18.6783 35.5237 19.1474 35.4337 19.6001C35.3437 20.0527 35.1214 20.4685 34.7951 20.7948C34.4688 21.1211 34.053 21.3433 33.6004 21.4334C33.1478 21.5234 32.6786 21.4772 32.2523 21.3006C31.8259 21.124 31.4615 20.8249 31.2051 20.4412C30.9487 20.0575 30.8118 19.6063 30.8118 19.1449C30.8118 18.526 31.0577 17.9325 31.4953 17.4949C31.9329 17.0574 32.5263 16.8115 33.1452 16.8115ZM30.8118 26.1449C30.8118 25.526 31.0577 24.9325 31.4953 24.4949C31.9329 24.0574 32.5263 23.8115 33.1452 23.8115C33.764 23.8115 34.3575 24.0574 34.7951 24.4949C35.2327 24.9325 35.4785 25.526 35.4785 26.1449V37.8115C35.4785 38.4304 35.2327 39.0239 34.7951 39.4614C34.3575 39.899 33.764 40.1449 33.1452 40.1449C32.5263 40.1449 31.9329 39.899 31.4953 39.4614C31.0577 39.0239 30.8118 38.4304 30.8118 37.8115V26.1449Z" fill="#B5FF5F"/>
+                </svg>
+            ),
+            title: "We guide you through your choices",
+            description: "We’ll walk you through your options, ask the hard questions, and help you feel confident about your decision."
+        },
+        {
+            id: 4,
+            icon: (
+                <svg width={67} height={67} viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="66.29" height="66.29" rx={16} fill="#1D4115" />
+                    <path fillRule="evenodd" clipRule="evenodd" d="M11.8984 12.9634C11.8984 10.4263 13.9551 8.36963 16.4922 8.36963H44.0547C46.5918 8.36963 48.6484 10.4263 48.6484 12.9634V14.4946H50.1797C52.7168 14.4946 54.7734 16.5513 54.7734 19.0884V52.7759C54.7734 55.313 52.7168 57.3696 50.1797 57.3696H22.6172C20.0801 57.3696 18.0234 55.313 18.0234 52.7759V51.2446H16.4922C13.9551 51.2446 11.8984 49.188 11.8984 46.6509V12.9634ZM21.0859 51.2446V52.7759C21.0859 53.6216 21.7715 54.3071 22.6172 54.3071H50.1797C51.0254 54.3071 51.7109 53.6216 51.7109 52.7759V19.0884C51.7109 18.2427 51.0254 17.5571 50.1797 17.5571H48.6484V46.6509C48.6484 49.188 46.5918 51.2446 44.0547 51.2446H21.0859ZM21.0859 19.0884C20.2403 19.0884 19.5547 19.774 19.5547 20.6196C19.5547 21.4653 20.2403 22.1509 21.0859 22.1509H33.3359C34.1816 22.1509 34.8672 21.4653 34.8672 20.6196C34.8672 19.774 34.1816 19.0884 33.3359 19.0884H21.0859ZM19.5547 26.7446C19.5547 25.8989 20.2403 25.2134 21.0859 25.2134H33.3359C34.1816 25.2134 34.8672 25.8989 34.8672 26.7446C34.8672 27.5903 34.1816 28.2759 33.3359 28.2759H21.0859C20.2403 28.2759 19.5547 27.5903 19.5547 26.7446ZM21.0859 31.3384C20.2403 31.3384 19.5547 32.0239 19.5547 32.8696C19.5547 33.7153 20.2403 34.4009 21.0859 34.4009H39.4609C40.3066 34.4009 40.9922 33.7153 40.9922 32.8696C40.9922 32.0239 40.3066 31.3384 39.4609 31.3384H21.0859ZM19.5547 38.9946C19.5547 38.1489 20.2403 37.4634 21.0859 37.4634H39.4609C40.3066 37.4634 40.9922 38.1489 40.9922 38.9946C40.9922 39.8403 40.3066 40.5259 39.4609 40.5259H21.0859C20.2403 40.5259 19.5547 39.8403 19.5547 38.9946Z" fill="#B5FF5F"/>
+                </svg>
+            ),
+            title: "We handle the paperwork",
+            description: "Once you’re ready, we’ll take care of the application, manage the paperwork, and keep things moving right through to approval."
+        }
+    ];
+
+
+
     const storeAboutSupport = [
         {
             id: 1,
@@ -149,13 +204,33 @@ const Page = () => {
     <>
         <Hero
             badge="What's easier to find?"
-            title="A new home or the right loan?"
-            description="There are hundreds of loan options out there. Different types, lenders and new products launching all the time. We’ll help you make sense of it all and guide you to a loan that actually suits your needs."
+            title="There is no right loan for everyone but there is a right one for you"
+            description="There are so many different loans out there, each with its own benefits and drawbacks. The great thing is that lenders are more competitive than ever and are constantly refining their products and releasing new ones. The problem is how do you find one that’s right for you?"
+        />
+        <RichText  
+            nameClass="first-rich-text"
+            title="When you’re ready, why not talk to a broker about your next steps"
+            description=""
+            buttonText="Get Started today"
+            buttonlink="/Contact"
+        />
+        <Sixtipsforhomebuyers
+            title="Here is how we make it easier"
+            Badge="Helping you find the right loan"
+            items={HereisHow}
+            description="Our role is to make the process simple and to help you make the choice that’s right for you."
         />
         <Sixtipsforhomebuyers
             title="Here’s a guide to common loan features and benefits"
+            Badge=""
             items={storeAboutSupport}
             description="Of course, not all of these features will be available on every loan. You can ask us about any that interest you."
+        />
+        <InnerNeedHomeLoan
+            heading ="Need a home loan?"
+            description="Whatever your circumstances, we will find the deal that’s right for you. Send through a quick enquiry and we will be in touch."
+            buttonText="Speak to us today"
+            buttonTextUrl="/Contact"
         />
         <Disclaimer 
             disclaimerTitle="DISCLAIMER"

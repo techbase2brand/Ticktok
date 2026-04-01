@@ -2,7 +2,9 @@ import DownloadGuids from '@/app/inner-pages-component/DownloadGuids';
 import Hero from '@/app/inner-pages-component/Hero';
 import { memo } from 'react';
 import Sixtipsforhomebuyers from '../buying-a-home/Sixtipsforhomebuyers';
-
+import Disclaimer from '@/app/inner-pages-component/Disclaimer';
+import NeedHomeLoan from '@/app/components/HomeLoansCom/NeedHomeLoan';
+import ResearchAndHaving from '@/app/inner-pages-component/ResearchAndHaving';
 const Page = () => {
     const storeAboutSupport = [
         {
@@ -128,9 +130,29 @@ const Page = () => {
             buttonUrl="/"
             image="/download-guide.webp"
         />
+        <ResearchAndHaving 
+            flexReverse={true}
+            rightContent="Research and having the right people in your corner are the keys to property investing."
+            title="It pays to keep a cool head, research, and seek advice before taking the plunge."
+            description="Property remains a popular choice for investors looking to build long-term wealth. With demand for affordable rentals consistently strong, many see real estate as a way to achieve steady capital growth and reliable rental income. That said, it’s essential to carefully research the market and ensure any investment you make is financially sound, not just today, but well into the future."
+            subtitle=""
+            description2=""
+            whyUseBtn=""
+        />
         <Sixtipsforhomebuyers
             title="Make a confident rental choice and get more from your investment"
             items={storeAboutSupport}
+        />
+        <NeedHomeLoan 
+            image= "/living-room.webp"
+            heading ="Ready to grow your property portfolio?"
+            description="Whether you’re new to investing or growing your portfolio, we’ll help you find the right loan and make confident decisions.Let’s build your property strategy together."
+            buttonText="Speak to us today"
+            buttonTextUrl="/Contact"
+        />
+        <Disclaimer
+            disclaimerTitle="DISCLAIMER"
+            description="Please note we do not provide tax, legal or accounting advice. Any information provided is of a general nature only and does not take into account the objectives, financial situation or needs of any particular person and is not intended to provide, and should not be relied on for, tax, legal or accounting advice. You should consult your own tax, legal and accounting advisors before engaging in or considering the appropriateness of any transaction. "
         />
     </>
   );

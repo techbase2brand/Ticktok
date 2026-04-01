@@ -1,4 +1,5 @@
 import Banner from '@/app/inner-pages-component/banner';
+import Disclaimer from '@/app/inner-pages-component/Disclaimer';
 import DownloadGuids from '@/app/inner-pages-component/DownloadGuids';
 import InnerNeedHomeLoan from '@/app/inner-pages-component/InnerNeedHomeLoan';
 import { memo } from 'react';
@@ -24,6 +25,10 @@ const Page = () => {
         description="Let me help you make sense of business lending and find a finance option that’s right for your business objectives."
         buttonText="Speak to us today"
         buttonTextUrl="/Contact"
+      />
+      <Disclaimer
+        disclaimerTitle="DISCLAIMER"
+        description="Please note we do not provide tax, legal or accounting advice. Any information provided is of a general nature only and does not take into account the objectives, financial situation or needs of any particular person and is not intended to provide, and should not be relied on for, tax, legal or accounting advice. You should consult your own tax, legal and accounting advisors before engaging in or considering the appropriateness of any transaction. "
       />
     </div>
   );

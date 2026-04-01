@@ -21,7 +21,7 @@ const MeetingYourBroker = ({
   return (
     <div className='inner-banner bg-gradient-to-r from-[#000000] via-[#19240d] to-[#090a09] pb-12 md:pb-20 px-4 sm:px-6 lg:px-8'>
       <div className="mx-auto max-w-[1440px]">
-        <div className='banner-wrapper flex flex-col md:grid md:grid-cols-2 gap-12 md:gap-12 lg:gap-20 items-center'>
+        <div className='banner-wrapper flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-center'>
 
           {(badgeTitle || title || description) && (
             <div className='content text-center md:text-left order-1 md:order-2'>
