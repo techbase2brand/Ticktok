@@ -1,8 +1,8 @@
 import { memo } from 'react';
 type SupportTypeItem = {
-  title: string;
-  description?: string;
-  icon?: string;
+  id: number;
+  icon: Element;
+  name: string;
 };
 
 type SupportForEveryProps = {
@@ -10,6 +10,7 @@ type SupportForEveryProps = {
   badge?: string;
   supportTypes?: SupportTypeItem[];
 };
+
 // Move data outside component to prevent recreation on renders
 const SUPPORT_TYPES = [
   { 
