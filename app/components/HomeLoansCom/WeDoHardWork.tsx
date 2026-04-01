@@ -67,7 +67,7 @@ const WeDoHardWork = ({
                                     data-aos="fade-up"
                                     data-aos-duration="500"
                                     className='text-2xl sm:text-3xl md:text-4xl lg:text-[35px] font-bold text-left leading-tight mb-3 md:mb-4'>
-                                    {title.split(' ').map((word, index) => (
+                                    {title!.split(' ').map((word, index) => (
                                         <span
                                             key={index}
                                             className={
@@ -77,7 +77,7 @@ const WeDoHardWork = ({
                                             }
                                         >
                                             {word}
-                                            {index < title.split(' ').length - 1 ? ' ' : ''}
+                                           {index < title!.split(' ').length - 1 ? ' ' : ''}
                                         </span>
                                     ))}
                                 </h2>
@@ -100,7 +100,7 @@ const WeDoHardWork = ({
                                     data-aos-duration="700"
                                     className='text-xl sm:text-2xl md:text-3xl lg:text-[35px] font-bold text-left leading-tight mb-3 md:mb-4'
                                 >
-                                    {subtitle.split(' ').map((word, index) => (
+                                  {subtitle!.split(' ').map((word, index, arr) => (
                                         <span
                                             key={index}
                                             className={
@@ -110,7 +110,7 @@ const WeDoHardWork = ({
                                             }
                                         >
                                             {word}
-                                            {index < subtitle.split(' ').length - 1 ? ' ' : ''}
+                                            {index < subtitle!.split(' ').length - 1 ? ' ' : ''}
                                         </span>
                                     ))}
                                 </h3>
