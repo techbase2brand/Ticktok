@@ -1,13 +1,21 @@
 "use client";  // ← Add this at the very top
+type AccordionItem = {
+  title: string;
+  content: string;
+};
+type AccordionProps = {
+  mainheading: string;
+  items: AccordionItem[];
+};
+
 
 import { memo, useState } from 'react';
+const Accordion = ({ mainheading, items }: AccordionProps) => {
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-const Accordion = ({ mainheading, items }) => {
-    const [activeIndex, setActiveIndex] = useState(null);
-
-    const toggleItem = (index) => {
+    const toggleItem = (index: number) => {
         setActiveIndex(activeIndex === index ? null : index);
-    };
+     };
 
     return (
         <div className="custom-accordion bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-8 md:pt-[50px] px-4 sm:px-6 lg:px-8">
@@ -22,7 +30,7 @@ const Accordion = ({ mainheading, items }) => {
 
                 <div className='space-y-4 max-w-5xl mx-auto mt-5'>
                     {items && items.map((item, index) => (
-                        <div key={item.id} className='border border-[#B4FE5D]/30 rounded-lg overflow-hidden'>
+                        <div key={index} className='border border-[#B4FE5D]/30 rounded-lg overflow-hidden'>
                             <button onClick={() => toggleItem(index)}
                                 className='w-full cursor-pointer text-left px-4 py-3 md:py-4 text-[14px] md:text-[18px] bg-gradient-to-b from-transparent to-[#9EF01A]/9 flex justify-between items-center text-white font-medium'>
                                 {item.title}

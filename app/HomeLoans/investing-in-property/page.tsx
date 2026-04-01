@@ -138,6 +138,7 @@ const Page = () => {
             subtitle=""
             description2=""
             whyUseBtn=""
+            badeTitle=""
         />
         <Sixtipsforhomebuyers
             title="Make a confident rental choice and get more from your investment"

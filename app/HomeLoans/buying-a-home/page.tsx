@@ -105,6 +105,9 @@ const Page = () => {
         title="Six tips for home buyers"
         items={storeAboutSupport}
         description=""
+        nameClass=""
+        summery=""
+        Badge=""
      />
     <NeedHomeLoan 
       image= "/living-room.webp"

@@ -1,6 +1,12 @@
 import { memo } from 'react';
-
-const RichText = ({ title, description, buttonText, buttonlink, nameClass }) => {
+type RichTextProps = {
+  title?: string;
+  description?: string; 
+    buttonText?: string;    
+    buttonlink?: string;
+    nameClass?: string; // Optional class for custom styling
+};
+const RichText = ({ title, description, buttonText, buttonlink, nameClass }: RichTextProps) => {
   // agar dono nahi aaye toh component hi render na ho
   if (!title && !description) return null;
 

@@ -189,6 +189,8 @@ const Page = () => {
             description="There are hundreds of loan options out there. Different types, lenders and new products launching all the time. We’ll help you make sense of it all and guide you to a loan that actually suits your needs."
         />
         <RichText  
+          buttonText=""     
+          buttonlink="" 
           nameClass="first-rich-text"
           title="Types of home loans and how they work"
           description="Here’s a quick look at the main types of loans and some of their advantages and disadvantages."

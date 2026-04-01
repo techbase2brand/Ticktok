@@ -1,7 +1,13 @@
 import { memo } from 'react';
 import Link from 'next/link';
 
-const Feelingoverwhelmed = ({ title, description, buttonName, buttonUrl }) => {
+type FeelingoverwhelmedProps = {
+  title: string;
+  description: string;
+  buttonName: string;
+  buttonUrl: string;
+};  
+const Feelingoverwhelmed = ({ title, description, buttonName, buttonUrl }: FeelingoverwhelmedProps) => {
   return (
     <div className="bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-10 md:pt-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-[1440px] mx-auto px-4 text-center bg-gradient-to-r from-[#0D2611] to-[#294B11] rounded-2xl p-10">

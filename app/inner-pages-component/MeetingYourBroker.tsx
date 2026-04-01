@@ -2,6 +2,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { memo } from 'react';
 
+type MeetingYourBrokerProps = {
+  badgeTitle: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  buttonText: string;
+  buttonLink: string;
+};
+
 const MeetingYourBroker = ({
   badgeTitle,
   title,
@@ -9,7 +18,7 @@ const MeetingYourBroker = ({
   imageUrl,
   buttonText,
   buttonLink
-}) => {
+}: MeetingYourBrokerProps) => {
 
   const buttonIcon = (
     <svg width={21} height={21} viewBox="0 0 21 21" fill="none">

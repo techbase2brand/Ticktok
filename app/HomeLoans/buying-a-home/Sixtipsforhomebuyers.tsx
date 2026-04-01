@@ -1,6 +1,27 @@
 import { memo } from 'react';
+type SixtipsProps = {
+  title?: string;
+  items?: {
+    id: number;
+    icon: React.ReactNode;
+    title: string;
+    description: string;
+  }[];
+  nameClass?: string;
+  description?: string;
+  summery?: string;
+  Badge?: string;
+};
 
-const Sixtipsforhomebuyers = ({title, items , nameClass, description, summery, Badge}) => {
+
+const Sixtipsforhomebuyers = ({
+  title,
+  items,
+  nameClass,
+  description,
+  summery,
+  Badge
+}: SixtipsProps) => {
     const badgeSvg = (
         <svg width={19} height={19} viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_31_188)">
@@ -33,7 +54,7 @@ const Sixtipsforhomebuyers = ({title, items , nameClass, description, summery, B
                 {description && (<p className='text-center text-[16px] md:text-[20px] text-[#9D9E9D] pb-4'>{description}</p>)}
                 {/* 3 Column Grid - Mobile: 1 col, Desktop: 3 cols */}
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5 lg:gap-7 mt-7'>
-                    {items.map((item) => (
+                    {items?.map((item) => (
                         <div 
                             key={item.id} 
                             data-aos="fade-up" 

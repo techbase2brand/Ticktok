@@ -1,6 +1,10 @@
 import { memo } from 'react';
 
-const WhatAssets = ({ data }) => {
+type WhatAssetsProps = {
+  data: any[];
+};
+
+const WhatAssets = ({ data }: WhatAssetsProps) => {
 
   if (!data || data.length === 0) return null;
 

@@ -2,7 +2,13 @@ import { memo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const InnerNeedHomeLoan = ({ heading, description, buttonText, buttonTextUrl = "/Contact" }) => {
+type InnerNeedHomeLoanProps = {
+  heading: string;
+  description: string;
+  buttonText: string;
+  buttonTextUrl?: string;
+};  
+const InnerNeedHomeLoan = ({ heading, description, buttonText, buttonTextUrl = "/Contact" }: InnerNeedHomeLoanProps) => {
   const hasContent = heading?.trim() || description?.trim() || buttonText?.trim();
 
   if (!hasContent) {

@@ -1,7 +1,14 @@
 import Image from 'next/image';
 import { memo } from 'react';
 
-const TopTips = ({ title, description, imageUrl, data }) => {
+type TopTipsProps = {
+  title: string;
+  description: string;
+  imageUrl: string;
+  data: any[];
+};
+
+const TopTips = ({ title, description, imageUrl, data }: TopTipsProps) => {
     return (
         <>
             <div className="top-tips bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] py-10 md:py-[60px] px-4 sm:px-6 lg:px-8">

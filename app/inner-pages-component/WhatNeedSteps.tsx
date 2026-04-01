@@ -1,6 +1,13 @@
 import { memo } from 'react';
-
-const WhatNeedSteps = ({ items }) => {
+type WhatNeedStepsProps = {
+  items: {
+    id: string | number;    
+    badge?: string; // Optional badge text
+    title?: string; // Optional title
+    content?: string; // Optional content/description
+  }[];
+};      
+const WhatNeedSteps = ({ items }: WhatNeedStepsProps) => {
   // Hide component if no data
   if (!items || items.length === 0) return null;
 

@@ -1,6 +1,9 @@
 import { memo } from 'react';
 
-const WhatYouNeedBread = ({ title }) => {
+type WhatYouNeedBreadProps = {
+  title: string;
+};      
+const WhatYouNeedBread = ({ title }: WhatYouNeedBreadProps) => {
     // If no title is passed, don't render anything
     if (!title) return null;
 

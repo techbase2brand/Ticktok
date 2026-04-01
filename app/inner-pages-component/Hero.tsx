@@ -1,6 +1,10 @@
 import { memo } from 'react';
-
-const Hero = ({ badge, title, description }) => {
+type HeroProps = {
+  badge: string;
+  title: string;
+  description: string;
+};      
+const Hero = ({ badge, title, description }: HeroProps) => {
         const badgeSvg = (
         <svg width={19} height={19} viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_31_188)">
