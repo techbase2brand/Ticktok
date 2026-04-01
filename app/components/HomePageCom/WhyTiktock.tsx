@@ -1,6 +1,10 @@
 "use client";
 import { memo } from 'react';
-const WhyTiktock = ({ title, description }) => {
+type WhyTiktockProps = {
+  title?: string;
+  description?: string;
+};
+const WhyTiktock = ({ title, description }: WhyTiktockProps) => {
     const boxData = [
         {
             svg: (
@@ -47,11 +51,11 @@ const WhyTiktock = ({ title, description }) => {
             <div className='max-w-[1440px] mx-auto'>
                 {/* Title - Responsive text sizes */}
                <h2  data-aos="fade-up"  data-aos-duration="500" className='text-3xl sm:text-4xl md:text-[45px] font-bold text-center pb-2 md:pb-4 leading-tight'>
-                    {title.split(' ').map((word, index) => (
+                    {title!.split(' ').map((word, index) => (
                         <span 
                             key={index} 
                             className={index === 1 ? 'text-[#B4FE5D]' : 'text-[#fff]'}>
-                            {word}{index < title.split(' ').length - 1 ? ' ' : ''}
+                            {word}{index < title!.split(' ').length - 1 ? ' ' : ''}
                         </span>
                     ))}
                 </h2>
