@@ -99,6 +99,7 @@ const Page = () => {
           If you want to get a better idea of your borrowing power and what your likely repayments might be, try out our Online Calculators.
           At anytime on your home buying journey, feel free to give us a call or email us and we’ll do everything we can to make it easier for you."
         whyUseBtn=""
+        badeTitle=""
      />
      <Sixtipsforhomebuyers 
         title="Six tips for home buyers"

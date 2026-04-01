@@ -254,6 +254,8 @@ const Page = () => {
           data={Investment}
         />
         <RichText  
+          buttonText=""     
+          buttonlink="" 
           nameClass="first-rich-text"
           title="What assets and equipment can be financed?"
           description="Any asset, plant, or equipment that can help generate income for your business may be able to be financed and can include:"

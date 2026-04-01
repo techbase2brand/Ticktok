@@ -50,6 +50,7 @@ const Page = () => {
         subtitle=""
         description2=""
         whyUseBtn=""
+        badeTitle=""
       />
       <WeDoHardWork
         flexReverse={true}
@@ -59,6 +60,7 @@ const Page = () => {
         subtitle=""
         description2=""
         whyUseBtn=""
+        badeTitle=""
       />
       <WeDoHardWork
         flexReverse={false}
@@ -68,6 +70,7 @@ const Page = () => {
         subtitle=""
         description2=""
         whyUseBtn=""
+        badeTitle=""
       />
       <Accordion
         mainheading='Common questions for off the plan home buyers'

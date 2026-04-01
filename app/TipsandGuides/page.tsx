@@ -31,6 +31,7 @@ const Page = () => {
         description="Buying your first home is exciting, but it can feel overwhelming. From saving a deposit to finding the right loan, we’re here to help guide you every step of the way."
         subtitle=""
         description2=""
+        badeTitle=""
         whyUseBtn="Secure Your First Home"
       />
 
@@ -41,11 +42,13 @@ const Page = () => {
         description="Having the right people to help you is key when it comes to property finance. Although it always pays to do your homework on the property market before you dive in, when the time comes to finance your decision, we’ll be thrilled to help."
         subtitle=""
         description2=""
+        badeTitle=""
         whyUseBtn="Get Trusted Advice"
       />
 
       <WeDoHardWork 
         flexReverse={false}
+        badeTitle=""
         image= "/new-home-loan-still.webp"
         title="Is your home loan still right for you?"
         description="As time marches on, situations change. Have you started a new job? Welcomed a new family member? Perhaps you’re looking for a better interest rate or finally ready to kick off that renovation project. Whatever the reason, it’s the perfect time to review your options."
@@ -61,6 +64,7 @@ const Page = () => {
         description="Whether you’re starting up, sustaining success, or wanting to make the most of new opportunities, the right finance can help fund what you’re looking for."
         subtitle=""
         description2=""
+        badeTitle=""
         whyUseBtn="Explore Your Options"
       />
 

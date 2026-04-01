@@ -54,6 +54,7 @@ const Page = () => {
             subtitle=""
             description2=""
             whyUseBtn=""
+            badeTitle=""
         />
         <Accordion
             mainheading='Common questions for those thinking of refinancing'

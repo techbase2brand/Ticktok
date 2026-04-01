@@ -55,6 +55,7 @@ const Page = () => {
             title="How we can help"
             description="We’ll do the legwork for you. We can compare home loans across a variety of products available from Australia’s leading lenders."
             subtitle=""
+            badeTitle=""
             description2="And because you’re a first home buyer, you may be eligible for a first home buyer grant. The grant is for Australian citizens or permanent residents buying or building their first home, to be their primary residence within 12 months of settlement. Contact us to learn about eligibility and grant amounts in your state. We’ll communicate with the lender, allowing you to focus on finding your dream home. With us by your side, we’ll guide you through the entire home loan process, from application to approval."
             whyUseBtn=""
         />

@@ -121,6 +121,7 @@ const Page = () => {
           description=""
           nameClass="second-six-tips"
           summery=""
+          Badge=""
         />
         <RichText 
           nameClass="second-rich-text"
@@ -133,6 +134,8 @@ const Page = () => {
           title=""
           items={bussinessStore}
           description=""
+          nameClass=""
+          Badge=""
           summery="The business structure has an impact on your management, governance, tax obligations and exposure of your personal assets – all of which the lenders take into consideration when assessing your application. So not only does it help to speak to us, it’s a good idea to chat to a finance professional like your accountant who can advise you on how your business structure can impact your financial and taxation position when it comes to lending."
         />
         <InnerNeedHomeLoan
