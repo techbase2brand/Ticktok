@@ -29,9 +29,10 @@ const Page = () => {
       flexReverse={false}
       image= "/about-part.webp"
       title="Why use a mortgage broker?"
+      badeTitle=""  
       description="Whether you’re buying your first home, refinancing, or investing, finding the right loan can be challenging without the right support and expertise."
       subtitle=""
-      description2="That’s where ticktock comes in. While banks offer a limited selection, mortgage brokers have access to a large network of Australia’s lenders, giving you choice beyond a single bank.We take the time to understand your needs and search through a wide range of loans to find your perfect fit. We’re by your side every step of the way, so you can feel confident we’re securing the right loan without the legwork."
+      description2="That’s where ticktock comes in. While banks offer a limited selection, mortgage brokers have access to a large network of Australia’s lenders, giving you choice beyond a single bank. We take the time to understand your needs and search through a wide range of loans to find your perfect fit. We’re by your side every step of the way, so you can feel confident we’re securing the right loan without the legwork."
       whyUseBtn="Why use a broker guide"
     />
 
