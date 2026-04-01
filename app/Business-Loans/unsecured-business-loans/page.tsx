@@ -21,6 +21,7 @@ const Page = () => {
             subtitle=""
             description2="In recent years, a number of agile, financial technology  fintech lenders have entered the finance market in Australia. These more non-traditional lenders can turn around approvals and deposit cash into your account in as little as twenty four hours. Because they are unsecured the application is simpler and the loan amounts are often smaller – usually anywhere from dollar5,000 to dollar250,000. It also means there is greater risk to the lender so the interest rates may be relatively higher and the loan terms a lot shorter, with principal and interest repayments generally on a weekly basis but sometimes even daily."
             whyUseBtn=""
+            badeTitle=""
         />
         <InnerNeedHomeLoan
             heading ="We are here to help."

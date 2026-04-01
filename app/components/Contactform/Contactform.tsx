@@ -1,7 +1,11 @@
 import { memo, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-
-const ContactPage = ({title,subheading, description}) => {
+type ContactPageProps = {
+  title: string;
+  subheading: string;
+  description: string;
+};
+const ContactPage = ({title,subheading, description}: ContactPageProps) => {
   // call svg render here
   const call =((
     <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
