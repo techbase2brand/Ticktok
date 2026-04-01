@@ -2,7 +2,12 @@ import Image from 'next/image';
 import { title } from 'process';
 import { memo } from 'react';
 
-const FinaceYourDream = ({title , getStartBtn}) => {
+type FinaceYourDreamProps = {
+  title?: string;
+  getStartBtn?: string;
+};
+
+const FinaceYourDream = ({ title, getStartBtn }: FinaceYourDreamProps) => {
     const finaceContent =[
         {
             id:1,
@@ -54,11 +59,11 @@ const FinaceYourDream = ({title , getStartBtn}) => {
                             data-aos-duration="500"
                             className='text-2xl sm:text-3xl md:text-4xl lg:text-[45px] font-bold text-left text-[#B4FE5D] pb-2 md:pb-4 leading-tight'
                         >
-                            {title.split(' ').map((word, index) => (
+                            {title!.split(' ').map((word, index) => (
                                 <span 
                                     key={index} 
                                     className={index === 2 || index === 5 || index === 6 ? 'text-[#B4FE5D]' : 'text-[#fff]'}>
-                                    {word}{index < title.split(' ').length - 1 ? ' ' : ''}
+                                    {word}{index < title!.split(' ').length - 1 ? ' ' : ''}
                                 </span>
                             ))}
                         </h2>
