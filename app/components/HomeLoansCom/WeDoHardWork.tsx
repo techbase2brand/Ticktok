@@ -1,10 +1,28 @@
 import Image from 'next/image';
 import { memo } from 'react';
-
-const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUseBtn, badeTitle, flexReverse = false }) => {
+type WeDoHardWorkProps = {
+  title?: string;
+  description?: string;
+  subtitle?: string;
+  description2?: string;
+  image?: string;
+  whyUseBtn?: string;
+  badeTitle?: string;
+  flexReverse?: boolean;
+};
+const WeDoHardWork = ({
+  title,
+  description,
+  subtitle,
+  description2,
+  image,
+  whyUseBtn,
+  badeTitle,
+  flexReverse = false
+}: WeDoHardWorkProps) => {
     // Helper function to check if string has content
-    const hasContent = (value) => {
-        return value && typeof value === 'string' && value.trim() !== '';
+    const hasContent = (value?: string) => {
+    return value?.trim() !== "";
     };
 
     // Check if any content exists (including image)
@@ -12,7 +30,7 @@ const WeDoHardWork = ({ title, description, subtitle, description2, image, whyUs
         return hasContent(title) || 
                hasContent(description) || 
                hasContent(subtitle) || 
-               hasAnyContent(badeTitle) ||
+               hasContent(badeTitle) ||
                hasContent(description2) ||
                hasContent(whyUseBtn) ||
                image; 
