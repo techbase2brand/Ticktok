@@ -9,10 +9,10 @@ type FooterProps = {
     copyRight: string;
 };
 const Footer = ({ copyRight }: FooterProps) => {
-    const [openAccordion, setOpenAccordion] = useState(null);
+    const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
     // Handle accordion toggle - closes others when opening one
-    const toggleAccordion = (accordion) => {
+    const toggleAccordion = (accordion: string) => {
         setOpenAccordion(openAccordion === accordion ? null : accordion);
     };
 
