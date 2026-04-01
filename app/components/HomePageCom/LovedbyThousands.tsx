@@ -1,7 +1,12 @@
 "use client";
 import { memo } from 'react';
 
-const LovedbyThousands = ({ title ,description }) => {
+type LovedbyThousandsProps = {
+  title?: string;
+  description?: string;
+};
+
+const LovedbyThousands = ({ title, description }: LovedbyThousandsProps) => {
     const customerData = [
         {
             id: 1, 
@@ -25,8 +30,8 @@ const LovedbyThousands = ({ title ,description }) => {
     ];
 
     // Function to get initials from name
-    const getInitials = (fullName) => {
-        const nameParts = fullName.split(' ');
+    const getInitials = (fullName?: string) => {
+        const nameParts = fullName?.split(' ') || [];
         if (nameParts.length >= 2) {
             return {
                 firstInitial: nameParts[0].charAt(0).toUpperCase(),
@@ -34,7 +39,7 @@ const LovedbyThousands = ({ title ,description }) => {
             };
         }
         return {
-            firstInitial: fullName.charAt(0).toUpperCase(),
+            firstInitial: fullName?.charAt(0).toUpperCase() || '',
             lastInitial: ''
         };
     };
@@ -62,11 +67,11 @@ const LovedbyThousands = ({ title ,description }) => {
                     data-aos-duration="500" 
                     className='text-white text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold text-center leading-tight'
                 >
-                    {title.split(' ').map((word, index) => (
+                    {title!.split(' ').map((word, index) => (
                         <span 
                             key={index} 
                             className={index === 2 ? 'text-[#B4FE5D]' : 'text-[#fff]'}>
-                            {word}{index < title.split(' ').length - 1 ? ' ' : ''}
+                            {word}{index < title!.split(' ').length - 1 ? ' ' : ''}
                         </span>
                     ))}
                 </h3>
