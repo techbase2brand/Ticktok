@@ -87,12 +87,12 @@ export default function Header() {
     setOpenMobileMenu(null);
   }, [pathname]);
 
-  const getLinkClass = (href) => {
-    const isActive = pathname === href || pathname.startsWith(href + "/");
-    return `transition-colors duration-300 hover:text-[#B5FF5F] hover:underline ${
-      isActive ? "text-[#B5FF5F] underline font-semibold" : "text-white"
-    }`;
-  };
+  const getLinkClass = (href: string) => {
+  const isActive = pathname === href || pathname.startsWith(href + "/");
+  return `transition-colors duration-300 hover:text-[#B5FF5F] hover:underline ${
+    isActive ? "text-[#B5FF5F] underline font-semibold" : "text-white"
+  }`;
+};
 
   // Handle mouse leave with delay
   const handleMouseLeave = () => {
