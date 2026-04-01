@@ -58,8 +58,8 @@ const Hero = ({
         </svg>
     );
 
-    const hasContent = (value) => {
-        return value && typeof value === 'string' && value.trim() !== '';
+    const hasContent = (value?: string) => {
+        return value && typeof value === "string" && value.trim() !== "";
     };
 
     // Default overlay: gradient. If overlaycolor is provided, use solid color overlay on top.
