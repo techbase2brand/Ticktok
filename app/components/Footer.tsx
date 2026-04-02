@@ -39,7 +39,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                     </div>
 
                     {/* Social Icons with hover effects */}
-                    <div className="social-icons flex flex-wrap gap-4 mt-8">
+                    <div className="social-icons flex flex-wrap gap-4 mt-6 pb-2 md:pb-0">
                         {/* Facebook Icon */}
                         <Link
                             href="#"
@@ -217,7 +217,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                         type="button"
                         className="heading w-full flex items-center justify-between md:block cursor-pointer mb-4 md:mb-3"
                         onClick={() => toggleAccordion('quickLinks')}>
-                        <h3 className='text-white font-normal md:font-semibold text-[14px] md:text-[16px] pb-0 md:pb-[12px] text-left'>Quick Links</h3>
+                        <h3 className='text-white font-normal md:font-semibold text-[15px] md:text-[16px] pb-0 md:pb-[12px] text-left'>Quick Links</h3>
                         <span className="md:hidden text-white">
                             <svg className={`w-4 h-4 transform transition-transform duration-300 ${openAccordion === 'quickLinks' ? 'rotate-180' : 'rotate-0'}`}
                                 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -246,6 +246,19 @@ const Footer = ({ copyRight }: FooterProps) => {
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Finance for My Business
                         </Link>
+                        <Link href="/Contact" title="Contact" aria-label="Contact"
+                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
+                            Contact
+                        </Link>
+                        <Link href="/privacy-policy" title="Privacy Policy" aria-label="Privacy Policy"
+                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
+                            Privacy Policy
+                        </Link>
+                        <Link href="/terms-conditions" title="Terms & Conditions" aria-label="Terms & Conditions"
+                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
+                            Terms & Conditions
+                        </Link>
+
                     </div>
                 </div>
 
@@ -254,9 +267,8 @@ const Footer = ({ copyRight }: FooterProps) => {
                     <button
                         type="button"
                         className="heading w-full flex items-center justify-between md:block cursor-pointer mb-4 md:mb-3"
-                        onClick={() => toggleAccordion('legal')}
-                    >
-                        <h3 className='text-white font-normal md:font-semibold text-[14px] md:text-[16px] text-left pb-0 md:pb-[12px]'>Legal</h3>
+                        onClick={() => toggleAccordion('legal')}>
+                        <h3 className='text-white font-normal md:font-semibold text-[15px] md:text-[16px] text-left pb-0 md:pb-[12px]'>Guides</h3>
                         <span className="md:hidden text-white">
                             <svg className={`w-4 h-4 transform transition-transform duration-300 ${openAccordion === 'legal' ? 'rotate-180' : 'rotate-0'}`}
                                 viewBox="0 0 24 24"fill="none"xmlns="http://www.w3.org/2000/svg">
@@ -265,21 +277,33 @@ const Footer = ({ copyRight }: FooterProps) => {
                         </span>
                     </button>
                     <div className={`menu-links gap-3 flex-col transition-all duration-300 mb-4 md:mb-0 ${openAccordion === 'legal' ? 'flex' : 'hidden'} md:flex`}>
-                        <Link href="/privacy-policy" title="Privacy Policy" aria-label="Privacy Policy"
+                        <Link href="/TipsandGuides/first-home-buyer-guide" title="First Home Buyer Guide" aria-label="First Home Buyer Guide"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Privacy Policy
+                            First Home Buyer Guide
                         </Link>
-                        <Link href="/terms-of-service" title="Terms of Service" aria-label="Terms of Service"
+                        <Link href="/TipsandGuides/why-use-a-broker" title="Why Use a Broker?" aria-label=" Why Use a Broker?"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Terms of Service
+                            Why Use a Broker?
                         </Link>
-                        <Link href="/cookie-policy" title="Cookie Policy" aria-label="Cookie Policy"
+                        <Link href="/TipsandGuides/looking-for-refinance-your-home" title="Looking for Refinance Your Home" aria-label="Looking for Refinance Your Home"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Cookie Policy
+                            Looking for Refinance Your Home
                         </Link>
-                        <Link href="/Contact" title="Contact" aria-label="Contact"
+                        <Link href="/TipsandGuides/investing-in-property-guide" title="Investing in Property Guide" aria-label="Investing in Property Guide"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Contact
+                            Investing in Property Guide
+                        </Link>
+                        <Link href="/TipsandGuides/business-finance-guide" title="Business Finance Guide" aria-label="Business Finance Guide"
+                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
+                            Business Finance Guide
+                        </Link>
+                        <Link href="/TipsandGuides/explaining-the-loan-process" title="Explaining the Loan Process" aria-label="Explaining the Loan Process"
+                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
+                            Explaining the Loan Process
+                        </Link>
+                        <Link href="/TipsandGuides/checklist-of-loan-document" title="Checklist of loan document" aria-label="Checklist of loan document"
+                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
+                            Checklist of loan document
                         </Link>
                     </div>
                 </div>
@@ -291,7 +315,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                         className="heading w-full flex items-center justify-between md:block cursor-pointer mb-4 md:mb-3"
                         onClick={() => toggleAccordion('contact')}
                     >
-                        <h3 className='text-white font-normal md:font-semibold text-[14px] md:text-[16px] pb-0 md:pb-[12px] text-left'>Our Contact</h3>
+                        <h3 className='text-white font-normal md:font-semibold text-[15px] md:text-[16px] pb-0 md:pb-[12px] text-left'>Our Contact</h3>
                         <span className="md:hidden text-white">
                             <svg className={`w-4 h-4 transform transition-transform duration-300 ${openAccordion === 'contact' ? 'rotate-180' : 'rotate-0'}`} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 9L12 15L18 9"stroke="currentColor"strokeWidth="1.8"strokeLinecap="round"strokeLinejoin="round"/>
@@ -342,7 +366,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                     </div>
                 </div>
             </div>
-            <div className="max-w-[1440px] mx-auto py-[20px] md:py-[25px] border-t border-[#816f6f40] text-center mt-[40px] md:mt-[50px]">
+            <div className="max-w-[1440px] mx-auto py-[20px] md:py-[25px] border-t border-[#816f6f40] text-center mt-[20px] md:mt-[50px]">
                 <p className="text-white text-left text-[10px] md:text-[12px] text-center w-full flex justify-center gap-2">{copyRight} <a href="https://base2brand.com" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-[#B5FF5F] transition-colors duration-300">Designed By Base2brand</a></p>
             </div>
         </footer>
