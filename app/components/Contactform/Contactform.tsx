@@ -125,7 +125,7 @@ const ContactPage = ({title,subheading, description}: ContactPageProps) => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] py-20 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-12 md:pt-[80px] px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
           {title && <h2 className='text-3xl max-w-3xl mx-auto sm:text-3xl md:text-4xl lg:text-[45px] font-bold text-center leading-tight mb-7 md:mb-12 text-white'>{title}</h2>}
 
