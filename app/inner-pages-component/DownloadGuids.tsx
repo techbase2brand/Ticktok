@@ -36,7 +36,7 @@ const DownloadGuids = ({ title, description, buttonLable, buttonUrl, image }: Do
           <p className='text-gray-300 mb-6 sm:mb-8 text-sm sm:text-base'>
             {description}
           </p>
-          <a 
+          <a target='_blank'
             href={buttonUrl} 
             className='cursor-pointer bg-transparent backdrop-blur-sm border border-white/80 flex items-center justify-center gap-[10px] mx-auto md:mx-0 text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold hover:bg-[#B5FF5F] hover:text-[#154617] hover:border-[#B5FF5F] transition-all duration-300 text-sm sm:text-base w-fit shadow-[0_4px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_20px_rgba(181,255,95,0.3)]'>
             {buttonLable} {rightArrow}

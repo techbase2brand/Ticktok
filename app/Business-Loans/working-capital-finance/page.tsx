@@ -17,7 +17,7 @@ const Page = () => {
         title="Using working capital to grow and transform your business"
         description="Working capital is the money your business has in its pocket."
         buttonLable="Download the guide"
-        buttonUrl="/"
+        buttonUrl="https://marketingcdn.afgonline.com.au/website-assets/Smartonline/Your%20Guide%20to%20Working%20Capital.pdf"
         image="/download-guide.webp"
       />
       <InnerNeedHomeLoan
