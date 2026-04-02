@@ -127,7 +127,7 @@ const Page = () => {
             title="Download our guide on property investing"
             description="Whether you’re starting up, sustaining success, or wanting to make the most of new opportunities, the right finance can help fund what you’re looking for."
             buttonLable="Download the guide"
-            buttonUrl="/"
+            buttonUrl="https://marketingcdn.afgonline.com.au/website-assets/Smartonline/Your%20Guide%20to%20Working%20Capital.pdf"
             image="/download-guide.webp"
         />
         <ResearchAndHaving 

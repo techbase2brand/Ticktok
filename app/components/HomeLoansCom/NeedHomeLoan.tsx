@@ -60,6 +60,7 @@ const NeedHomeLoan = ({
 
               {buttonText && (
                 <Link 
+                  target='_blank'
                   href={buttonTextUrl} 
                   title={buttonText} 
                   aria-label={buttonText} 

@@ -51,7 +51,7 @@ const Page = () => {
         heading ="Looking for the right business finance?"
         description="Discover the ideal loan option to support your business growth and success. Explore our range of business finance solutions tailored to your specific needs."
         buttonText="Download the guide"
-        buttonTextUrl=""
+        buttonTextUrl="https://marketingcdn.afgonline.com.au/website-assets/Smartonline/Your%20Guide%20to%20Working%20Capital.pdf"
       />
 
     

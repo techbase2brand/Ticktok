@@ -46,7 +46,7 @@ const Page = () => {
             title="Download our guide to "
             description="Feeling lost in the maze of home buying? Take the first step towards your dream home by downloading our guide. Get essential knowledge and discover how a broker can assist you on this exciting journey."
             buttonLable="Download the guide"
-            buttonUrl="/"
+            buttonUrl="https://marketingcdn.afgonline.com.au/website-assets/Smartonline/Your%20Guide%20to%20Working%20Capital.pdf"
             image="/download-guide.webp"
         />
         <WeDoHardWork 

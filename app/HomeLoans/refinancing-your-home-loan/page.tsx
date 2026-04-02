@@ -43,7 +43,7 @@ const Page = () => {
             title="Download our guide to refinancing your home loan"
             description="As time goes on, your situations and needs change. Have you started a new job? Welcomed a new family member? Perhaps you’re looking for a better interest rate or finally ready to kick off that renovation project. Whatever the reason, it’s the perfect time to review your options."
             buttonLable="Download the guide"
-            buttonUrl="/"
+            buttonUrl="https://marketingcdn.afgonline.com.au/website-assets/Smartonline/Your%20Guide%20to%20Working%20Capital.pdf"
             image="/download-guide.webp"
         />
         <WeDoHardWork
