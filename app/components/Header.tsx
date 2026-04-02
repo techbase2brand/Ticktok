@@ -316,7 +316,7 @@ export default function Header() {
             )
           )}
 
-          <div className="apply_button pt-6 mt-4">
+          <div className="apply_button pt-6 mt-4 ss">
             <Link
               href="/Contact"
               className="inline-block bg-[#B5FF5F] text-[#154617] px-4 py-2.5 rounded-full hover:bg-white font-bold w-full text-center text-base transition-colors duration-300"

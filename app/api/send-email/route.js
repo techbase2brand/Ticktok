@@ -9,7 +9,10 @@ export async function POST(request) {
     }
 
     const transporter = nodemailer.createTransport({
-      service: "gmail",
+      // service: "gmail",
+       host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.EMAIL_USERNAME,
         pass: process.env.EMAIL_PASSWORD,
@@ -28,4 +31,5 @@ export async function POST(request) {
     console.error("Error sending email:", error);
     return new Response(JSON.stringify({ message: "Error sending email" }), { status: 500 });
   }
+  
 }
