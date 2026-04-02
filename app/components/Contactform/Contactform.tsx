@@ -269,10 +269,10 @@ const ContactPage = ({title,subheading, description}: ContactPageProps) => {
             <button
               type="submit"
               disabled={isLoading}
-              className={`py-3 px-12 font-semibold cursor-pointer rounded-md transition-all duration-200 ${
+              className={`py-3 px-12 font-semibold cursor-pointer rounded-3xl transition-all duration-200 ${
                 isLoading
                   ? 'bg-lime-600 opacity-60 cursor-not-allowed text-white'
-                  : 'bg-lime-400 text-[#154617] hover:bg-white active:scale-95'
+                  : 'bg-[#b4fe5d] text-[#154617] hover:bg-white active:scale-95'
               }`}
             >
               {isLoading ? 'Sending...' : 'Submit'}
