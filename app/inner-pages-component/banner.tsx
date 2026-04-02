@@ -53,7 +53,7 @@ const Banner = ({ badgeTitle, title, description, imageUrl }: BannerProps) => {
 
           {/* Image Section */}
           {imageUrl && (
-            <div className='image'>
+            <div className='image w-full'>
               <Image src={imageUrl} alt="banner" className="max-w-full w-full" width={1000} height={1000} priority  quality={75} />
             </div>
           )}
