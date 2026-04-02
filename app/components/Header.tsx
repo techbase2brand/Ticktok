@@ -130,10 +130,10 @@ export default function Header() {
             <Image
               src="/logo.svg"
               alt="Logo"
-              width={250}
+              width={200}
               height={30}
-              priority
-              style={{ width: "auto", height: "auto" }}
+              className="w-[200px] sm:w-[200px] md:w-[300px] h-auto"
+              priority 
             />
           </Link>
         </div>

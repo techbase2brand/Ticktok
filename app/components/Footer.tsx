@@ -30,7 +30,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                                 height={20}
                                 quality={75}
                                 priority
-                                style={{ width: 'auto', height: 'auto' }}
+                               className="w-[200px] sm:w-[200px] md:w-[300px] h-auto"
                             />
                         </Link>
                         <p className='text-white max-w-[400px] pt-[15px] text-[14px] md:text-[14px]'>
@@ -241,6 +241,10 @@ const Footer = ({ copyRight }: FooterProps) => {
                         <Link title="Tips and Guides" aria-label="Tips and Guides" href="/TipsandGuides"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Tips and Guides
+                        </Link>
+                        <Link title="Finance for My Business" aria-label="Finance for My Business" href="/Business-Loans/finance-for-my-business"
+                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
+                            Finance for My Business
                         </Link>
                     </div>
                 </div>

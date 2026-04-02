@@ -68,7 +68,7 @@ const Hero = ({
         : {};
 
     return (
-       <div className='banner w-full relative min-h-[600px] max-h-[700px] sm:min-h-[650px] md:min-h-[700px] flex items-center pb-[30px] overflow-hidden'>
+       <div className='banner w-full relative min-h-[600px] max-h-[900px] sm:min-h-[650px] md:min-h-[700px] flex items-center pb-[30px] overflow-hidden'>
             {/* Video Background */}
             {videoUrl && (
                 <video 
@@ -111,7 +111,7 @@ const Hero = ({
             
             {/* Content */}
             <div className='relative z-20 max-w-[1440px] mx-auto w-full'>
-               <div className='banner-wrapper flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 py-8 md:py-12 lg:py-16'>
+               <div className='banner-wrapper flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 pt-8 md:pt-12 lg:pt-16'>
                     
                   {(hasContent(subheading) || hasContent(heading) || hasContent(description) || hasContent(badge) || hasContent(apply) || hasContent(checkEligibility)) && (
                     <div className='content text-center md:text-left w-full md:w-[65%] order-2 md:order-1'>
