@@ -25,7 +25,6 @@ export async function POST(request) {
       subject: "New Ticktock Guide Form Submission",
       text: `First Name: ${firstName}\nEmail: ${email}`,
     });
-
     return new Response(JSON.stringify({ message: "Email sent successfully" }), { status: 200 });
   } catch (error) {
     console.error("Error sending email:", error);
