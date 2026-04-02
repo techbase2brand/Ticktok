@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { memo } from 'react';
 type WeDoHardWorkProps = {
   title?: string;
@@ -7,6 +8,7 @@ type WeDoHardWorkProps = {
   description2?: string;
   image?: string;
   whyUseBtn?: string;
+  whyUseBtnUrl?: string;
   badeTitle?: string;
   flexReverse?: boolean;
 };
@@ -16,8 +18,9 @@ const WeDoHardWork = ({
   subtitle,
   description2,
   image,
-  whyUseBtn,
   badeTitle,
+  whyUseBtnUrl,
+  whyUseBtn,
   flexReverse = false
 }: WeDoHardWorkProps) => {
     // Helper function to check if string has content
@@ -129,9 +132,12 @@ const WeDoHardWork = ({
 
                             {/* Why Use Button - Show only if whyUseBtn exists */}
                             {hasContent(whyUseBtn) && (
-                                <button className='mt-8 sm:mt-8 md:mt-8 lg:mt-[40px] cursor-pointer bg-transparent backdrop-blur-sm border border-white/80 flex items-center justify-center gap-[10px] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold hover:bg-[#B5FF5F] hover:text-[#154617] hover:border-[#B5FF5F] transition-all duration-300 text-sm sm:text-base w-full sm:w-auto shadow-[0_4px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_20px_rgba(181,255,95,0.3)]'>
-                                    {whyUseBtn}
-                                </button>
+                            <Link
+                                href={whyUseBtnUrl || "#"}
+                                className='mt-8 sm:mt-8 md:mt-8 lg:mt-[40px] cursor-pointer bg-transparent backdrop-blur-sm border border-white/80 flex items-center justify-center gap-[10px] text-white px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold hover:bg-[#B5FF5F] hover:text-[#154617] hover:border-[#B5FF5F] transition-all duration-300 text-sm sm:text-base w-fit  shadow-[0_4px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_20px_rgba(181,255,95,0.3)]'
+                            >
+                                {whyUseBtn}
+                            </Link>
                             )}
                         </div>
                     )}

@@ -111,7 +111,7 @@ const Hero = ({
             
             {/* Content */}
             <div className='relative z-20 max-w-[1440px] mx-auto w-full'>
-               <div className='banner-wrapper flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 pt-8 md:pt-12 lg:pt-16'>
+               <div className='banner-wrapper flex flex-col md:flex-row items-center justify-between gap-3 md:gap-8 pt-8 md:pt-12 lg:pt-16'>
                     
                   {(hasContent(subheading) || hasContent(heading) || hasContent(description) || hasContent(badge) || hasContent(apply) || hasContent(checkEligibility)) && (
                     <div className='content text-center md:text-left w-full md:w-[65%] order-2 md:order-1'>

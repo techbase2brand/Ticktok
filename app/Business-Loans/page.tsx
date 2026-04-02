@@ -1,7 +1,6 @@
 import { memo } from 'react';
 import dynamic from "next/dynamic";
 import Hero from '../components/HomePageCom/Hero';
-const LightningFastApproval = dynamic(() => import('../components/HomePageCom/LightningFastApproval'));
 const NeedHomeLoan = dynamic(() => import('../components/HomeLoansCom/NeedHomeLoan'));
 const WeDoHardWork = dynamic(() => import('../components/HomeLoansCom/WeDoHardWork'));
 
@@ -53,13 +52,7 @@ const Page = () => {
         buttonTextUrl=""
       />
 
-      <LightningFastApproval
-        applyBtn="Apply Now" 
-        subheading="Looking for the Right Loan?" 
-        heading="Home. Business. Car." 
-        badge="Lightning Fast Approval" 
-        description="Get funded with the right loan solution tailored to your goals. No confusion. No hidden charges. Just smart financing."
-      />
+    
     </>
   );
 };

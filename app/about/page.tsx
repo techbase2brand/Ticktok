@@ -2,7 +2,6 @@ import { memo } from 'react';
 import dynamic from "next/dynamic";
 import Hero from '../components/HomePageCom/Hero';
 const WeDoHardWork = dynamic(() => import('../components/HomeLoansCom/WeDoHardWork'));
-const LightningFastApproval = dynamic(() => import('../components/HomePageCom/LightningFastApproval'));
 const NeedHomeLoan = dynamic(() => import('../components/HomeLoansCom/NeedHomeLoan'));
 const AboutSupport = dynamic(() => import('../components/AboutCom/AboutSupport'));
 
@@ -19,8 +18,8 @@ const Page = () => {
       description="We’ll guide you through the options, advocate at every step, and negotiate the right loan to fit your needs. From start to finish, we handle the details so you can focus on what matters most and enjoy a seamless journey to securing your loan." 
       badge="About ticktock" 
       checkEligibility="Booking a meeting" 
-      checkEligibilityUrl=""
-      applyUrl="/Contact"
+      checkEligibilityUrl="/Contact"
+      applyUrl=""
       apply=""
       overlaycolor="rgb(0 0 0 / 82%)"
     />
@@ -34,6 +33,7 @@ const Page = () => {
       subtitle=""
       description2="That’s where ticktock comes in. While banks offer a limited selection, mortgage brokers have access to a large network of Australia’s lenders, giving you choice beyond a single bank. We take the time to understand your needs and search through a wide range of loans to find your perfect fit. We’re by your side every step of the way, so you can feel confident we’re securing the right loan without the legwork."
       whyUseBtn="Why use a broker guide"
+      whyUseBtnUrl="/TipsandGuides/why-use-a-broker"
     />
 
     <AboutSupport 
@@ -47,14 +47,6 @@ const Page = () => {
       buttonTextUrl="/Contact"
     />
 
-
-    <LightningFastApproval
-      applyBtn="Apply Now" 
-      subheading="Looking for the Right Loan?" 
-      heading="Home. Business. Car." 
-      badge="Lightning Fast Approval" 
-      description="Get funded with the right loan solution tailored to your goals. No confusion. No hidden charges. Just smart financing."
-    />
    </>
   );
 };

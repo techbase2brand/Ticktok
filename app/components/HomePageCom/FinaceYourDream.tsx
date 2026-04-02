@@ -89,11 +89,10 @@ const FinaceYourDream = ({ title, getStartBtn }: FinaceYourDreamProps) => {
                             data-aos-duration="800" 
                             className='start-your-application mt-4 sm:mt-6 md:mt-[40px] flex justify-center md:justify-start px-0 sm:px-4'
                         >
-                            <a 
-                                href='/application' 
+                            <a  aria-label={getStartBtn} 
+                                href='/Contact' 
                                 title={getStartBtn} 
-                                className='bg-[#B4FE5D] flex items-center gap-[3px] w-full sm:w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300 justify-center text-sm sm:text-base'
-                            >
+                                className='bg-[#B4FE5D] flex items-center gap-[3px] w-full sm:w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300 justify-center text-sm sm:text-base'>
                                 {getStartBtn} {arrowSvg}
                             </a>
                         </div>
