@@ -50,12 +50,12 @@ const WeDoHardWork = ({
         <div className='bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-10 md:pt-[80px] px-4 sm:px-6 lg:px-8'>
             <div className='max-w-[1440px] mx-auto'>
                 <div className={`flex flex-col md:grid ${gridDirectionClass} gap-8 md:gap-12 lg:gap-20 items-center`}>
-                    
-                    {/* Content - Show only if there's any text content */}
-                    {(hasContent(title) || hasContent(description) || hasContent(subtitle) || hasContent(description2)) && (
-                        <div className={`content w-full ${flexReverse ? 'md:order-1' : 'md:order-2'}`}>
-                           
 
+
+                        
+                    {/* Content - Show only if there's any text content */}
+                    {(hasContent(title) || hasContent(description) || hasContent(badeTitle) || hasContent(subtitle) || hasContent(description2)) && (
+                        <div className={`content w-full ${flexReverse ? 'md:order-1' : 'md:order-2'}`}>
                             {hasContent(badeTitle) && (
                                 <p className='flex items-center justify-start md:justify-start gap-[10px] text-[#B5FF5F] bg-[#384329] text-xs sm:text-sm font-bold mb-4 md:mb-2 w-fit  md:mx-0 border border-[#B5FF5F]/20 py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl shadow-[0_4px_15px_rgba(181,255,95,0.15)]'>
                                     {badeTitle}

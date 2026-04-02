@@ -32,6 +32,7 @@ const Page = () => {
           subtitle="And we help with the whole process."
           description2="We don’t stop at just finding the right loan. We help with the whole process. That includes completing the paperwork, managing the application, and following it through to approval. You’ll have clear guidance and support every step of the way, so things feel straightforward and under control."
           whyUseBtn=""
+          badeTitle=""
         />
         <SupportForEvery
           title= "What types of finance can Lending Boys SA help you with?"
