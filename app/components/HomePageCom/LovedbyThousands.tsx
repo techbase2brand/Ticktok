@@ -25,7 +25,7 @@ const LovedbyThousands = ({ title, description }: LovedbyThousandsProps) => {
             )),
             content:"Got my loan approved in literally 8 minutes! The process was super smooth and transparent. No hidden charges, just straight-up honest service. Best fintech experience ever!",
             name:"John Doe",
-            location:"New York, Australia",   
+            location:" Australia",   
         }
     ];
 
