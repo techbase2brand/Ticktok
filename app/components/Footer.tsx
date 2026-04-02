@@ -177,17 +177,17 @@ const Footer = ({ copyRight }: FooterProps) => {
 
                         {/* Email Icon */}
                         <Link
-                            href="#"
+                            href="mailto:sim@ticktockloans.com.au"
                             title="Email"
                             aria-label="Email"
+                            target='_blank'
                             className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
                             <svg
                                 width={20}
                                 height={20}
                                 viewBox="0 0 24 24"
                                 fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M19.7289 3.94629H3.94601C2.85642 3.94629 1.97314 4.82957 1.97314 5.91915V17.7563C1.97314 18.8459 2.85642 19.7292 3.94601 19.7292H19.7289C20.8185 19.7292 21.7018 18.8459 21.7018 17.7563V5.91915C21.7018 4.82957 20.8185 3.94629 19.7289 3.94629Z"
                                     stroke="white"
@@ -329,8 +329,8 @@ const Footer = ({ copyRight }: FooterProps) => {
                                 <path d="M19.7289 3.94629H3.94601C2.85642 3.94629 1.97314 4.82957 1.97314 5.91915V17.7563C1.97314 18.8459 2.85642 19.7292 3.94601 19.7292H19.7289C20.8185 19.7292 21.7018 18.8459 21.7018 17.7563V5.91915C21.7018 4.82957 20.8185 3.94629 19.7289 3.94629Z" stroke="#B5FF5F" strokeWidth="1.97286" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M21.7018 6.90576L12.8535 12.5284C12.5489 12.7192 12.1968 12.8204 11.8374 12.8204C11.4781 12.8204 11.126 12.7192 10.8214 12.5284L1.97314 6.90576" stroke="#B5FF5F" strokeWidth="1.97286" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <a href="mailto:helloralo@gmail.com" className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] transition-colors duration-300">
-                                helloralo@gmail.com
+                            <a href="mailto:sim@ticktockloans.com.au" className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] transition-colors duration-300">
+                                sim@ticktockloans.com.au
                             </a>
                         </div>
 
@@ -340,19 +340,19 @@ const Footer = ({ copyRight }: FooterProps) => {
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <a href="tel:+48743260239" className="text-[#e9e9e9e3] font-poppins text-[12px] md:text-[13px] hover:text-[#B5FF5F] transition-colors duration-300">
-                                + 48 74326 02396
+                                + 0433 249 678
                             </a>
                         </div>
 
                         {/* Hours */}
-                        <div className='flex items-center gap-3'>
+                        {/* <div className='flex items-center gap-3'>
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
                                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <span className="text-[#e9e9e9e3] text-[12px] md:text-[13px]">
                                 Mon to Fri 12:00 - 18:00
                             </span>
-                        </div>
+                        </div> */}
 
                         {/* Address */}
                         <div className='flex items-start gap-3'>
