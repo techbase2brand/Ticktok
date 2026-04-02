@@ -32,6 +32,7 @@ const Page = () => {
         description2=""
         badeTitle=""
         whyUseBtn="Secure Your First Home"
+         whyUseBtnUrl=""
       />
 
       <WeDoHardWork 
@@ -43,6 +44,7 @@ const Page = () => {
         description2=""
         badeTitle=""
         whyUseBtn="Get Trusted Advice"
+         whyUseBtnUrl=""
       />
 
       <WeDoHardWork 
@@ -54,6 +56,7 @@ const Page = () => {
         subtitle=""
         description2=""
         whyUseBtn="Reassess Your Home Loan"
+         whyUseBtnUrl=""
       />
 
       <WeDoHardWork 
@@ -65,6 +68,7 @@ const Page = () => {
         description2=""
         badeTitle=""
         whyUseBtn="Explore Your Options"
+         whyUseBtnUrl=""
       />
 
 

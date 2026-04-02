@@ -22,6 +22,7 @@ const Page = () => {
         subtitle=""
         description2="With commercial property, it may be possible for your SMSF to purchase a property that will be occupied by your business, as long as the rent is at market rates. Essentially this type of finance is a Term Loan with features such as flexible terms up to 30 years, the choice of principal and interest or interest only repayment, and the options of fixed or variable rates, or a combination of both. There are many rules and regulations governing your SMSF so it’s important you get the advice of a financial professional, like your accountant or financial planner to assist you to make the right choices."
         whyUseBtn=""
+        whyUseBtnUrl=""
       />
       <InnerNeedHomeLoan
         heading ="We are here to help."

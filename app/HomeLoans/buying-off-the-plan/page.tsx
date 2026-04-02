@@ -51,6 +51,7 @@ const Page = () => {
         description2=""
         whyUseBtn=""
         badeTitle=""
+        whyUseBtnUrl=""
       />
       <WeDoHardWork
         flexReverse={true}
@@ -70,6 +71,7 @@ const Page = () => {
         subtitle=""
         description2=""
         whyUseBtn=""
+        whyUseBtnUrl=""
         badeTitle=""
       />
       <Accordion

@@ -22,6 +22,7 @@ const Page = () => {
         subtitle=""
         description2="Business purposes includes buying a trading business or franchise, a new business start-up or the expansion of an existing business. The types of commercial property purchased encompass a very broad spectrum. The types of real estate include established, vacant or to be developed land; owner occupied or investment; and zoned from retail, industrial, office, warehouse, and factory units, to specialised property such as aged care facilities, or hotels and taverns."
         whyUseBtn=""
+        whyUseBtnUrl=""
       />
       <InnerNeedHomeLoan
         heading ="We are here to help."

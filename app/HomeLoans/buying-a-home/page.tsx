@@ -100,6 +100,7 @@ const Page = () => {
           At anytime on your home buying journey, feel free to give us a call or email us and we’ll do everything we can to make it easier for you."
         whyUseBtn=""
         badeTitle=""
+        whyUseBtnUrl=""
      />
      <Sixtipsforhomebuyers 
         title="Six tips for home buyers"
