@@ -23,7 +23,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                     <div className="logo">
                         <Link href="/" title="logo" className="inline-block" aria-label="Logo">
                             <Image
-                                className=""
+                             
                                 src="/logo.svg"
                                 alt="Logo"
                                 width={220}
