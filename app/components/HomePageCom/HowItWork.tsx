@@ -122,7 +122,7 @@ const HowItWork = ({ title, description, applicationBtn }: HowItWorkProps) => {
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="800" className='startr-your-application mt-[60px] flex justify-center'>
-                    <Link  aria-label={applicationBtn} href='/Contact' title={applicationBtn} className='bg-[#B4FE5D] flex items-center gap-[3px] w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300'>
+                    <Link  aria-label={applicationBtn} href='/Contact' title={applicationBtn} className='bg-[#B4FE5D] flex items-center text-sm md:text-[16px] gap-[3px] w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300'>
                         {applicationBtn} {arrowSvg}
                     </Link>
                 </div>

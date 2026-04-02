@@ -60,7 +60,7 @@ const MeetingYourBroker = ({
               {buttonText && (
                 <Link
                   href={buttonLink || "/contact-us"}
-                  className='cursor-pointer bg-transparent border border-[#B5FF5F] text-[#B5FF5F] w-fit mx-auto md:mx-0  mt-8  px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-semibold hover:bg-[#B5FF5F] hover:text-[#154617] hover:border-[#B5FF5F] transition-all duration-300 flex items-center gap-2 text-sm'>
+                  className='cursor-pointer bg-[#B4FE5D]  hover:bg-[#fff] hover:text-[#154617] border border-[#B5FF5F] text-[#154617] w-fit mx-auto md:mx-0  mt-8  px-5 py-2.5 sm:px-6 sm:py-3 rounded-full font-semibold  hover:border-[#B5FF5F] transition-all duration-300 flex items-center gap-2 text-sm'>
                   {buttonText}
                   {buttonIcon && <span>{buttonIcon}</span>}
                 </Link>

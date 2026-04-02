@@ -359,7 +359,9 @@ const Footer = ({ copyRight }: FooterProps) => {
                                 <path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <span className="text-[#e9e9e9e3] text-[12px] md:text-[13px]">
-                                Hilton, TY56/90 NY, USA
+                               <a target='_blank' href='https://www.google.com/maps/place/136+Green+Valley+Dr,+Greenwith+SA+5125,+Australia/@-34.7715352,138.7006255,17z/data=!3m1!4b1!4m6!3m5!1s0x6ab0b2de72200d53:0x23b071f82d1df8b0!8m2!3d-34.7715352!4d138.7006255!16s%2Fg%2F11c4txjgt6?entry=ttu&g_ep=EgoyMDI2MDMzMC4wIKXMDSoASAFQAw%3D%3D' title=' 136 GreenValley Drive Greenwith, SA, 5125' aria-label=' 136 GreenValley Drive Greenwith, SA, 5125'>
+                                    136 GreenValley Drive Greenwith, SA, 5125
+                               </a>
                             </span>
                         </div>
                     </div>
