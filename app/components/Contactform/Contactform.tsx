@@ -262,19 +262,15 @@ const ContactPage = ({title,subheading, description}: ContactPageProps) => {
               />
             </div>
             <div className='mb-7'>
-              {subheading && <h3 className='text-white text-[16px] md:text-[20px] lg:text-[20px] font-bold'>{subheading}</h3>}
-              {description && <p className='text-white text-[12px] py-2'>{description}</p>}
+              {subheading && <h3 className='text-white text-[16px] md:text-[20px] lg:text-[20px] font-bold text-center md:text-left'>{subheading}</h3>}
+              {description && <p className='text-white text-[12px] text-center md:text-left py-2'>{description}</p>}
             </div>
             {/* Submit Button */}
-            <button
-              type="submit"
-              disabled={isLoading}
-              className={`py-3 px-12 font-semibold cursor-pointer rounded-3xl transition-all duration-200 ${
+            <button type="submit" disabled={isLoading} className={`py-3 px-12 font-semibold cursor-pointer rounded-3xl transition-all w-fit flex duration-200 mx-auto md:mx-0 ${
                 isLoading
                   ? 'bg-lime-600 opacity-60 cursor-not-allowed text-white'
                   : 'bg-[#b4fe5d] text-[#154617] hover:bg-white active:scale-95'
-              }`}
-            >
+              }`}>
               {isLoading ? 'Sending...' : 'Submit'}
             </button>
           </form>

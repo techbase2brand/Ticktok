@@ -21,7 +21,7 @@ const Page = () => {
           checkEligibilityUrl=""
           apply=""
           applyUrl="/Contact"
-          overlaycolor="rgb(0 0 0 / 82%)"
+          overlaycolor="rgb(0 0 0 / 69%)"
         />
         <Contactform 
           title="Too busy to call? Send us a message instead."
