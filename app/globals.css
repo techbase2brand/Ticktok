@@ -5,7 +5,9 @@
   --foreground: #171717;
 }
 
-
+body.active-drawer .footer-floating-button{
+    display: none;
+}
 
 body {
     background: var(--background);

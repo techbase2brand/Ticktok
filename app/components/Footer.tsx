@@ -56,7 +56,7 @@ const FloatingFooterSocial = memo(() => {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end gap-3 footer-floating-button">
       {/* Action Menu Items */}
       <div
         className={`flex flex-col gap-2 transition-all duration-300 ease-out transform origin-bottom-right ${
