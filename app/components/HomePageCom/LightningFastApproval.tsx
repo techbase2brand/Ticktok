@@ -83,7 +83,7 @@ const LightningFastApproval = ({
                     <Link 
                         href='/Contact' 
                         title={applyBtn} 
-                        className='bg-[#B4FE5D] flex items-center gap-[3px] w-full sm:w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300 justify-center text-sm sm:text-base'
+                        className='bg-[#B4FE5D] flex items-center gap-[3px] w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300 justify-center text-sm sm:text-base'
                     >
                         {applyBtn} {arrowSvg}
                     </Link>

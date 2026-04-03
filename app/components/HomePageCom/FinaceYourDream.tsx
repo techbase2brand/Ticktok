@@ -71,11 +71,10 @@ const FinaceYourDream = ({ title, getStartBtn }: FinaceYourDreamProps) => {
                         <ol 
                             data-aos="fade-up" 
                             data-aos-duration="500" 
-                            className='list-data ml-4 sm:ml-[17px] grid gap-3 md:gap-[10px] my-4 md:my-[20px]'
-                        >
+                            className='list-data ml-4 sm:ml-[17px] grid gap-3 md:gap-[10px] my-4 md:my-[20px]'>
                             {finaceContent.map((content, index) => (
                                 <li 
-                                    className='text-[#bebaba] marker:text-[#B5FF5F] text-sm sm:text-base md:text-lg' 
+                                    className='text-[#bebaba] list-disc marker:text-[#B5FF5F] text-sm sm:text-base md:text-lg' 
                                     key={index}
                                 >
                                     {content.title}
@@ -87,12 +86,11 @@ const FinaceYourDream = ({ title, getStartBtn }: FinaceYourDreamProps) => {
                         <div 
                             data-aos="fade-up" 
                             data-aos-duration="800" 
-                            className='start-your-application mt-4 sm:mt-6 md:mt-[40px] flex justify-center md:justify-start px-0 sm:px-4'
-                        >
+                            className='start-your-application mt-7 sm:mt-7 md:mt-[40px] flex justify-center md:justify-start px-0 sm:px-4'>
                             <a  aria-label={getStartBtn} 
                                 href='/Contact' 
                                 title={getStartBtn} 
-                                className='bg-[#B4FE5D] flex items-center gap-[3px] w-full sm:w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300 justify-center text-sm sm:text-base'>
+                                className='bg-[#B4FE5D] flex items-center gap-[3px]  w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300 justify-center text-sm sm:text-base'>
                                 {getStartBtn} {arrowSvg}
                             </a>
                         </div>
