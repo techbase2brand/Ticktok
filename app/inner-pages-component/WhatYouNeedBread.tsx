@@ -8,7 +8,7 @@ const WhatYouNeedBread = ({ title }: WhatYouNeedBreadProps) => {
     if (!title) return null;
 
     return (
-        <div className='bg-[#0D2611] py-10'>
+        <div className='bg-gradient-to-r from-[#1c290e] to-[#0D2611] py-10'>
             <div className='max-w-[1440px] mx-auto'>
                 {title && (<h2 className='text-white text-center text-4xl md:text-[40px] font-bold pb-[15px]'>{title.split(' ').map((word, index) => (
                     <span

@@ -3,9 +3,20 @@ import "./globals.css";
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LightningFastApproval from "./components/HomePageCom/LightningFastApproval";
+import { Paytone_One, Inter } from "next/font/google";
+const headingFont = Paytone_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-heading",
+});
+
+const bodyFont = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+});
 
 export const metadata: Metadata = {
-  title: "TickTock Loans", // Tumhari website ka naam
+  title: "TickTock Loans", 
   description: "Your trusted loan partner",
   icons: {
     icon: [
@@ -50,8 +61,9 @@ export default function RootLayout({
               href="/fonts/FONTSPRINGDEMO-BalginRegular.woff2"
               crossOrigin="anonymous"
               aria-label="fonts"/>
+              
       </head>
-      <body className="">
+      <body className={`${headingFont.variable} ${bodyFont.variable}`}>
         <Header />
           <main>
             {children}

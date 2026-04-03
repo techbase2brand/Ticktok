@@ -10,10 +10,12 @@
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family:Inter;
+    font-family: var(--font-body);
 }
+
 h1,h2,h3{
-    font-family: 'FONTSPRING DEMO - Balgin';
+     font-family: var(--font-heading);
+     font-weight:500;
 }
 
 @font-face {

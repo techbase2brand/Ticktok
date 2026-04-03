@@ -19,14 +19,14 @@ const WhatNeedSteps = ({ items }: WhatNeedStepsProps) => {
             <div key={step.id} className='cursor-pointer p-6 rounded-2xl border border-[#9EF01A]/20 hover:border-[#B4FE5D]/40 transition-all duration-300 bg-gradient-to-b from-transparent to-[#9EF01A]/9 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#B4FE5D]/10'>
                 {/* Badge */}
                 {step.badge && (
-                <h2 className='text-[#B5FF5F] text-2xl sm:text-3xl font-semibold mb-4 text-center md:text-left'>
+                <p className='text-[#B5FF5F] text-2xl sm:text-2xl font-semibold mb-0 text-center md:text-left'>
                     {step.badge}
-                </h2>
+                </p>
                 )}
 
                 {/* Title */}
                 {step.title && (
-                <h3 className='text-white text-xl sm:text-2xl font-regular mb-4 text-center md:text-left mt-2'>
+                <h3 className='text-white text-xl sm:text-2xl font-regular mb-3 text-center md:text-left mt-1'>
                     {step.title}
                 </h3>
                 )}
