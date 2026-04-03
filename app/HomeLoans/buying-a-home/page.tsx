@@ -1,8 +1,12 @@
+"use client";
 import { memo } from 'react';
+import dynamic from "next/dynamic";
+
 import Hero from '../../inner-pages-component/Hero';
-import  NeedHomeLoan from '../../components/HomeLoansCom/NeedHomeLoan';
-import  WeDoHardWork from '../../components/HomeLoansCom/WeDoHardWork';
-import Sixtipsforhomebuyers from './Sixtipsforhomebuyers';
+
+const NeedHomeLoan = dynamic(() => import("../../components/HomeLoansCom/NeedHomeLoan"));
+const WeDoHardWork = dynamic(() => import("../../components/HomeLoansCom/WeDoHardWork"));
+const Sixtipsforhomebuyers = dynamic(() => import("./Sixtipsforhomebuyers"));
 
 const Page = () => {
       const storeAboutSupport = [

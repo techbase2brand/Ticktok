@@ -1,9 +1,11 @@
+"use client";
 import { memo } from 'react';
-import Hero from '../../inner-pages-component/Hero';
-import  NeedHomeLoan from '../../components/HomeLoansCom/NeedHomeLoan';
-import  WeDoHardWork from '../../components/HomeLoansCom/WeDoHardWork'
-import  Accordion from '../../inner-pages-component/Accordion'
-import  DownloadGuids from '../../inner-pages-component/DownloadGuids'
+import dynamic from "next/dynamic";
+const Hero = dynamic(() => import('../../inner-pages-component/Hero'));
+const NeedHomeLoan = dynamic(() => import('../../components/HomeLoansCom/NeedHomeLoan'));
+const WeDoHardWork = dynamic(() => import('../../components/HomeLoansCom/WeDoHardWork'));
+const Accordion = dynamic(() => import('../../inner-pages-component/Accordion'));
+const DownloadGuids = dynamic(() => import('../../inner-pages-component/DownloadGuids'));
 const Page = () => {
     const AccordionData =[
         {   

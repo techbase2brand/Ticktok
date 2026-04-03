@@ -1,10 +1,13 @@
-import Banner from '@/app/inner-pages-component/banner';
-import Disclaimer from '@/app/inner-pages-component/Disclaimer';
-import InnerNeedHomeLoan from '@/app/inner-pages-component/InnerNeedHomeLoan';
-import RichText from '@/app/inner-pages-component/RichText';
-import TopTips from '@/app/inner-pages-component/top-tips';
-import WhatAssets from '@/app/inner-pages-component/WhatAssets';
+"use client";
+import dynamic from "next/dynamic";
 
+// Dynamic imports with SSR enabled (SEO friendly)
+const Banner = dynamic(() => import('@/app/inner-pages-component/banner'));
+const Disclaimer = dynamic(() => import('@/app/inner-pages-component/Disclaimer'));
+const InnerNeedHomeLoan = dynamic(() => import('@/app/inner-pages-component/InnerNeedHomeLoan'));
+const RichText = dynamic(() => import('@/app/inner-pages-component/RichText'));
+const TopTips = dynamic(() => import('@/app/inner-pages-component/top-tips'));
+const WhatAssets = dynamic(() => import('@/app/inner-pages-component/WhatAssets'));
 
 import { memo } from 'react';
 

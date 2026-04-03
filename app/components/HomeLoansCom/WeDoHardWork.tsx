@@ -152,6 +152,7 @@ const WeDoHardWork = ({
                                 height={500}
                                 className='w-full h-auto max-h-[800px] rounded-2xl md:rounded-3xl'
                                 priority
+                                quality={75}
                             />
                         </div>
                     )}

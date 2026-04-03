@@ -1,8 +1,12 @@
+"use client";
 import { memo } from 'react';
-import Banner from '@/app/inner-pages-component/banner';
-import MeetingYourBroker from '@/app/inner-pages-component/MeetingYourBroker';
-import Accordion from '@/app/inner-pages-component/Accordion';
-import InnerNeedHomeLoan from '@/app/inner-pages-component/InnerNeedHomeLoan';
+import dynamic from "next/dynamic";
+
+// Dynamic imports with SSR enabled (SEO friendly)
+const Banner = dynamic(() => import('@/app/inner-pages-component/banner'));
+const MeetingYourBroker = dynamic(() => import('@/app/inner-pages-component/MeetingYourBroker'));
+const Accordion = dynamic(() => import('@/app/inner-pages-component/Accordion'));
+const InnerNeedHomeLoan = dynamic(() => import('@/app/inner-pages-component/InnerNeedHomeLoan'));
 
 const Page = () => {
   const AccordionData =[

@@ -132,6 +132,7 @@ export default function Header() {
               alt="Logo"
               width={200}
               height={30}
+              quality={75}
               className="w-[200px] sm:w-[200px] md:w-[300px] h-auto"
               priority 
             />

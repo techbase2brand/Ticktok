@@ -1,9 +1,13 @@
-import NeedHomeLoan from '@/app/components/HomeLoansCom/NeedHomeLoan';
-import WeDoHardWork from '@/app/components/HomeLoansCom/WeDoHardWork';
-import Accordion from '@/app/inner-pages-component/Accordion';
-import DownloadGuids from '@/app/inner-pages-component/DownloadGuids';
-import Hero from '@/app/inner-pages-component/Hero';
+"use client";
+import dynamic from "next/dynamic";
 import { memo } from 'react';
+// All components dynamic with SSR (SEO friendly)
+const NeedHomeLoan = dynamic(() => import('@/app/components/HomeLoansCom/NeedHomeLoan'));
+const WeDoHardWork = dynamic(() => import('@/app/components/HomeLoansCom/WeDoHardWork'));
+const Accordion = dynamic(() => import('@/app/inner-pages-component/Accordion'));
+const DownloadGuids = dynamic(() => import('@/app/inner-pages-component/DownloadGuids'));
+const Hero = dynamic(() => import('@/app/inner-pages-component/Hero'));
+
 
 const Page = () => {
     const AccordionData =[

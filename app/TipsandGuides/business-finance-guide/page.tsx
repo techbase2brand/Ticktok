@@ -1,6 +1,10 @@
-import Banner from '@/app/inner-pages-component/banner';
-import HumanverificationForm from '@/app/inner-pages-component/HumanverificationForm';
+"use client";
+import dynamic from "next/dynamic";
 import { memo } from 'react';
+// Dynamic imports with SSR enabled (SEO friendly)
+const Banner = dynamic(() => import('@/app/inner-pages-component/banner'));
+const HumanverificationForm = dynamic(() => import('@/app/inner-pages-component/HumanverificationForm'));
+
 
 const Page = () => {
   return (

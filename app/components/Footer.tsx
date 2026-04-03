@@ -8,16 +8,124 @@ const poppins = Inter({ subsets: ["latin"], weight: "400" });
 type FooterProps = {
     copyRight: string;
 };
+
+// Floating Footer Social Component (Internal)
+const FloatingFooterSocial = memo(() => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const actions = [
+    {
+      label: 'Book a meeting',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 4h-1V3c0-.55-.45-1-1-1s-1 .45-1 1v1H8V3c0-.55-.45-1-1-1s-1 .45-1 1v1H5c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V9c0-2.76-2.24-5-5-5zm0 19H5V9h14v14zm-5-10h-4v4h4v-4z" 
+            fill="currentColor" />
+        </svg>
+      ),
+      href: 'https://calendly.com/your-link', // 👈 UPDATE THIS
+      external: true, // Open in new tab
+    },
+    {
+      label: 'Request a call',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" 
+            fill="currentColor" />
+        </svg>
+      ),
+      href: '/Contact', // 👈 UPDATE THIS
+    },
+    {
+      label: '+0433 249 678',
+      icon: (
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" 
+            fill="currentColor" />
+        </svg>
+      ),
+      href: 'tel:+0433249678', // 👈 UPDATE THIS
+    },
+  ];
+
+  const handleActionClick = (href: string, external?: boolean) => {
+    if (external) {
+      window.open(href, '_blank');
+    } else {
+      window.location.href = href;
+    }
+  };
+
+  return (
+    <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end gap-3">
+      {/* Action Menu Items */}
+      <div
+        className={`flex flex-col gap-2 transition-all duration-300 ease-out transform origin-bottom-right ${
+          isOpen
+            ? 'opacity-100 scale-100 translate-y-0'
+            : 'opacity-0 scale-75 translate-y-4 pointer-events-none'
+        }`}
+      >
+        {actions.map((action, index) => (
+          <button
+            key={action.label}
+            onClick={() => handleActionClick(action.href, action.external)}
+            className={`group cursor-pointer relative flex items-center gap-3 px-6 py-4 rounded-full bg-[#013003] border-2 border-[#B5FF5F] text-[#B5FF5F] font-medium shadow-lg hover:shadow-xl hover:bg-[#B5FF5F] hover:text-[#013003] transition-all duration-200 hover:scale-105 whitespace-nowrap text-sm md:text-base transform ${
+              isOpen
+                ? 'translate-x-0 opacity-100'
+                : 'translate-x-4 opacity-0'
+            }`}
+            style={{
+              transitionDelay: isOpen ? `${index * 60}ms` : '0ms',
+            }}
+          >
+            <span className="group-hover:text-[#013003] transition-colors duration-200">
+              {action.icon}
+            </span>
+            {action.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Main Speak to Us Button */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="group relative flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-[#B5FF5F] text-[#013003] font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 w-max cursor-pointer"
+        aria-expanded={isOpen}
+        aria-label="Open contact menu">
+        {/* Glow effect on hover */}
+        <div className="absolute inset-0 rounded-full bg-[#B5FF5F] opacity-0 group-hover:opacity-30 blur-lg transition-opacity duration-300" />
+
+        {/* Icon and text */}
+        <span className="relative flex items-center gap-2">
+          <span className="text-sm md:text-base">Speak to us</span>
+        </span>
+
+        {/* Chevron indicator */}
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className={`transition-transform duration-300 ml-1 ${isOpen ? 'rotate-0' : 'rotate-180'}`}>
+          <path d="M7 10l5 5 5-5z" fill="currentColor" />
+        </svg>
+
+        {/* Pulse animation when closed */}
+        {!isOpen && (
+          <div className="absolute inset-0 rounded-full border-2 border-[#013003] animate-pulse opacity-40" />
+        )}
+      </button>
+    </div>
+  );
+});
+
+FloatingFooterSocial.displayName = 'FloatingFooterSocial';
+
+// Main Footer Component
 const Footer = ({ copyRight }: FooterProps) => {
     const [openAccordion, setOpenAccordion] = useState<string | null>(null);
 
-    // Handle accordion toggle - closes others when opening one
     const toggleAccordion = (accordion: string) => {
         setOpenAccordion(openAccordion === accordion ? null : accordion);
     };
 
     return (
-        <footer className='bg-gradient-to-r from-[#013003] to-[#013811] pt-[40px] px-4 md:px-6 lg:px-8'>
+        <footer className='bg-gradient-to-r from-[#013003] to-[#013811] pt-[40px] px-4 md:px-6 lg:px-8 relative'>
             <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row items-start justify-between  md:gap-8">
                 <div className='logo-content w-full md:w-auto mb-5'>
                     <div className="logo">
@@ -172,13 +280,6 @@ const Footer = ({ copyRight }: FooterProps) => {
                                     strokeLinejoin="round"
                                     className="group-hover:stroke-black transition-all duration-300"
                                 />
-                            </svg>
-                        </Link>
-
-                        {/* whatsapp Icon */}
-                        <Link  className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300" href="   https://wa.me/61433249678" title='whatsaap'  rel="noopener noreferrer" target="_blank" aria-label='whatsaap'>
-                            <svg fill="#417703" stroke='#417703' width={20} height={20} viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" > <title>whatsapp</title>
-                                <path   className="group-hover:stroke-black transition-all duration-300" d="M26.576 5.363c-2.69-2.69-6.406-4.354-10.511-4.354-8.209 0-14.865 6.655-14.865 14.865 0 2.732 0.737 5.291 2.022 7.491l-0.038-0.070-2.109 7.702 7.879-2.067c2.051 1.139 4.498 1.809 7.102 1.809h0.006c8.209-0.003 14.862-6.659 14.862-14.868 0-4.103-1.662-7.817-4.349-10.507l0 0zM16.062 28.228h-0.005c-0 0-0.001 0-0.001 0-2.319 0-4.489-0.64-6.342-1.753l0.056 0.031-0.451-0.267-4.675 1.227 1.247-4.559-0.294-0.467c-1.185-1.862-1.889-4.131-1.889-6.565 0-6.822 5.531-12.353 12.353-12.353s12.353 5.531 12.353 12.353c0 6.822-5.53 12.353-12.353 12.353h-0zM22.838 18.977c-0.371-0.186-2.197-1.083-2.537-1.208-0.341-0.124-0.589-0.185-0.837 0.187-0.246 0.371-0.958 1.207-1.175 1.455-0.216 0.249-0.434 0.279-0.805 0.094-1.15-0.466-2.138-1.087-2.997-1.852l0.010 0.009c-0.799-0.74-1.484-1.587-2.037-2.521l-0.028-0.052c-0.216-0.371-0.023-0.572 0.162-0.757 0.167-0.166 0.372-0.434 0.557-0.65 0.146-0.179 0.271-0.384 0.366-0.604l0.006-0.017c0.043-0.087 0.068-0.188 0.068-0.296 0-0.131-0.037-0.253-0.101-0.357l0.002 0.003c-0.094-0.186-0.836-2.014-1.145-2.758-0.302-0.724-0.609-0.625-0.836-0.637-0.216-0.010-0.464-0.012-0.712-0.012-0.395 0.010-0.746 0.188-0.988 0.463l-0.001 0.002c-0.802 0.761-1.3 1.834-1.3 3.023 0 0.026 0 0.053 0.001 0.079l-0-0.004c0.131 1.467 0.681 2.784 1.527 3.857l-0.012-0.015c1.604 2.379 3.742 4.282 6.251 5.564l0.094 0.043c0.548 0.248 1.25 0.513 1.968 0.74l0.149 0.041c0.442 0.14 0.951 0.221 1.479 0.221 0.303 0 0.601-0.027 0.889-0.078l-0.031 0.004c1.069-0.223 1.956-0.868 2.497-1.749l0.009-0.017c0.165-0.366 0.261-0.793 0.261-1.242 0-0.185-0.016-0.366-0.047-0.542l0.003 0.019c-0.092-0.155-0.34-0.247-0.712-0.434z" />
                             </svg>
                         </Link>
 
@@ -345,20 +446,10 @@ const Footer = ({ copyRight }: FooterProps) => {
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <a href="tel:+48743260239" className="text-[#e9e9e9e3] font-poppins text-[12px] md:text-[13px] hover:text-[#B5FF5F] transition-colors duration-300">
+                            <a href="tel:+61433249678" className="text-[#e9e9e9e3] font-poppins text-[12px] md:text-[13px] hover:text-[#B5FF5F] transition-colors duration-300">
                                 + 0433 249 678
                             </a>
                         </div>
-
-                        {/* Hours */}
-                        {/* <div className='flex items-center gap-3'>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
-                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                            </svg>
-                            <span className="text-[#e9e9e9e3] text-[12px] md:text-[13px]">
-                                Mon to Fri 12:00 - 18:00
-                            </span>
-                        </div> */}
 
                         {/* Address */}
                         <div className='flex items-start gap-3'>
@@ -377,6 +468,9 @@ const Footer = ({ copyRight }: FooterProps) => {
             <div className="max-w-[1440px] mx-auto py-[20px] md:py-[25px] border-t border-[#816f6f40] text-center mt-[20px] md:mt-[50px]">
                 <p className="text-white text-left text-[10px] md:text-[12px] text-center w-full flex justify-center gap-2">{copyRight} <a href="https://base2brand.com" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-[#B5FF5F] transition-colors duration-300">Designed By Base2brand</a></p>
             </div>
+
+            {/* Floating Footer Social - Built-in Component */}
+            <FloatingFooterSocial />
         </footer>
     );
 };

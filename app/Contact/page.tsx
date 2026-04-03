@@ -2,8 +2,9 @@
 
 import { memo } from 'react';
 import dynamic from "next/dynamic";
-import Hero from "../components/HomePageCom/Hero";
-import Contactform from '../components/Contactform/Contactform';
+const Hero = dynamic(() => import("../components/HomePageCom/Hero"));
+const Contactform = dynamic(() => import("../components/Contactform/Contactform"));
+
 
 const Page = () => {
   return (

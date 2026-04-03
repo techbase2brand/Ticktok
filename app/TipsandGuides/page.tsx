@@ -1,6 +1,9 @@
+"use client";
 import { memo } from 'react';
-import Hero from '../components/HomePageCom/Hero';
 import dynamic from "next/dynamic";
+
+// All components dynamic with SSR enabled (SEO friendly)
+const Hero = dynamic(() => import('../components/HomePageCom/Hero'));
 const NeedHomeLoan = dynamic(() => import('../components/HomeLoansCom/NeedHomeLoan'));
 const WeDoHardWork = dynamic(() => import('../components/HomeLoansCom/WeDoHardWork'));
 

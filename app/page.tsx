@@ -30,7 +30,7 @@ export default function Home() {
     <HowItWork 
       title="How It Works" 
       description="Get funded in 3 simple steps" 
-      applicationBtn="Start Your Application" 
+      applicationBtn="Contact Us" 
     />
     <FinaceYourDream 
       title="Finance Your Dreams with the Right Loan" 

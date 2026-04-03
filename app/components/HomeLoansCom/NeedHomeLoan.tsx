@@ -77,6 +77,8 @@ const NeedHomeLoan = ({
               alt="Home Loan"
               width={1000}
               height={1000}
+              quality={75}
+              priority
               className='object-contain drop-shadow-2xl w-full max-w-[320px] sm:max-w-[400px] md:max-w-full'
             />
           </div>

@@ -40,13 +40,13 @@ const LightningFastApproval = ({
         <div className='bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] py-12 md:py-[80px] px-4 sm:px-6 lg:px-8'>
             <div className='max-w-[1440px] mx-auto'>
                 {/* Badge */}
-                <h5 
+                <h3
                     data-aos="fade-up" 
                     data-aos-duration="400" 
                     className='flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular mb-4 md:mb-2 w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl'
                 >
                     {badgeSvg} {badge}
-                </h5>
+                </h3>
                 
                 {/* Subheading - Responsive */}
                 <h3 

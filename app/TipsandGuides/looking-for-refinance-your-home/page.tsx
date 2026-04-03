@@ -1,5 +1,7 @@
-import Banner from '@/app/inner-pages-component/banner';
-import HumanverificationForm from '@/app/inner-pages-component/HumanverificationForm';
+"use client";
+import dynamic from "next/dynamic";
+const Banner = dynamic( () => import("@/app/inner-pages-component/banner"));
+const HumanverificationForm = dynamic( () => import('@/app/inner-pages-component/HumanverificationForm'));
 import { memo } from 'react';
 
 const Page = () => {

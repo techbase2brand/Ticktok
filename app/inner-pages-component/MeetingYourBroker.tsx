@@ -71,7 +71,7 @@ const MeetingYourBroker = ({
 
           {imageUrl && (
             <div className='image order-2 md:order-1'>
-              <Image src={imageUrl} alt="banner" className="max-w-full w-full" width={1000} height={1000} />
+              <Image src={imageUrl} alt="banner" priority   quality={75} className="max-w-full w-full" width={1000} height={1000} />
             </div>
           )}
 

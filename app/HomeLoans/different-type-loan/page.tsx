@@ -1,11 +1,13 @@
-import Hero from '@/app/inner-pages-component/Hero';
-import RichText from '@/app/inner-pages-component/RichText';
+"use client";
+import dynamic from "next/dynamic";
 import { memo } from 'react';
-import Sixtipsforhomebuyers from '../buying-a-home/Sixtipsforhomebuyers';
-import Feelingoverwhelmed from '@/app/inner-pages-component/Feelingoverwhelmed';
-import Disclaimer from '@/app/inner-pages-component/Disclaimer';
-import InnerNeedHomeLoan from '@/app/inner-pages-component/InnerNeedHomeLoan';
-
+// Dynamic imports with SSR enabled (SEO friendly)
+const Hero = dynamic(() => import('@/app/inner-pages-component/Hero'));
+const RichText = dynamic(() => import('@/app/inner-pages-component/RichText'));
+const Sixtipsforhomebuyers = dynamic(() => import('../buying-a-home/Sixtipsforhomebuyers'));
+const Feelingoverwhelmed = dynamic(() => import('@/app/inner-pages-component/Feelingoverwhelmed'));
+const Disclaimer = dynamic(() => import('@/app/inner-pages-component/Disclaimer'));
+const InnerNeedHomeLoan = dynamic(() => import('@/app/inner-pages-component/InnerNeedHomeLoan'));
 const Page = () => {
     const VariableRate = [
         {

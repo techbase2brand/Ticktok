@@ -1,8 +1,12 @@
-import WeDoHardWork from '@/app/components/HomeLoansCom/WeDoHardWork';
-import Banner from '@/app/inner-pages-component/banner';
-import Disclaimer from '@/app/inner-pages-component/Disclaimer';
-import InnerNeedHomeLoan from '@/app/inner-pages-component/InnerNeedHomeLoan';
+"use client";
+import dynamic from "next/dynamic";
 import { memo } from 'react';
+// Dynamic imports with SSR enabled (SEO friendly)
+const WeDoHardWork = dynamic(() => import('@/app/components/HomeLoansCom/WeDoHardWork'));
+const Banner = dynamic(() => import('@/app/inner-pages-component/banner'));
+const Disclaimer = dynamic(() => import('@/app/inner-pages-component/Disclaimer'));
+const InnerNeedHomeLoan = dynamic(() => import('@/app/inner-pages-component/InnerNeedHomeLoan'));
+
 
 const Page = () => {
   return (

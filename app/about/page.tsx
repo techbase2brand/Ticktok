@@ -1,3 +1,4 @@
+"use client";
 import { memo } from 'react';
 import dynamic from "next/dynamic";
 import Hero from '../components/HomePageCom/Hero';

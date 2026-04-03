@@ -1,9 +1,13 @@
-import Banner from '@/app/inner-pages-component/banner';
-import InnerNeedHomeLoan from '@/app/inner-pages-component/InnerNeedHomeLoan';
-import MeetingYourBroker from '@/app/inner-pages-component/MeetingYourBroker';
-import WhatNeedSteps from '@/app/inner-pages-component/WhatNeedSteps';
-import WhatYouNeedBread from '@/app/inner-pages-component/WhatYouNeedBread';
+"use client";
+import dynamic from "next/dynamic";
 import { memo } from 'react';
+// Dynamic imports with SSR enabled (SEO friendly)
+const Banner = dynamic(() => import('@/app/inner-pages-component/banner'));
+const InnerNeedHomeLoan = dynamic(() => import('@/app/inner-pages-component/InnerNeedHomeLoan'));
+const MeetingYourBroker = dynamic(() => import('@/app/inner-pages-component/MeetingYourBroker'));
+const WhatNeedSteps = dynamic(() => import('@/app/inner-pages-component/WhatNeedSteps'));
+const WhatYouNeedBread = dynamic(() => import('@/app/inner-pages-component/WhatYouNeedBread'));
+
 
 const Page = () => {
     const StepsData = [
