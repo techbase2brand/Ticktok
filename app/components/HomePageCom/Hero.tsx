@@ -68,7 +68,7 @@ const Hero = ({
         : {};
 
     return (
-       <div className='banner w-full relative min-h-[600px] max-h-[900px] sm:min-h-[650px] md:min-h-[700px] flex items-center pb-[30px] overflow-hidden'>
+       <div className='banner w-full relative min-h-auto max-h-[900px] sm:min-h-[650px] md:min-h-[700px] flex items-center pb-[30px] overflow-hidden'>
             {/* Video Background */}
             {videoUrl && (
                 <video 
@@ -153,19 +153,19 @@ const Hero = ({
                         
                         {(hasContent(apply) || hasContent(checkEligibility)) && (
                             <div data-aos="fade-up" data-aos-duration="800" 
-                                className='banner-button flex flex-col sm:flex-row justify-center md:justify-start gap-3 sm:gap-4 md:gap-[20px] mt-6 sm:mt-8 md:mt-[50px] px-4 sm:px-0'>
+                                className='banner-button flex sm:flex-row justify-center md:justify-start gap-2 sm:gap-4 md:gap-[20px] mt-6 sm:mt-8 md:mt-[50px] px-4 sm:px-0'>
                                 
                                 {hasContent(apply) && (
                                     <Link href={applyUrl} title='Apply Now' aria-label='Apply Now' 
-                                        className='cursor-pointer bg-[#B5FF5F] flex items-center justify-center gap-[10px] text-[#154617] px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold hover:bg-white transition-colors duration-300 text-sm sm:text-base w-fit mx-auto md:mx-0 shadow-[0_8px_20px_rgba(181,255,95,0.3)] hover:shadow-[0_8px_25px_rgba(181,255,95,0.5)]'>
+                                        className='cursor-pointer bg-[#B5FF5F] flex items-center justify-center gap-[10px] text-[#154617] px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold hover:bg-white transition-colors duration-300 text-sm sm:text-base md:w-fit mx-auto md:mx-0 shadow-[0_8px_20px_rgba(181,255,95,0.3)] hover:shadow-[0_8px_25px_rgba(181,255,95,0.5)]'>
                                         {apply} {arrowSvg}
                                     </Link>
                                 )}
                                 
                                 {hasContent(checkEligibility) && (
                                     <Link href={checkEligibilityUrl} title='Check Eligibility' aria-label='Check Eligibility' 
-                                        className='bg-[#B4FE5D] flex items-center gap-[3px] w-fit text-[#154617] font-bold py-3 px-6 rounded-full hover:bg-[#fff] hover:text-[#154617] transition-colors duration-300'>
-                                        {checkEligibility}
+                                        className='cursor-pointer bg-transparent flex items-center justify-center gap-[10px] text-white px-4 sm:px-6 py-2.5 sm:py-3 border border-white rounded-full font-bold hover:bg-[#B5FF5F] hover:text-[#154617] transition-colors duration-300 text-sm sm:text-base w-fit mx-auto md:mx-0 '>
+                                        {checkEligibility} {arrowSvg}
                                     </Link>
                                 )}
                             </div>

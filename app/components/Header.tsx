@@ -234,7 +234,7 @@ export default function Header() {
             title="Apply Now"
             aria-label="Apply Now"
           >
-            Apply Now
+           Speak  To Us
           </Link>
         </div>
 
@@ -347,7 +347,7 @@ export default function Header() {
           </div>
 
           {/* Social Icons with hover effects */}
-          <div className="social-icons flex flex-wrap gap-4 mt-6 pb-2 md:pb-0 absolute bottom-[20]">
+          <div className="social-icons flex flex-wrap gap-4 mt-6 pb-2 md:pb-0 ">
             {/* Facebook Icon */}
             <Link href="#" title="Facebook" aria-label="Facebook"
               className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">

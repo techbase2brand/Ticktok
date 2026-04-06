@@ -11,27 +11,27 @@ export default function Home() {
     <Hero 
      videoUrl="/0_Couple_Home_1920x1010.mp4"
       poster="/banner.webp" 
-      getImage="/loan-ammount.webp" 
-      subheading="Money in" 
-      heading="Minutes" 
+      getImage="" 
+      subheading="Mortgage Broker in" 
+      heading="Adelaide" 
       subheading2="" 
-      description="Fast. Secure. Instant Loans." 
-      badge="Instant Loan Approval" 
-      checkEligibility="" 
-      checkEligibilityUrl=""
-      apply="Apply Now"
+      description="Trusted and loved by Aussies!!" 
+      badge="Award Winning !!" 
+      checkEligibility="Contact Us" 
+      checkEligibilityUrl="/Contact"
+      apply="Speak  To Us"
       applyUrl="/Contact"
       overlaycolor="rgb(0 0 0 / 41%)"
     />
     <WhyTiktock 
       title="Why TickTock?"  
-      description="Everything you need, nothing you don't"
-    />
-    <HowItWork 
+      description=""
+      descriiption2="At TickTock Loans, we believe getting the right home loan shouldn't be complicated, stressful, or time consuming. We do the hard work so you don't have to."/>
+    {/* <HowItWork 
       title="How It Works" 
       description="Get funded in 3 simple steps" 
       applicationBtn="Contact Us" 
-    />
+    /> */}
     <FinaceYourDream 
       title="Finance Your Dreams with the Right Loan" 
       getStartBtn="Get Started Today"

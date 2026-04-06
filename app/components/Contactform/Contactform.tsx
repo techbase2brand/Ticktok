@@ -20,9 +20,7 @@ const ContactPage = ({title,subheading, description}: ContactPageProps) => {
     firstName: '',
     lastName: '',
     email: '',
-    confirmEmail: '',
     phone: '',
-    subject: '',
     message: '',
   });
 
@@ -63,22 +61,12 @@ const ContactPage = ({title,subheading, description}: ContactPageProps) => {
       setError('Please enter a valid email address');
       return false;
     }
-    if (!formData.confirmEmail.trim()) {
-      setError('Please confirm your email');
-      return false;
-    }
-    if (formData.email !== formData.confirmEmail) {
-      setError('Emails do not match');
-      return false;
-    }
+  
     if (!formData.phone.trim()) {
       setError('Phone number is required');
       return false;
     }
-    if (!formData.subject.trim()) {
-      setError('Subject is required');
-      return false;
-    }
+
     if (!formData.message.trim()) {
       setError('Message is required');
       return false;
@@ -183,7 +171,7 @@ const ContactPage = ({title,subheading, description}: ContactPageProps) => {
             </div>
 
             {/* Email and Confirm Email Row */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mb-6">
               <div>
                 <label htmlFor="email" className="block text-white text-sm font-medium mb-2">
                   Email
@@ -198,20 +186,7 @@ const ContactPage = ({title,subheading, description}: ContactPageProps) => {
                   className="w-full px-4 py-3 md:py-5 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
                 />
               </div>
-              <div>
-                <label htmlFor="confirmEmail" className="block text-white text-sm font-medium mb-2">
-                  Confirm Email
-                </label>
-                <input
-                  type="email"
-                  id="confirmEmail"
-                  name="confirmEmail"
-                  value={formData.confirmEmail}
-                  onChange={handleChange}
-                  placeholder="Confirm Email"
-                  className="w-full px-4 py-3 md:py-5 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
-                />
-              </div>
+             
             </div>
 
             {/* Phone Field */}
@@ -230,21 +205,7 @@ const ContactPage = ({title,subheading, description}: ContactPageProps) => {
               />
             </div>
 
-            {/* Subject Field */}
-            <div className="mb-6">
-              <label htmlFor="subject" className="block text-white text-sm font-medium mb-2">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                name="subject"
-                value={formData.subject}
-                onChange={handleChange}
-                placeholder="What is this about?"
-                className="w-full px-4 py-3 md:py-5 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
-              />
-            </div>
+          
 
             {/* Message Field */}
             <div className="mb-4">
@@ -256,7 +217,7 @@ const ContactPage = ({title,subheading, description}: ContactPageProps) => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Your message here..."
+                placeholder="What is in your mind? "
                 rows={5}
                 className="w-full px-4 py-5 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none resize-none"
               />
