@@ -27,7 +27,7 @@ const Page = () => {
 
     <WeDoHardWork 
       flexReverse={false}
-      image= "/about-part.webp"
+      image= "/about-part-new.webp"
       title="Why use a mortgage broker?"
       badeTitle=""  
       description="Whether you’re buying your first home, refinancing, or investing, finding the right loan can be challenging without the right support and expertise."
