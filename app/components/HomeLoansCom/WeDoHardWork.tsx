@@ -144,12 +144,12 @@ const WeDoHardWork = ({
 
                     {/* Image - Show only if image exists */}
                    {image && (
-                        <div className={`w-full image-hard rounded-2xl md:rounded-3xl ${flexReverse ? 'md:order-2' : 'md:order-1'}`}>
+                        <div className={`w-full image-hard rounded-2xl px-4 md:px-0 md:rounded-3xl ${flexReverse ? 'md:order-2' : 'md:order-1'}`}>
                             <Image
                                 src={image || '/placeholder.png'}
                                 alt="Home Loan"
-                                width={500}
-                                height={500}
+                                width={400}
+                                height={400}
                                 className='w-full h-auto max-h-[800px] rounded-2xl md:rounded-3xl'
                                 priority
                                 quality={75}
