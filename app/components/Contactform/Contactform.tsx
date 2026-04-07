@@ -21,8 +21,7 @@ const ContactPage = ({ title, subheading, description }: ContactPageProps) => {
     email: '',
     phone: '',
     message: '',
-  });
-
+  }); s
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
