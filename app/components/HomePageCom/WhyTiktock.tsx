@@ -92,7 +92,7 @@ const WhyTiktock = ({ title, description, descriiption2 }: WhyTiktockProps) => {
         <div className='why-tiktock-section bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] py-8 md:py-[50px] px-4 sm:px-6 lg:px-8'>
             <div className='max-w-[1440px] mx-auto'>
                 {/* Title - Responsive text sizes */}
-               <h2  data-aos="fade-up"  data-aos-duration="500" className='text-3xl sm:text-4xl md:text-[45px] font-bold text-center pb-2 md:pb-4 leading-tight'>
+               <h2  data-aos="fade-up"  data-aos-duration="500" className='text-3xl sm:text-4xl md:text-[45px] max-w-3xl mx-auto font-bold text-center pb-2 md:pb-4 leading-tight'>
                     {title!.split(' ').map((word, index) => (
                         <span 
                             key={index} 

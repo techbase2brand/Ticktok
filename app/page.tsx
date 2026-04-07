@@ -24,7 +24,7 @@ export default function Home() {
       overlaycolor="rgb(0 0 0 / 41%)"
     />
     <WhyTiktock 
-      title="Why TickTock?"  
+      title="Because your time matters — and so does your money."  
       description=""
       descriiption2="At TickTock Loans, we believe getting the right home loan shouldn't be complicated, stressful, or time consuming. We do the hard work so you don't have to."/>
     {/* <HowItWork 

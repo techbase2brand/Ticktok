@@ -2,14 +2,14 @@
 
 import { memo } from 'react';
 import dynamic from "next/dynamic";
-const Hero = dynamic(() => import("../components/HomePageCom/Hero"));
+import ContactHero from '../components/HomePageCom/ContactHero';
 const Contactform = dynamic(() => import("../components/Contactform/Contactform"));
 
 
 const Page = () => {
   return (
     <>
-        <Hero
+        <ContactHero
           videoUrl=""
           poster="/contact-banner.png" 
           getImage="" 
