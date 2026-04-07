@@ -15,7 +15,6 @@ const ContactPage = ({ title, subheading, description }: ContactPageProps) => {
       </g>
     </svg>
   ));
-
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
