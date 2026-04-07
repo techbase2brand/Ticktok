@@ -109,7 +109,7 @@ const ContactPage = ({ title, subheading, description }: ContactPageProps) => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-12 md:pt-[80px] px-4 sm:px-6 lg:px-8">
+    <div className="bg-[#1d361e] rounded-none md:rounded-2xl to-[#0b110c] py-12 md:py-[50px] px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         {title && <h2 className='text-3xl max-w-3xl mx-auto sm:text-3xl md:text-4xl lg:text-[45px] font-bold text-center leading-tight mb-7 md:mb-12 text-white'>{title}</h2>}
 
@@ -147,7 +147,7 @@ const ContactPage = ({ title, subheading, description }: ContactPageProps) => {
                   value={formData.firstName}
                   onChange={handleChange}
                   placeholder="First name"
-                  className="w-full px-4 py-3 md:py-5 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
+                  className="w-full px-4 py-3 text-sm md:py-3 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
                 />
               </div>
               <div>
@@ -161,17 +161,15 @@ const ContactPage = ({ title, subheading, description }: ContactPageProps) => {
                   value={formData.lastName}
                   onChange={handleChange}
                   placeholder="Last name"
-                  className="w-full px-4 py-3 md:py-5 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
+                  className="w-full px-4 py-3 text-sm md:py-3 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
                 />
               </div>
             </div>
 
             {/* Email and Confirm Email Row */}
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-4 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div>
-                <label htmlFor="email" className="block text-white text-sm font-medium mb-2">
-                  Email
-                </label>
+                <label htmlFor="email" className="block text-white text-sm font-medium mb-2">Email</label>
                 <input
                   type="email"
                   id="email"
@@ -179,14 +177,11 @@ const ContactPage = ({ title, subheading, description }: ContactPageProps) => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter Email"
-                  className="w-full px-4 py-3 md:py-5 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
+                  className="w-full px-4 py-3 text-sm  md:py-3 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
                 />
               </div>
-
-            </div>
-
-            {/* Phone Field */}
-            <div className="mb-6">
+              {/* Phone Field */}
+            <div className="mb-2">
               <label htmlFor="phone" className="block text-white text-sm font-medium mb-2">
                 Phone
               </label>
@@ -197,10 +192,13 @@ const ContactPage = ({ title, subheading, description }: ContactPageProps) => {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder="Your phone number"
-                className="w-full px-4 py-3 md:py-5 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
+                className="w-full px-4 py-3 text-sm md:py-3 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none"
               />
             </div>
 
+            </div>
+
+            
 
 
             {/* Message Field */}
@@ -214,8 +212,8 @@ const ContactPage = ({ title, subheading, description }: ContactPageProps) => {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="What is in your mind? "
-                rows={5}
-                className="w-full px-4 py-5 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none resize-none"
+                rows={4}
+                className="w-full text-sm px-4 py-5 bg-transparent text-gray-300 border border-lime-600 rounded-md placeholder-gray-300 focus:border-lime-400 focus:ring-0 focus:ring-lime-400 focus:ring-opacity-20 transition-all outline-none resize-none"
               />
             </div>
             <div className='mb-7'>

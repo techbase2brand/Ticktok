@@ -2,6 +2,7 @@
 import { memo } from 'react';
 import Image from "next/image";
 import Link from 'next/link';
+import Contactform from '../Contactform/Contactform';
 
 type HeroProps = {
   subheading?: string;
@@ -68,7 +69,7 @@ const ContactHero = ({
         : {};
 
     return (
-       <div className='banner w-full relative min-h-auto max-h-[900px] sm:min-h-[650px] md:min-h-[700px] flex items-center pb-[30px] overflow-hidden'>
+       <div className='banner w-full relative min-h-auto max-h-auto flex items-center overflow-hidden'>
             {/* Video Background */}
             {videoUrl && (
                 <video 
@@ -111,10 +112,10 @@ const ContactHero = ({
             
             {/* Content */}
             <div className='relative z-20 max-w-[1440px] mx-auto w-full'>
-               <div className='banner-wrapper flex flex-col md:flex-row items-center justify-between gap-3 md:gap-8 pt-8 md:pt-12 lg:pt-16'>
+               <div className='banner-wrapper items-center grid grid-cols-1 md:grid-cols-2  gap-3 md:gap-8 pb-0 py-8 md:py-12 lg:py-16'>
                     
                   {(hasContent(subheading) || hasContent(heading) || hasContent(description) || hasContent(badge) || hasContent(apply) || hasContent(checkEligibility)) && (
-                    <div className='content text-center md:text-left w-full md:w-[65%] order-2 md:order-1'>
+                    <div className='content text-center md:text-left w-full  order-1'>
                         
                         {hasContent(badge) && (
                             <p data-aos="fade-up" data-aos-duration="400" 
@@ -173,25 +174,15 @@ const ContactHero = ({
                     </div>
                 )}
                     
-                    {getImage && (
-                        <div className='banner-image w-full md:w-[35%] flex justify-center order-1 md:order-2 mb-4 md:mb-0'>
-                           <div className="relative w-full md:w-[600px] drop-shadow-2xl px-4 md:px-0">
-                                <Image 
-                                    data-aos="fade-up" 
-                                    data-aos-duration="500"   
-                                    src={getImage}
-                                    alt="Loan Amount"
-                                    width={1000}
-                                    height={580}
-                                    quality={65}
-                                    sizes="(max-width:100%) 100%, (max-width: 768px) 100%, 100%"
-                                    priority
-                                    className="relative z-20 w-full h-auto"
-                                />
-                                <div className="absolute inset-0 bg-[#B5FF5F]/20 blur-3xl rounded-full z-10 scale-150 opacity-50"></div>
-                            </div>
+    
+                        <div className='banner-image w-full flex justify-center order-2'>
+                           <Contactform 
+                            title="Too busy to call? Send us a message instead."
+                            subheading=""
+                            description=""
+                            />
                         </div>
-                    )}
+                
                 </div>
             </div>
         </div>

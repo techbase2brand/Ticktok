@@ -24,11 +24,11 @@ const Page = () => {
           applyUrl="/Contact"
           overlaycolor="rgb(0 0 0 / 69%)"
         />
-        <Contactform 
+        {/* <Contactform 
           title="Too busy to call? Send us a message instead."
           subheading=""
           description=""
-        />
+        /> */}
     </>
   );
 };
