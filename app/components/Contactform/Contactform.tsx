@@ -99,7 +99,7 @@ const ContactPage = ({ title, subheading, description }: ContactPageProps) => {
       );
 
       setSuccess(true);
-      setFormData({ firstName: '', lastName: '', email: '', confirmEmail: '', phone: '', subject: '', message: '' });
+      setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
 
       setTimeout(() => setSuccess(false), 5000);
     } catch (err) {
