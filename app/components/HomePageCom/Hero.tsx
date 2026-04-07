@@ -53,8 +53,8 @@ const Hero = ({
 
     const arrowSvg = (
         <svg width={21} height={21} viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4.30566 10.3337H16.3616" stroke="#154617" strokeWidth="1.7223" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M10.3337 4.30573L16.3617 10.3337L10.3337 16.3616" stroke="#154617" strokeWidth="1.7223" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M4.30566 10.3337H16.3616" stroke="currentColor" strokeWidth="1.7223" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M10.3337 4.30573L16.3617 10.3337L10.3337 16.3616" stroke="currentColor" strokeWidth="1.7223" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
     );
 
