@@ -46,7 +46,7 @@ const Page = () => {
       />
       <WeDoHardWork
         flexReverse={false}
-        image= "/concept-is-simple.jpg"
+        image= "/concept-is-simple (2).jpg"
         title="The concept is simple"
         description="Buyers put down a deposit usually 10 per cent) for a house or apartment based on site plans. These commitments to buy help developers fund construction, with full payment due only on completion. The lure for buyers, is a potential capital gain if values rise during this period, but that can be a big if’."
         subtitle=""
