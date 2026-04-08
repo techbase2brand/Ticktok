@@ -157,14 +157,14 @@ const Hero = ({
                                 
                                 {hasContent(apply) && (
                                     <Link href={applyUrl} title='Apply Now' aria-label='Apply Now' 
-                                        className='cursor-pointer bg-[#B5FF5F] flex items-center justify-center gap-[10px] text-[#154617] px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold hover:bg-white transition-colors duration-300 text-sm sm:text-base md:w-fit mx-auto md:mx-0 shadow-[0_8px_20px_rgba(181,255,95,0.3)] hover:shadow-[0_8px_25px_rgba(181,255,95,0.5)]'>
+                                        className='cursor-pointer bg-[#B5FF5F] flex items-center justify-center gap-[10px] text-[#154617] px-4 sm:px-6 py-2.5 sm:py-3 rounded-full font-bold hover:bg-white transition-colors duration-300 text-[12px] sm:text-base md:w-fit mx-auto md:mx-0 shadow-[0_8px_20px_rgba(181,255,95,0.3)] hover:shadow-[0_8px_25px_rgba(181,255,95,0.5)]'>
                                         {apply} {arrowSvg}
                                     </Link>
                                 )}
                                 
                                 {hasContent(checkEligibility) && (
                                     <Link href={checkEligibilityUrl} title='Check Eligibility' aria-label='Check Eligibility' 
-                                        className='cursor-pointer bg-transparent flex items-center justify-center gap-[10px] text-white px-4 sm:px-6 py-2.5 sm:py-3 border border-white rounded-full font-bold hover:bg-[#B5FF5F] hover:text-[#154617] transition-colors duration-300 text-sm sm:text-base w-fit mx-auto md:mx-0 '>
+                                        className='cursor-pointer bg-transparent flex items-center justify-center gap-[10px] text-white px-4 sm:px-6 py-2.5 sm:py-3 border border-white rounded-full font-bold hover:bg-[#B5FF5F] hover:text-[#154617] transition-colors duration-300 text-[12px] sm:text-base w-fit mx-auto md:mx-0 '>
                                         {checkEligibility} {arrowSvg}
                                     </Link>
                                 )}
