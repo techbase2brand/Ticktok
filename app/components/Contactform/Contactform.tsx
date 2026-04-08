@@ -114,7 +114,7 @@ const ContactPage = ({ title, subheading, description }: ContactPageProps) => {
         {title && <h2 className='text-3xl max-w-3xl mx-auto sm:text-3xl md:text-4xl lg:text-[45px] font-bold text-center leading-tight mb-7 md:mb-12 text-white'>{title}</h2>}
 
         {/* RIGHT SIDE - FORM */}
-        <div className="bg-gradient-to-b from-transparent to-[#000]/9">
+        <div className="">
           {/* Success Message */}
           {success && (
             <div className="mb-6 p-4 bg-green-900 border border-green-500 rounded-lg">
