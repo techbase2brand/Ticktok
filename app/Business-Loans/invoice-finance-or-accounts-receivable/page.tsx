@@ -15,7 +15,7 @@ const Page = () => {
         badgeTitle="Invoice finance or accounts receivable"
         title="Free up working capital and improve cash flow"
         description="Looking for an effective way of unlocking cash that’s already been invoiced to your clients?"
-        imageUrl="/invoice-finance-or-accounts-receivable.webp"
+        imageUrl="/invoice-finance-or-accounts-receivable.svg"
       />
       <WeDoHardWork
         flexReverse={false}

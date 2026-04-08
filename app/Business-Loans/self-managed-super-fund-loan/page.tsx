@@ -15,7 +15,7 @@ const Page = () => {
         badgeTitle="Invest in commercial property"
         title="Self Managed Super Fund Loan"
         description="Have you considered using the funds in your Self Managed Super Fund  SMSF  to invest in property?"
-        imageUrl="/self-managed-super-fund-loan.webp"
+        imageUrl="/self-managed-super-fund-loan.svg"
       />
       <WeDoHardWork
         flexReverse={false}

@@ -10,7 +10,7 @@ const Page = () => {
       <Hero 
         videoUrl=""
         poster="/business-loan-banner.jpg" 
-        getImage="/business-loan-right.webp" 
+        getImage="/business-loan-right.png" 
         subheading="There are many different" 
         heading="types of loans" 
         subheading2="to choose from." 

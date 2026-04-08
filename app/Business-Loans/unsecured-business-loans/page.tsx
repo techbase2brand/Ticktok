@@ -15,7 +15,7 @@ const Page = () => {
             badgeTitle="fuel your business growth"
             title="Unsecured Business Loans"
             description="A faster way to access finance for everyday expenses."
-            imageUrl="/unsecured-business-loans.webp"
+            imageUrl="/unsecured-business-loans.svg"
         />
          <WeDoHardWork
             flexReverse={false}

@@ -109,7 +109,7 @@ const Page = () => {
             badgeTitle="Fuel your business growth"
             title="Finance for my business"
             description="Before you start to decide on finance products and options, it’s a great idea to pin down exactly why you need finance and what type of business you are. This helps you to create clear objectives that can help paint a clear picture to lenders about why finance for your business makes sense."
-            imageUrl="/finance-for-my-business.webp"
+            imageUrl="/finance-for-my-business.svg"
         />
         <RichText  
           nameClass="first-rich-text"
