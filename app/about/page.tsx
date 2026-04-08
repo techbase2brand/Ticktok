@@ -12,7 +12,7 @@ const Page = () => {
     <Hero 
       videoUrl=""
       poster="/about-banner.jpg" 
-      getImage="/about-right.webp" 
+      getImage="/new-about-apart-img.webp" 
       subheading="" 
       heading="Who we are" 
       subheading2="At ticktock, our mission is to find the right loan for you." 
