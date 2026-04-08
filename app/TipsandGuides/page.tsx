@@ -13,7 +13,7 @@ const Page = () => {
       <Hero 
         videoUrl=""
         poster="/our-tip-banner.webp" 
-        getImage="/custom-our-guide.webp" 
+        getImage="/custom-our-guide.svg" 
         subheading="" 
         heading="Our Guides" 
         subheading2="" 

@@ -111,10 +111,10 @@ const Hero = ({
             
             {/* Content */}
             <div className='relative z-20 max-w-[1440px] mx-auto w-full'>
-               <div className='banner-wrapper flex flex-col md:flex-row items-center justify-between gap-3 md:gap-8 pt-8 md:pt-12 lg:pt-16 px-4'>
+               <div className='banner-wrapper grid grid-cols-1 md:grid-cols-2 md:flex-row items-center justify-between gap-3  px-2 md:mx-0 md:gap-8 py-8 md:py-12 lg:py-16'>
                     
                   {(hasContent(subheading) || hasContent(heading) || hasContent(description) || hasContent(badge) || hasContent(apply) || hasContent(checkEligibility)) && (
-                    <div className='content text-center md:text-left w-full md:w-[65%] order-2 md:order-1'>
+                    <div className='content text-center md:text-left w-full order-2 md:order-1'>
                         
                         {hasContent(badge) && (
                             <p data-aos="fade-up" data-aos-duration="400" 
@@ -174,8 +174,8 @@ const Hero = ({
                 )}
                     
                     {getImage && (
-                        <div className='banner-image w-full md:w-[35%] flex justify-center order-1 md:order-2 mb-4 md:mb-0'>
-                           <div className="relative w-full md:w-[600px] drop-shadow-2xl px-4 md:px-0">
+                        <div className='banner-image w-full flex justify-center order-1 md:order-2 mb-4 md:mb-0'>
+                           <div className="relative w-full drop-shadow-2xl px-2 md:px-0">
                                 <Image 
                                     data-aos="fade-up" 
                                     data-aos-duration="500"   

@@ -11,7 +11,7 @@ const Page = () => {
         badgeTitle="Download our free guide"
         title="Why use a broker?"
         description="Simply tell us your name and email address to receive your guide on how a mortgage broker can help you."
-        imageUrl="/why-choose-broker.webp"
+        imageUrl="/why-choose-broker.svg"
     />
     
     <HumanverificationForm 

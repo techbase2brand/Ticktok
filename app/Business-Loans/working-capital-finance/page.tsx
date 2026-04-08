@@ -15,7 +15,7 @@ const Page = () => {
           badgeTitle="Download our free guide"
           title="Working Capital Finance"
           description="Working Capital Finance is a business loan that can help you take care of your immediate and day to day costs. Like the name suggests, having this type of financing means you have the capital to cover vital operating costs like paying suppliers, covering wages, or adding inventory to make the most of busier business periods.Importantly, it also means you can have funds at hand when you need them to create growth and make the most of any opportunities when they happen."
-          imageUrl="/working-capital-finance.webp"
+          imageUrl="/working-capital-finance.svg"
       />
       <DownloadGuids 
         title="Using working capital to grow and transform your business"
