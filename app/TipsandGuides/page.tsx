@@ -64,7 +64,7 @@ const Page = () => {
 
       <WeDoHardWork 
         flexReverse={true}
-        image= "/new-explore-option.webp"
+        image= "/new-explore-option.png"
         title="Looking to invest in property?"
         description="Whether you’re starting up, sustaining success, or wanting to make the most of new opportunities, the right finance can help fund what you’re looking for."
         subtitle=""

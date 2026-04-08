@@ -20,7 +20,7 @@ const Page = () => {
       <WeDoHardWork
         flexReverse={false}
         badeTitle="TIPS and TRICKS"
-        image= "/how-dose-it-work.webp"
+        image= "/self-managed-super-fund-loan (2).svg"
         title="How does it work?"
         description="The savings you’ve built up in your Superannuation Fund can be used to purchase property. Using your SMSF funds as a deposit, some lenders will approve loans starting at just dollar 100,000 to purchase property, and the income generated from the rental can help meet your repayments."
         subtitle=""

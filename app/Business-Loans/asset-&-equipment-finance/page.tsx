@@ -248,12 +248,12 @@ const Page = () => {
             badgeTitle="Asset and Equipment Finance"
             title="Asset and Equipment Finance"
             description="It’s a common question for small business owners; how do you get your hands on the equipment you need to grow, while still keeping the all important cash flow and working capital at healthy levels?"
-            imageUrl="/asset-&-equipment-finance.webp"
+            imageUrl="/asset-&-equipment-finance.png"
         />
         <TopTips 
           title="Top Tips"
           description="Choosing the right asset and equipment finance can give you further benefits than just preserving your day to day funds:"
-          imageUrl="/investment.webp"
+          imageUrl="/investment.png"
           data={Investment}
         />
         <RichText  

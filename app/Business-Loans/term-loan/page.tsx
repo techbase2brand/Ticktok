@@ -15,7 +15,7 @@ const Page = () => {
             badgeTitle="Grow your business"
             title="Term Loans"
             description="Terms loans are commonly used to buy commercial real estate or to buy an existing business or franchise."
-            imageUrl="/term-loan.webp"
+            imageUrl="/term-loan.png"
         />
        <WeDoHardWork
           flexReverse={false}

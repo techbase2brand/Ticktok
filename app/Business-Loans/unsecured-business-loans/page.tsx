@@ -19,7 +19,7 @@ const Page = () => {
         />
          <WeDoHardWork
             flexReverse={false}
-            image= "/what- involved.webp"
+            image= "/what- involved.png"
             title="What’s  involved?"
             description="Unsecured business loans are a relatively new option for businesses that need to get access to some extra funds. The obvious benefit of this type of finance is the speed in which access is granted to the finance, with a simplified application process. This may allow you to quickly take care of cash flow, cover urgent expenses, or make the most of an opportunity."
             subtitle=""

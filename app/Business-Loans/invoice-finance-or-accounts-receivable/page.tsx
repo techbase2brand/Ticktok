@@ -20,7 +20,7 @@ const Page = () => {
       <WeDoHardWork
         flexReverse={false}
         badeTitle=""
-        image= "/accounts-receivable.webp"
+        image= "/repreman.png"
         title=""
         description="If you’re familiar with home loans, you’ll understand the principles of how a term loan works. Generally speaking, this type of loan can be used for two purposes – business or property."
         subtitle=""

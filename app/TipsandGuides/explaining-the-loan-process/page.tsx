@@ -39,7 +39,7 @@ const Page = () => {
             badgeTitle="Download our free guide"
             title="Got some questions about the loan process?"
             description="Sometimes the best way to get an understanding of home loans, how it all works and how to choose the right one, is to speak to a broker in person."
-            imageUrl="/got-some-question.webp"
+            imageUrl="/got-some-question.png"
         />
         <MeetingYourBroker
             badgeTitle=""
@@ -47,7 +47,7 @@ const Page = () => {
             description="When you sit down with us, it’s your opportunity to share your needs and financial goals. Ask questions about loans, applications, approvals, and what follows.We’ll meet you at your preferred time and location – home, office, or café, during the day, night, or weekend."
             buttonText=""
             buttonLink=""
-            imageUrl="/understanding-your.webp"
+            imageUrl="/understanding-your.png"
         />
         <WhatYouNeedBread 
             title="What do you need finance for?"

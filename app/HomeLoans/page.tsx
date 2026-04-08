@@ -12,7 +12,7 @@ const Page = () => {
         <Hero
           videoUrl=""
           poster="/banner-loan.webp" 
-          getImage="/home-loan-right-img.webp" 
+          getImage="/home-loan-right-img.png" 
           subheading="Buying a" 
           heading="property " 
           subheading2="is a time to be excited." 

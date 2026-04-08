@@ -57,7 +57,7 @@ const Page = () => {
       />
       <WeDoHardWork
         flexReverse={true}
-        image= "/buying-off-tsx.webp"
+        image= "/buying-off-tsx.png"
         title="Buying off the plan can be a win to win for buyers and developers"
         description="Having buyers lined up helps developers secure finance. And on the flipside, buyers who commit early can lock in a property at current market rates, without the need to settle until construction is finished, which can be months or even years later. The hope is that the property may be worth more by the time it is completed, and payment due. Most contracts only require a 10 per cent deposit, also allowing buyers additional time to save the 20 per cent needed to avoid Lenders Mortgage Insurance on settlement."
         subtitle=""
@@ -67,7 +67,7 @@ const Page = () => {
       />
       <WeDoHardWork
         flexReverse={false}
-        image= "/when-buying-off.webp"
+        image= "/when-buying-off.png"
         title="When buying off the plan, a developer should providebuyers with a contract"
         description="It outlines the details of the purchase, the completion date and the deadline for when a decision must be made as to whether the development will go ahead. That decision usually hinges on whether sufficient finance has been secured. If the developer pulls the pin or passes the decision deadline, buyers should be entitled to a refund of their deposit under a `sunset clause’, although this can depend on the conditions of the sale contract. It pays to read contract terms carefully and, if required, seek financial or legal advice."
         subtitle=""
