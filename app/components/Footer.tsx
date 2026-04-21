@@ -362,7 +362,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                         type="button"
                         className="heading w-full flex items-center justify-between md:block cursor-pointer mb-4 md:mb-3"
                         onClick={() => toggleAccordion('legal')}>
-                        <h3 className='text-white font-normal md:font-semibold text-[15px] md:text-[16px] text-left pb-0 md:pb-[12px]'>Supports Links</h3>
+                        <h3 className='text-white font-normal md:font-semibold text-[15px] md:text-[16px] text-left pb-0 md:pb-[12px]'>Helpful Links</h3>
                         <span className="md:hidden text-white">
                             <svg className={`w-4 h-4 transform transition-transform duration-300 ${openAccordion === 'legal' ? 'rotate-180' : 'rotate-0'}`}
                                 viewBox="0 0 24 24"fill="none"xmlns="http://www.w3.org/2000/svg">

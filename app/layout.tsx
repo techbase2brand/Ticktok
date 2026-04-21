@@ -66,7 +66,7 @@ export default function RootLayout({
       </head>
       <body className={`${headingFont.variable} ${bodyFont.variable}`}>
         <Header />
-          <main>
+          <main className="">
             {children}
           </main>
           <CTAWrapper />
