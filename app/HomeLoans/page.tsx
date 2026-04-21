@@ -13,7 +13,7 @@ const Page = () => {
         <Hero
           videoUrl=""
           poster="/banner-loan.webp" 
-          getImage="/home-loan-right-img.png" 
+          getImage="/new-home-loan.png" 
           subheading="Buying a" 
           heading="property " 
           subheading2="is a time to be excited." 
@@ -27,7 +27,7 @@ const Page = () => {
         />
         <TabsSection />
         <WeDoHardWork 
-          image="/we-do-hard-work-loan.webp"
+          image="/new-we-do-hard-work-loan.png"
           title="We do Hard work"
           description="We consider a range of options for you. Using our understanding and knowledge of the current market, we look at different loans and quickly narrow them down to the ones that suit your needs. Then we choose together."
           subtitle="And we help with the whole process."
