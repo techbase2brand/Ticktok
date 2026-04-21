@@ -57,7 +57,7 @@ const navLinks: NavLink[] = [
       { href: "/TipsandGuides/checklist-of-loan-document", label: "Checklist of loan document" },
     ],
   },
-  { href: "/Contact", label: "Contact" },
+
 ];
 
 type ChevronIconProps = {
@@ -234,7 +234,7 @@ export default function Header() {
             title="Apply Now"
             aria-label="Apply Now"
           >
-           Speak  To Us
+          Contact Us
           </Link>
         </div>
 
