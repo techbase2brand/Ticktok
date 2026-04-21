@@ -146,7 +146,7 @@ const Hero = ({
                         
                         {hasContent(description) && (
                             <p data-aos="fade-up" data-aos-duration="700" data-aos-delay="0" 
-                                className='text-white/90 text-sm sm:text-base md:text-lg mb-6 md:mb-6 max-w-md mx-auto md:mx-0 px-2 sm:px-0 drop-shadow-md'>
+                                className='text-white/90 text-sm sm:text-base md:text-lg my-6 md:my-6 max-w-md mx-auto md:mx-0 px-2 sm:px-0 drop-shadow-md'>
                                 {description}
                             </p>
                         )}

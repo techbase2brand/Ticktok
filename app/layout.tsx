@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from './components/Header';
 import Footer from './components/Footer';
-import LightningFastApproval from "./components/HomePageCom/LightningFastApproval";
+
 import { Paytone_One, Inter } from "next/font/google";
+import CTAWrapper from "./inner-pages-component/CTAWrapper";
 const headingFont = Paytone_One({
   subsets: ["latin"],
   weight: "400",
@@ -68,13 +69,7 @@ export default function RootLayout({
           <main>
             {children}
           </main>
-          <LightningFastApproval
-          applyBtn="Apply Now" 
-          subheading="Looking for the Right Loan?" 
-          heading="Home. Business. Car." 
-          badge="Lightning Fast Approval" 
-          description="Get funded with the right loan solution tailored to your goals. No confusion. No hidden charges. Just smart financing."
-        />
+          <CTAWrapper />
         <Footer copyRight="© 2026 TickTock Loans. All rights reserved." />
        
       </body>

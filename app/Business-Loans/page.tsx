@@ -14,7 +14,7 @@ const Page = () => {
         getImage="/business-loan-right.png" 
         subheading="There are many different" 
         heading="types of loans" 
-        subheading2="to choose from." 
+        subheading2="" 
         description="One of the biggest opportunities many small businesses struggle with is finding the right business finance to fuel their growth plans." 
         badge="Fuel your business growth" 
         checkEligibility="Discuss option today" 

@@ -349,10 +349,28 @@ const Footer = ({ copyRight }: FooterProps) => {
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Tips and Guides
                         </Link>
-                        <Link title="Finance for My Business" aria-label="Finance for My Business" href="/Business-Loans/finance-for-my-business"
+                        <Link title="Why use a broker?" aria-label="Why use a broker?" href="/TipsandGuides/#TipsandGuides-tab"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Finance for My Business
+                            Why use a broker?
                         </Link>
+                    </div>
+                </div>
+
+                {/* Legal Accordion */}
+                <div className={poppins.className + ' quick-links w-full md:w-auto'}>
+                    <button
+                        type="button"
+                        className="heading w-full flex items-center justify-between md:block cursor-pointer mb-4 md:mb-3"
+                        onClick={() => toggleAccordion('legal')}>
+                        <h3 className='text-white font-normal md:font-semibold text-[15px] md:text-[16px] text-left pb-0 md:pb-[12px]'>Supports Links</h3>
+                        <span className="md:hidden text-white">
+                            <svg className={`w-4 h-4 transform transition-transform duration-300 ${openAccordion === 'legal' ? 'rotate-180' : 'rotate-0'}`}
+                                viewBox="0 0 24 24"fill="none"xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 9L12 15L18 9"stroke="currentColor"strokeWidth="1.8"strokeLinecap="round"strokeLinejoin="round"/>
+                            </svg>
+                        </span>
+                    </button>
+                    <div className={`menu-links gap-3 flex-col transition-all duration-300 mb-4 md:mb-0 ${openAccordion === 'legal' ? 'flex' : 'hidden'} md:flex`}>
                         <Link href="/Contact" title="Contact" aria-label="Contact"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Contact
@@ -364,54 +382,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                         <Link href="/terms-conditions" title="Terms & Conditions" aria-label="Terms & Conditions"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Terms & Conditions
-                        </Link>
-
-                    </div>
-                </div>
-
-                {/* Legal Accordion */}
-                <div className={poppins.className + ' quick-links w-full md:w-auto'}>
-                    <button
-                        type="button"
-                        className="heading w-full flex items-center justify-between md:block cursor-pointer mb-4 md:mb-3"
-                        onClick={() => toggleAccordion('legal')}>
-                        <h3 className='text-white font-normal md:font-semibold text-[15px] md:text-[16px] text-left pb-0 md:pb-[12px]'>Guides</h3>
-                        <span className="md:hidden text-white">
-                            <svg className={`w-4 h-4 transform transition-transform duration-300 ${openAccordion === 'legal' ? 'rotate-180' : 'rotate-0'}`}
-                                viewBox="0 0 24 24"fill="none"xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 9L12 15L18 9"stroke="currentColor"strokeWidth="1.8"strokeLinecap="round"strokeLinejoin="round"/>
-                            </svg>
-                        </span>
-                    </button>
-                    <div className={`menu-links gap-3 flex-col transition-all duration-300 mb-4 md:mb-0 ${openAccordion === 'legal' ? 'flex' : 'hidden'} md:flex`}>
-                        <Link href="/TipsandGuides/first-home-buyer-guide" title="First Home Buyer Guide" aria-label="First Home Buyer Guide"
-                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            First Home Buyer Guide
-                        </Link>
-                        <Link href="/TipsandGuides/why-use-a-broker" title="Why Use a Broker?" aria-label=" Why Use a Broker?"
-                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Why Use a Broker?
-                        </Link>
-                        <Link href="/TipsandGuides/looking-for-refinance-your-home" title="Looking for Refinance Your Home" aria-label="Looking for Refinance Your Home"
-                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Looking for Refinance Your Home
-                        </Link>
-                        <Link href="/TipsandGuides/investing-in-property-guide" title="Investing in Property Guide" aria-label="Investing in Property Guide"
-                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Investing in Property Guide
-                        </Link>
-                        <Link href="/TipsandGuides/business-finance-guide" title="Business Finance Guide" aria-label="Business Finance Guide"
-                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Business Finance Guide
-                        </Link>
-                        <Link href="/TipsandGuides/explaining-the-loan-process" title="Explaining the Loan Process" aria-label="Explaining the Loan Process"
-                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Explaining the Loan Process
-                        </Link>
-                        <Link href="/TipsandGuides/checklist-of-loan-document" title="Checklist of loan document" aria-label="Checklist of loan document"
-                            className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Checklist of loan document
-                        </Link>
+                        </Link >
                     </div>
                 </div>
 

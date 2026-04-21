@@ -13,7 +13,7 @@ export default function Home() {
       poster="/banner.webp" 
       getImage="" 
       subheading="Adelaide's Trusted Mortgage Broker" 
-      heading="in Adelaide " 
+      heading="" 
       subheading2="" 
       description="Trusted and loved by Aussies!!" 
       badge="Award Winning !!" 

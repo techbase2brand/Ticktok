@@ -222,7 +222,7 @@ const TipTabsSection = () => {
         <div className="bg-gradient-to-r from-[#000000] via-[#19240d] to-[#090a09] pt-10 flex justify-center px-4 sm:px-6">
             <div className="max-w-[1440px] w-full mx-auto">
                 {/* Tabs */}
-                <div className="flex items-end justify-center gap-2 flex-wrap border-b border-[#b4fe5d]">
+                <div id='TipsandGuides-tab' className="flex items-end justify-center gap-2 flex-wrap border-b border-[#b4fe5d]">
                     {tabs.map((tab) => (
                         <button key={tab.id} onClick={() => setActive(tab.id)} aria-selected={active === tab.id} role="tab"
                             className={`px-3 md:px-4 py-2 md:py-3 text-[10px] md:text-xs cursor-pointer font-semibold capitalize rounded-2xl md:rounded-t-2xl md:rounded-b-none transition-all ${active === tab.id ? "bg-[#B5FF5F] text-black" : "bg-gray-200 text-black hover:bg-gray-300"
