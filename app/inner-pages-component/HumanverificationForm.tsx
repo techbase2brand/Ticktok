@@ -37,7 +37,7 @@ const HumanverificationForm = ({ description }: { description: string }) => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-[#000000] via-[#19240d] to-[#090a09] grid items-center justify-center pb-[30px] md:pb-[50px] px-4">
+    <div className=" grid items-center justify-center pb-[30px] md:pb-[50px] px-4">
       <form onSubmit={handleSubmit} className="max-w-[1000px] w-full grid grid-cols-1 gap-4 mb-6 rounded-lg text-gray-300 font-poppins" noValidate>
         <div className="field">
           <label className="block text-white text-sm font-medium mb-2">First Name</label>

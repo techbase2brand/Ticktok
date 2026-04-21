@@ -20,42 +20,26 @@ const navLinks: NavLink[] = [
   {
     href: "/HomeLoans",
     label: "Home Loans",
-    submenu: [
-      { href: "/HomeLoans/buying-a-home", label: "Buying a Home" },
-      { href: "/HomeLoans/becoming-a-first-home-buyer", label: "Becoming a first home buyer" },
-      { href: "/HomeLoans/buying-off-the-plan", label: "Buying Off the plan" },
-      { href: "/HomeLoans/refinancing-your-home-loan", label: "Refinancing your home loan" },
-      { href: "/HomeLoans/investing-in-property", label: "Investing in property" },
-      { href: "/HomeLoans/different-type-loan", label: "Different type loan" },
-      { href: "/HomeLoans/typical-loan-features", label: "Typical Loan Features" },
-    ],
+    
   },
   {
     href: "/Business-Loans",
     label: "Business Loans",
-    submenu: [
-      { href: "/Business-Loans/finance-for-my-business", label: "Finance for My Business" },
-      { href: "/Business-Loans/asset-&-equipment-finance", label: "Asset & Equipment Finance" },
-      { href: "/Business-Loans/invoice-finance-or-accounts-receivable", label: "Invoice Finance or Accounts Receivable" },
-      { href: "/Business-Loans/working-capital-finance", label: "Working Capital Finance" },
-      { href: "/Business-Loans/term-loan", label: "Term Loan" },
-      { href: "/Business-Loans/self-managed-super-fund-loan", label: "Self-Managed Super Fund Loan" },
-      { href: "/Business-Loans/unsecured-business-loans", label: "Unsecured Business Loans" },
-    ],
+    
   },
   { href: "/about", label: "About" },
   {
     href: "/TipsandGuides",
     label: "Tips and Guides", 
-    submenu: [
-      { href: "/TipsandGuides/why-use-a-broker", label: "Why Use a Broker?" },
-      { href: "/TipsandGuides/first-home-buyer-guide", label: "First Home Buyer Guide" },
-      { href: "/TipsandGuides/looking-for-refinance-your-home", label: "Looking for Refinance Your Home" },
-      { href: "/TipsandGuides/investing-in-property-guide", label: "Investing in Property Guide" },
-      { href: "/TipsandGuides/business-finance-guide", label: "Business Finance Guide" },
-      { href: "/TipsandGuides/explaining-the-loan-process", label: "Explaining the Loan Process" },
-      { href: "/TipsandGuides/checklist-of-loan-document", label: "Checklist of loan document" },
-    ],
+    // submenu: [
+    //   { href: "/TipsandGuides/why-use-a-broker", label: "Why Use a Broker?" },
+    //   { href: "/TipsandGuides/first-home-buyer-guide", label: "First Home Buyer Guide" },
+    //   { href: "/TipsandGuides/looking-for-refinance-your-home", label: "Looking for Refinance Your Home" },
+    //   { href: "/TipsandGuides/investing-in-property-guide", label: "Investing in Property Guide" },
+    //   { href: "/TipsandGuides/business-finance-guide", label: "Business Finance Guide" },
+    //   { href: "/TipsandGuides/explaining-the-loan-process", label: "Explaining the Loan Process" },
+    //   { href: "/TipsandGuides/checklist-of-loan-document", label: "Checklist of loan document" },
+    // ],
   },
 
 ];

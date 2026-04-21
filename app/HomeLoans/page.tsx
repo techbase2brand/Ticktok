@@ -3,6 +3,7 @@
 import { memo } from 'react';
 import dynamic from "next/dynamic";
 import Hero from "../components/HomePageCom/Hero";
+import TabsSection from '../inner-pages-component/TabsSection';
 const NeedHomeLoan = dynamic(() => import("../components/HomeLoansCom/NeedHomeLoan"));
 const WeDoHardWork = dynamic(() => import("../components/HomeLoansCom/WeDoHardWork"));
 const SupportForEvery = dynamic(() => import("../components/HomeLoansCom/SupportForEvery"));
@@ -24,6 +25,7 @@ const Page = () => {
           apply=""
           overlaycolor="rgb(0 0 0 / 85%)"
         />
+        <TabsSection />
         <WeDoHardWork 
           image="/we-do-hard-work-loan.webp"
           title="We do Hard work"

@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import dynamic from "next/dynamic";
 import Hero from '../components/HomePageCom/Hero';
+import BussinessTabsSection from '../inner-pages-component/BussinessTabsSection';
 const NeedHomeLoan = dynamic(() => import('../components/HomeLoansCom/NeedHomeLoan'));
 const WeDoHardWork = dynamic(() => import('../components/HomeLoansCom/WeDoHardWork'));
 
@@ -22,7 +23,7 @@ const Page = () => {
         apply=""
         overlaycolor="rgb(0 0 0 / 82%)"
       />
-
+      <BussinessTabsSection />
       <WeDoHardWork 
         flexReverse={false}
         image= "/find-the-right.webp"

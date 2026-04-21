@@ -1,6 +1,7 @@
 "use client";
 import { memo } from 'react';
 import dynamic from "next/dynamic";
+import TipTabsSection from '../inner-pages-component/TipTabsSection';
 
 // All components dynamic with SSR enabled (SEO friendly)
 const Hero = dynamic(() => import('../components/HomePageCom/Hero'));
@@ -25,7 +26,7 @@ const Page = () => {
         apply=""
         overlaycolor="rgb(0 0 0 / 75%)"
       />
-
+      <TipTabsSection />
       <WeDoHardWork 
         flexReverse={false}
         image= "/new-look-buy.webp"
