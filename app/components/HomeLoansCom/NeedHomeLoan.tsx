@@ -71,7 +71,7 @@ const NeedHomeLoan = ({
             </div>
           )}
 
-          <div className='w-full max-h-[400px] md:w-1/2 flex justify-center md:justify-end'>
+          <div className='w-full max-h-[400px] md:w-1/2 flex justify-center mb-[-50px] md:justify-end'>
             <Image
               src={image || "/living-room.webp"}
               alt="Home Loan"

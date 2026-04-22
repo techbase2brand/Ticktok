@@ -21,6 +21,10 @@ h1,h2,h3{
      font-weight:500;
 }
 
+.custom-container-wraper .bg-gradient-to-r{
+    
+}
+
 @font-face {
     font-family: 'FONTSPRING DEMO - Balgin';
     src: url('/fonts/FONTSPRINGDEMO-BalginBold.woff2') format('woff2'),

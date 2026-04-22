@@ -12,7 +12,7 @@ const Page = () => {
     <Hero 
       videoUrl=""
       poster="/about-banner.jpg" 
-      getImage="/new-about-apart-img.svg" 
+      getImage="/about-banner-part.png" 
       subheading="" 
       heading="Who we are" 
       subheading2="At ticktock, our mission is to find the right loan for you." 
@@ -27,7 +27,7 @@ const Page = () => {
 
     <WeDoHardWork 
       flexReverse={false}
-      image= "/about-part-new.webp"
+      image= "/why-use-about.png"
       title="Why use a mortgage broker?"
       badeTitle=""  
       description="Whether you’re buying your first home, refinancing, or investing, finding the right loan can be challenging without the right support and expertise."
@@ -41,7 +41,7 @@ const Page = () => {
     />
 
     <NeedHomeLoan 
-      image= "/need-home-loan.png"
+      image= "/need-homne-loan.png"
       heading ="Need a Home Loan?"
       description="Whatever your circumstances, we will find the deal that’s right for you. 'Send through a quick enquiry and we will be in touch."
       buttonText="Speak to us today"

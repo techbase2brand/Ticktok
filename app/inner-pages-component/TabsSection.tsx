@@ -610,7 +610,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     services: {
         component: (
             <>
-                <div className="header-inner pt-10 md:pt-20">
+                <div className="header-inner pt-10 md:pt-12">
                     <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}Start your journey
                     </p>
@@ -621,7 +621,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
                         Buying your first home is an exciting, but big step to take and one that comes with many questions and decisions. The first big question is how much you can borrow and what your likely repayments will be.
                     </p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-20 gap-10 md:gap-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-12 gap-10 md:gap-20">
                     <div className="how-can-help">
                         <h2 className="text-2xl text-white sm:text-3xl md:text-4xl lg:text-[35px] font-bold text-left leading-tight mb-3 md:mb-4">How we <span className="text-[#B4FE5D]">can help</span></h2>
                         <p className="text-left text-gray-300 text-sm sm:text-base md:text-lg mb-0 md:mb-3 leading-relaxed">We’ll do the legwork for you. We can compare home loans across a variety of products available from Australia’s leading lenders.</p>
@@ -643,7 +643,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     solutions: {
         component: (
             <>
-                <div className="header-inner pt-10 md:pt-20">
+                <div className="header-inner pt-10 md:pt-12">
                     <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}Buy early move later
                     </p>
@@ -655,7 +655,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
                     </p>
                 </div>
 
-                <div className="grid mt-15 grid-cols-1 md:grid-cols-3 gap-6 md:gap-7 lg:gap-7">
+                <div className="grid mt-12 grid-cols-1 md:grid-cols-3 gap-6 md:gap-7 lg:gap-7">
                     <div className="cursor-pointer p-6 rounded-2xl border border-[#9EF01A]/20 hover:border-[#B4FE5D]/40 transition-all duration-300 bg-gradient-to-b from-transparent to-[#9EF01A]/9 hover:-translate-y-2 hover:shadow-lg hover:shadow-[#B4FE5D]/10">
                         <h3 className="text-white text-xl sm:text-2xl font-regular mb-4 text-center md:text-left">
                             The concept <span className="text-[#B5FF5F]">is simple</span>
@@ -687,7 +687,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     news: {
         component: (
             <>
-                <div className="header-inner pt-10 md:pt-20">
+                <div className="header-inner pt-10 md:pt-12">
                     <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}Refinancing your home loan
                     </p>
@@ -698,7 +698,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
                         A shift in circumstances may mean it is time to revisit your home finances. For many, the idea of refinancing a mortgage can be daunting. Fees and fixed versus variable interest rates need to be considered.
                     </p>
                 </div>
-                <div className="grid grid-cols-2 mt-20 gap-20">
+                <div className="grid grid-cols-2 mt-10 md:mt-12 gap-20">
                     <div className="how-can-help">
                         <h2 className="text-2xl text-white sm:text-3xl md:text-4xl lg:text-[35px] font-bold text-left leading-tight mb-3 md:mb-4">Changing circumstances <span className="text-[#B5FF5F]">may mean</span> it is time to revisit your home finances</h2>
                         <p className="text-left text-gray-300 text-sm sm:text-base md:text-lg mb-0 md:mb-3 leading-relaxed">Refinancing a mortgage can feel overwhelming for many people. This is where our expertise comes in. We can clarify the nuances of fees and the choice between fixed and variable interest rates. Opting for the right refinanced loan could pave the way to quicker mortgage repayment, reduced costs, elimination of unhealthy debt, or the enhancement and increased value of your home, all of which are steps in the right direction.</p>
@@ -719,7 +719,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     investing: {
         component: (
             <>
-                <div className="header-inner py-10 md:py-20">
+                <div className="header-inner py-10 md:py-12">
                     <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}Start building your wealth
                     </p>
@@ -767,7 +767,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     different: {
         component: (
             <>
-                <div className="header-inner py-10 md:py-20">
+                <div className="header-inner py-10 md:py-12">
                     <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}What's easier to find?
                     </p>
@@ -851,7 +851,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     typical: {
         component: (
             <>
-                <div className="header-inner py-10 md:py-20">
+                <div className="header-inner py-10 md:py-12">
                     <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}What's easier to find?
                     </p>
@@ -893,7 +893,7 @@ export default function TabsSection() {
     const [active, setActive] = useState<TabId>("company");
 
     return (
-        <div className="bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-10 flex justify-center px-4 sm:px-6">
+        <div className="bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-12 md:pt-18 flex justify-center px-4 sm:px-6">
             <div className="max-w-[1440px] w-full mx-auto">
                 {/* Tabs */}
                 <div className="flex items-end justify-center gap-2 flex-wrap border-b border-[#b4fe5d]">
@@ -911,7 +911,7 @@ export default function TabsSection() {
                     {/* Company Tab */}
                     {active === "company" ? (
                         <>
-                            <div className="header-inner pt-10 md:pt-20">
+                            <div className="header-inner pt-10 md:pt-12">
                                 <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                                     {badgeSvg}Get started
                                 </p>
@@ -923,7 +923,7 @@ export default function TabsSection() {
                                 </p>
                             </div>
                             
-                            <div className="mx-[-16px] sm:mx-[-24px] lg:mx-[-32px]">
+                            <div className="mx-[-16px] sm:mx-[-24px] lg:mx-[-32px] mt-[-25px]">
                                 <Sixtipsforhomebuyers
                                     title="Six tips for home buyers"
                                     items={storeAboutSupport}

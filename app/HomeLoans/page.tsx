@@ -23,7 +23,7 @@ const Page = () => {
           checkEligibilityUrl="/Contact"
           applyUrl="/Contact"
           apply=""
-          overlaycolor="rgb(0 0 0 / 85%)"
+          overlaycolor="rgb(3 7 7 / 99%)"
         />
         <TabsSection />
         <WeDoHardWork 
@@ -41,7 +41,7 @@ const Page = () => {
           badge="Support for every stage of your property journey"
         />
         <NeedHomeLoan 
-          image= "/living-room.webp"
+          image= "/need-homne-loan.png"
           heading ="Need a Home Loan?"
           description="Whatever your circumstances, we will find the deal that’s right for you. 'Send through a quick enquiry and we will be in touch."
           buttonText="Speak to us today"
