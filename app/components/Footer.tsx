@@ -379,7 +379,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                     <div className={`menu-links gap-3 flex-col transition-all duration-300 mb-4 md:mb-0 ${openAccordion === 'legal' ? 'flex' : 'hidden'} md:flex`}>
                         <Link href="/Contact" title="Contact" aria-label="Contact"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
-                            Contact
+                            Contact 
                         </Link>
                         <Link href="/privacy-policy" title="Privacy Policy" aria-label="Privacy Policy"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
