@@ -155,7 +155,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                     
                     <div className="footer-branding flex flex-wrap items-center justify-start gap-2 pt-4">
                         {logos.map((logo, index) => (
-                            <div key={index} className="w-[70px] sm:w-[70px] md:w-[80px] flex justify-center">
+                            <div key={index} className="w-[70px] sm:w-[70px] md:w-[50px] flex justify-center">
                             <Image
                                 src={logo}
                                 alt={`brand-${index}`}
