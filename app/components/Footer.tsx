@@ -11,10 +11,12 @@ type FooterProps = {
 
 
 const logos: string[] = [
-  '/new-afc-2022.png',
-  '/afc-winner.png',
-  '/adviser-2024.png',
-  '/afc-2022.png',
+    '/afc-2022.png',
+    '/footer-bnard.png',
+    '/footer-brand-2.png',
+    '/footer-brand-3.png',
+    '/footer-brand-4.png',
+    '/footer-brand-5.png',
 ];
 
 // Floating Footer Social Component (Internal)
