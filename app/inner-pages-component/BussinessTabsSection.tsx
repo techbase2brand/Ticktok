@@ -500,13 +500,13 @@ const BussinessTabsSection = () => {
     const [active, setActive] = useState<TabId>("company");
 
     return (
-        <div className="bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-10 flex justify-center px-4 sm:px-6">
+        <div className="bg-gradient-to-r from-[#000000] via-[#0b110c] to-[#0b110c] pt-12 md:pt-16 flex justify-center px-4 sm:px-6">
             <div className="max-w-[1440px] w-full mx-auto">
                 {/* Tabs */}
-                <div className="flex items-end justify-center gap-2 flex-wrap border-b border-[#b4fe5d]">
+                <div className="flex items-end justify-center gap-2 flex-wrap">
                     {tabs.map((tab) => (
                         <button key={tab.id} onClick={() => setActive(tab.id)} aria-selected={active === tab.id} role="tab"
-                            className={`px-3 md:px-4 py-2 md:py-3 text-[10px] md:text-xs cursor-pointer font-semibold capitalize rounded-2xl md:rounded-t-2xl md:rounded-b-none transition-all ${active === tab.id ? "bg-[#B5FF5F] text-black" : "bg-gray-200 text-black hover:bg-gray-300"
+                            className={`px-3 md:px-4 py-2 md:py-3 text-[10px] md:text-xs cursor-pointer font-semibold capitalize rounded-2xl transition-all ${active === tab.id ? "bg-[#B5FF5F] text-black" : "bg-gray-200 text-black hover:bg-gray-300"
                                 }`}>
                             {tab.label}
                         </button>
