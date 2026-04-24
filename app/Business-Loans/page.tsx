@@ -30,7 +30,7 @@ const Page = () => {
         applyUrl="/Contact"
         apply=""
         overlaycolor=""
-      />
+      /> 
       <BussinessTabsSection />
       <WeDoHardWork 
         flexReverse={false}
