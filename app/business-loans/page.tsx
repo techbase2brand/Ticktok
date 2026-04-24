@@ -12,7 +12,6 @@ export const metadata = {
     "Grow your business with flexible loan options in Adelaide. Get quick approvals, competitive rates and expert financial guidance.",
 };
 
-
 const Page = () => {
   return (
     <>
