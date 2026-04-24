@@ -5,12 +5,20 @@ import BussinessTabsSection from '../inner-pages-component/BussinessTabsSection'
 const NeedHomeLoan = dynamic(() => import('../components/HomeLoansCom/NeedHomeLoan'));
 const WeDoHardWork = dynamic(() => import('../components/HomeLoansCom/WeDoHardWork'));
 
+
+export const metadata = {
+  title: "Business Loans Adelaide | Fast Funding Solutions",
+  description:
+    "Grow your business with flexible loan options in Adelaide. Get quick approvals, competitive rates and expert financial guidance.",
+};
+
+
 const Page = () => {
   return (
     <>
       <Hero 
         videoUrl=""
-        poster="/business-loan-banner.jpg" 
+        poster="/latest-bussiness-loan-banner.png" 
         getImage="/bussiness-loan-banner-right.png" 
         subheading="There are many different" 
         heading="types of loans" 
@@ -21,7 +29,7 @@ const Page = () => {
         checkEligibilityUrl="/Contact"
         applyUrl="/Contact"
         apply=""
-        overlaycolor="rgb(0 0 0 / 82%)"
+        overlaycolor=""
       />
       <BussinessTabsSection />
       <WeDoHardWork 

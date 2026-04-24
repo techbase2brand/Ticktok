@@ -188,7 +188,7 @@ const Hero = ({
                                     priority
                                     className="relative z-20 w-full h-auto"
                                 />
-                                <div className="absolute inset-0 bg-[#B5FF5F]/20 blur-3xl rounded-full z-10 scale-150 opacity-50"></div>
+                                {/* <div className="absolute inset-0 bg-[#B5FF5F]/20 blur-3xl rounded-full z-10 scale-150 opacity-50"></div> */}
                             </div>
                         </div>
                     )}

@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import { memo } from 'react';
 // Dynamic imports with SSR enabled (SEO friendly)
-const Sixtipsforhomebuyers = dynamic(() => import('@/app/HomeLoans/buying-a-home/Sixtipsforhomebuyers'));
+const Sixtipsforhomebuyers = dynamic(() => import('@/app/home-loans/buying-a-home/Sixtipsforhomebuyers'));
 const Banner = dynamic(() => import('@/app/inner-pages-component/banner'));
 const Disclaimer = dynamic(() => import('@/app/inner-pages-component/Disclaimer'));
 const InnerNeedHomeLoan = dynamic(() => import('@/app/inner-pages-component/InnerNeedHomeLoan'));

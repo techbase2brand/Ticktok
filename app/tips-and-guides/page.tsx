@@ -1,4 +1,4 @@
-"use client";
+
 import { memo } from 'react';
 import dynamic from "next/dynamic";
 import TipTabsSection from '../inner-pages-component/TipTabsSection';
@@ -8,12 +8,18 @@ const Hero = dynamic(() => import('../components/HomePageCom/Hero'));
 const NeedHomeLoan = dynamic(() => import('../components/HomeLoansCom/NeedHomeLoan'));
 const WeDoHardWork = dynamic(() => import('../components/HomeLoansCom/WeDoHardWork'));
 
+export const metadata = {
+  title: "Loan Tips & Guides | Mortgage Advice Adelaide",
+  description:
+    "Explore expert tips on home loans, business finance and mortgages. Stay informed with TickTock Loans’ latest guides.",
+};
+
 const Page = () => {
   return (
     <>
       <Hero 
         videoUrl=""
-        poster="/our-tip-banner.webp" 
+        poster="/latest-tip-and-guids.png" 
         getImage="/our-tip-banner-new.png" 
         subheading="" 
         heading="Our Guides" 
@@ -75,7 +81,7 @@ const Page = () => {
          whyUseBtnUrl="/TipsandGuides/investing-in-property-guide"
       />
 
-
+      
       <NeedHomeLoan 
         image= "/note-sure.png"
         heading ="Not sure where to start?"

@@ -1,5 +1,3 @@
-"use client";
-
 import { memo } from 'react';
 import dynamic from "next/dynamic";
 import Hero from "../components/HomePageCom/Hero";
@@ -7,12 +5,20 @@ import TabsSection from '../inner-pages-component/TabsSection';
 const NeedHomeLoan = dynamic(() => import("../components/HomeLoansCom/NeedHomeLoan"));
 const WeDoHardWork = dynamic(() => import("../components/HomeLoansCom/WeDoHardWork"));
 const SupportForEvery = dynamic(() => import("../components/HomeLoansCom/SupportForEvery"));
+
+export const metadata = {
+  title: "Home Loans Adelaide | Best Mortgage Rates",
+  description:
+    "Find the best home loan deals in Adelaide. TickTock Loans helps you compare rates, get approvals fast and secure your dream home.",
+};
+
+
 const Page = () => {
   return (
     <>
         <Hero
           videoUrl=""
-          poster="/banner-loan.webp" 
+          poster="/latest-home-loan.png" 
           getImage="/new-home-loan.png" 
           subheading="Buying a property " 
           heading="" 
@@ -23,7 +29,7 @@ const Page = () => {
           checkEligibilityUrl="/Contact"
           applyUrl="/Contact"
           apply=""
-          overlaycolor="rgb(3 7 7 / 99%)"
+          overlaycolor=""
         />
         <TabsSection />
         <WeDoHardWork 

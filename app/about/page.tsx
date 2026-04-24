@@ -1,4 +1,4 @@
-"use client";
+
 import { memo } from 'react';
 import dynamic from "next/dynamic";
 import Hero from '../components/HomePageCom/Hero';
@@ -6,12 +6,18 @@ const WeDoHardWork = dynamic(() => import('../components/HomeLoansCom/WeDoHardWo
 const NeedHomeLoan = dynamic(() => import('../components/HomeLoansCom/NeedHomeLoan'));
 const AboutSupport = dynamic(() => import('../components/AboutCom/AboutSupport'));
 
+export const metadata = {
+  title: "About TickTock Loans | Adelaide Mortgage Experts",
+  description:
+    "Learn about TickTock Loans, your trusted Adelaide mortgage broker helping clients secure home and business loans with ease.",
+};
+
 const Page = () => {
   return (
    <>
     <Hero 
       videoUrl=""
-      poster="/about-banner.jpg" 
+      poster="/latest-about-banner.png" 
       getImage="/about-banner-part.png" 
       subheading="" 
       heading="Who we are" 
@@ -22,7 +28,7 @@ const Page = () => {
       checkEligibilityUrl="/Contact"
       applyUrl=""
       apply=""
-      overlaycolor="rgb(0 0 0 / 82%)"
+      overlaycolor=""
     />
 
     <WeDoHardWork 

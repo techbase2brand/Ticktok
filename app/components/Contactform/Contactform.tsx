@@ -1,3 +1,4 @@
+"use client";
 import { memo, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 type ContactPageProps = {

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import WeDoHardWork from "../components/HomeLoansCom/WeDoHardWork";
-import Sixtipsforhomebuyers from "../HomeLoans/buying-a-home/Sixtipsforhomebuyers";
+import Sixtipsforhomebuyers from "../home-loans/buying-a-home/Sixtipsforhomebuyers";
 import ResearchAndHaving from "./ResearchAndHaving";
 import Feelingoverwhelmed from "./Feelingoverwhelmed";
 import Disclaimer from "./Disclaimer";

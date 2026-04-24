@@ -9,6 +9,14 @@ type FooterProps = {
     copyRight: string;
 };
 
+
+const logos: string[] = [
+  '/new-afc-2022.png',
+  '/afc-winner.png',
+  '/adviser-2024.png',
+  '/afc-2022.png',
+];
+
 // Floating Footer Social Component (Internal)
 const FloatingFooterSocial = memo(() => {
   const [isOpen, setIsOpen] = useState(false);
@@ -129,10 +137,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                 <div className='logo-content w-full md:w-auto mb-5'>
                     <div className="logo">
                         <Link href="/" title="logo" className="inline-block" aria-label="Logo">
-                            <Image
-                             
-                                src="/logo.svg"
-                                alt="Logo"
+                            <Image src="/logo.svg" alt="Logo"
                                 width={220}
                                 height={20}
                                 quality={75}
@@ -144,6 +149,20 @@ const Footer = ({ copyRight }: FooterProps) => {
                             Fast, secure, and transparent instant loans. Get funded in minutes, not days.
                         </p>
                     </div>
+                    
+                    <div className="footer-branding flex items-center justify-start gap-1 flex-wrap pt-4">
+                        {logos.map((logo, index) => (
+                            <div key={index} className="relative">
+                            <img
+                                src={logo}
+                                alt={`brand-${index}`}
+                                width='auto'
+                                height='auto'
+                                className="object-cover transition"
+                            />
+                            </div>
+                        ))}
+                    </div>
 
                     {/* Social Icons with hover effects */}
                     <div className="social-icons flex flex-wrap gap-4 mt-6 pb-2 md:pb-0">
@@ -153,22 +172,9 @@ const Footer = ({ copyRight }: FooterProps) => {
                             title="Facebook"
                             aria-label="Facebook"
                             className="group border border-[#417703] hover:bg-[#b4fe5d] p-2.5 rounded-3xl transition-colors duration-300">
-                            <svg
-                                width={20}
-                                height={20}
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M14.5 4H16.5C17.0523 4 17.5 3.55228 17.5 3V2C17.5 1.44772 17.0523 1 16.5 1H14C10.9624 1 8.5 3.46243 8.5 6.5V9H7C6.44772 9 6 9.44772 6 10V12C6 12.5523 6.44772 13 7 13H8.5V21C8.5 21.5523 8.94772 22 9.5 22H12.5C13.0523 22 13.5 21.5523 13.5 21V13H15.5C16.0523 13 16.5 12.5523 16.5 12V10C16.5 9.44772 16.0523 9 15.5 9H13.5V6.5C13.5 5.67157 14.1716 5 15 5H14.5Z"
-                                    stroke="white"
-                                    strokeOpacity="0.6"
-                                    strokeWidth="1.6"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    className="group-hover:stroke-black transition-all duration-300"
-                                />
+                            <svg width={20} height={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.5 4H16.5C17.0523 4 17.5 3.55228 17.5 3V2C17.5 1.44772 17.0523 1 16.5 1H14C10.9624 1 8.5 3.46243 8.5 6.5V9H7C6.44772 9 6 9.44772 6 10V12C6 12.5523 6.44772 13 7 13H8.5V21C8.5 21.5523 8.94772 22 9.5 22H12.5C13.0523 22 13.5 21.5523 13.5 21V13H15.5C16.0523 13 16.5 12.5523 16.5 12V10C16.5 9.44772 16.0523 9 15.5 9H13.5V6.5C13.5 5.67157 14.1716 5 15 5H14.5Z"
+                                    stroke="white" strokeOpacity="0.6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"className="group-hover:stroke-black transition-all duration-300"/>
                             </svg>
                         </Link>
 

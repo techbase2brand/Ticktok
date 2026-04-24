@@ -1,10 +1,18 @@
 import dynamic from "next/dynamic";
+import TicktockBrands from "./inner-pages-component/TicktockBrands";
 const Hero = dynamic(() => import("./components/HomePageCom/Hero"));
 const WhyTiktock = dynamic(() => import("./components/HomePageCom/WhyTiktock"));
 const HowItWork = dynamic(() => import("./components/HomePageCom/HowItWork"));
 const FinaceYourDream = dynamic(() => import("./components/HomePageCom/FinaceYourDream"));
 
 const LovedbyThousands = dynamic(() => import("./components/HomePageCom/LovedbyThousands"));
+
+export const metadata = {
+  title: "Adelaide Mortgage Broker | Home & Business Loans",
+  description:
+    "Looking for a trusted mortgage broker in Adelaide? Get expert help with home, business & car loans. Fast approvals and best rates.",
+};
+
 export default function Home() {
   return (
    <>
@@ -35,6 +43,9 @@ export default function Home() {
     <FinaceYourDream 
       title="Finance Your Dreams with the Right Loan" 
       getStartBtn="Get Started Today"
+    />
+    <TicktockBrands 
+      title="Our Trusted Partners"
     />
     <LovedbyThousands 
       title="Loved by Thousands" 

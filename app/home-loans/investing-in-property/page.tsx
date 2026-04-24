@@ -4,7 +4,7 @@ import { memo } from 'react';
 // Dynamic imports with SSR enabled (SEO friendly)
 const DownloadGuids = dynamic(() => import('@/app/inner-pages-component/DownloadGuids'));
 const Hero = dynamic(() => import('@/app/inner-pages-component/Hero'));
-const Sixtipsforhomebuyers = dynamic(() => import('../buying-a-home/Sixtipsforhomebuyers'));
+const Sixtipsforhomebuyers = dynamic(() => import('../../home-loans/buying-a-home/Sixtipsforhomebuyers'));
 const Disclaimer = dynamic(() => import('@/app/inner-pages-component/Disclaimer'));
 const NeedHomeLoan = dynamic(() => import('@/app/components/HomeLoansCom/NeedHomeLoan'));
 const ResearchAndHaving = dynamic(() => import('@/app/inner-pages-component/ResearchAndHaving'));

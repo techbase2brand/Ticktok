@@ -18,18 +18,18 @@ type NavLink = {
 
 const navLinks: NavLink[] = [
   {
-    href: "/HomeLoans",
+    href: "/home-loans",
     label: "Home Loans",
     
   },
   {
-    href: "/Business-Loans",
+    href: "/business-loans",
     label: "Business Loans",
     
   },
   { href: "/about", label: "About" },
   {
-    href: "/TipsandGuides",
+    href: "/tips-and-guides",
     label: "Tips and Guides", 
     // submenu: [
     //   { href: "/TipsandGuides/why-use-a-broker", label: "Why Use a Broker?" },

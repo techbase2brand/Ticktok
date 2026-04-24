@@ -1,10 +1,14 @@
-"use client";
+
 
 import { memo } from 'react';
 import dynamic from "next/dynamic";
 import ContactHero from '../components/HomePageCom/ContactHero';
 const Contactform = dynamic(() => import("../components/Contactform/Contactform"));
-
+export const metadata = {
+  title: "Contact TickTock Loans | Adelaide Mortgage Broker",
+  description:
+    "Get in touch with TickTock Loans. Speak to our Adelaide mortgage experts for home, business, or car loan assistance.",
+};
 
 const Page = () => {
   return (
