@@ -141,7 +141,7 @@ const TicktockBrands = ({ title }: TicktockBrandsProps) => {
 
        {/* Optional: Show total brands count */}
         <div className="mt-5 text-white ">
-          Trusted by {logos.length}+ leading brands
+          Trusted by 70+ leading brands
         </div>
 
         {/* Logo Grid with Animation */}

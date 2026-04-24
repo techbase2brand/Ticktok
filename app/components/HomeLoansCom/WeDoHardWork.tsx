@@ -148,9 +148,9 @@ const WeDoHardWork = ({
                             <Image
                                 src={image || '/placeholder.png'}
                                 alt="Home Loan"
-                                width={400}
-                                height={400}
-                                className='w-full h-auto max-h-[800px] rounded-2xl md:rounded-3xl'
+                                width={600}
+                                height={600}
+                                className=' h-auto max-h-[800px] rounded-2xl md:rounded-3xl'
                                 priority
                                 quality={75}
                             />

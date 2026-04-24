@@ -14,9 +14,10 @@ const logos: string[] = [
     '/afc-2022.png',
     '/footer-bnard.png',
     '/footer-brand-2.png',
-    '/footer-brand-3.png',
     '/footer-brand-4.png',
     '/footer-brand-5.png',
+    '/footer-brand-3.png',
+    '/Award-19-61x61-1.webp',
 ];
 
 // Floating Footer Social Component (Internal)
@@ -155,11 +156,11 @@ const Footer = ({ copyRight }: FooterProps) => {
                     <div className="footer-branding flex items-center justify-start gap-1 flex-wrap pt-4">
                         {logos.map((logo, index) => (
                             <div key={index} className="relative">
-                            <img
+                            <Image
                                 src={logo}
                                 alt={`brand-${index}`}
-                                width='auto'
-                                height='auto'
+                                width={50}
+                                height={50}
                                 className="object-cover transition"
                             />
                             </div>

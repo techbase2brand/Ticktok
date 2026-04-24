@@ -45,7 +45,7 @@ export default function Home() {
       getStartBtn="Get Started Today"
     />
     <TicktockBrands 
-      title="Our Trusted Partners"
+      title="Our Trusted Lenders!"
     />
     <LovedbyThousands 
       title="Loved by Thousands" 
