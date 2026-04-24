@@ -339,11 +339,11 @@ const Footer = ({ copyRight }: FooterProps) => {
                         </span>
                     </button>
                     <div className={`menu-links gap-3 flex-col transition-all duration-300 mb-4 md:mb-0 ${openAccordion === 'quickLinks' ? 'flex' : 'hidden'} md:flex`}>
-                        <Link title="Home Loans" aria-label="Home Loans" href="/HomeLoans"
+                        <Link title="Home Loans" aria-label="Home Loans" href="/home-loans"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Home Loans
                         </Link>
-                        <Link title="Business Loans" aria-label="Business Loans" href="/Business-Loans"
+                        <Link title="Business Loans" aria-label="Business Loans" href="/business-loans"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Business Loans
                         </Link>
@@ -351,11 +351,11 @@ const Footer = ({ copyRight }: FooterProps) => {
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             About
                         </Link>
-                        <Link title="Tips and Guides" aria-label="Tips and Guides" href="/TipsandGuides"
+                        <Link title="Tips and Guides" aria-label="Tips and Guides" href="/tips-and-guides"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Tips and Guides
                         </Link>
-                        <Link title="Why use a broker?" aria-label="Why use a broker?" href="/TipsandGuides/#TipsandGuides-tab"
+                        <Link title="Why use a broker?" aria-label="Why use a broker?" href="/tips-and-guides#why-use-a-broker"
                             className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300 flex items-center">
                             Why use a broker?
                         </Link>
