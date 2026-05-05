@@ -42,7 +42,7 @@ const Page = () => {
         description2=""
         badeTitle=""
         whyUseBtn="Secure Your First Home"
-         whyUseBtnUrl="/TipsandGuides/first-home-buyer-guide"
+         whyUseBtnUrl="/"
       />
 
       <WeDoHardWork 
@@ -54,7 +54,7 @@ const Page = () => {
         description2=""
         badeTitle=""
         whyUseBtn="Get Trusted Advice"
-         whyUseBtnUrl="/TipsandGuides/why-use-a-broker"
+         whyUseBtnUrl="/about"
       />
 
       <WeDoHardWork 
@@ -66,7 +66,7 @@ const Page = () => {
         subtitle=""
         description2=""
         whyUseBtn="Reassess Your Home Loan"
-         whyUseBtnUrl="/TipsandGuides/looking-for-refinance-your-home"
+         whyUseBtnUrl="/home-loans"
       />
 
       <WeDoHardWork 
@@ -78,7 +78,7 @@ const Page = () => {
         description2=""
         badeTitle=""
         whyUseBtn="Explore Your Options"
-         whyUseBtnUrl="/TipsandGuides/investing-in-property-guide"
+         whyUseBtnUrl="/business-loans"
       />
 
       

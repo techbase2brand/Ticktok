@@ -141,7 +141,7 @@ export default function Header() {
         </div>
 
         {/* ── Desktop Nav ── */}
-        <nav className="hidden md:flex gap-6 items-center">
+        <nav className="hidden lg:flex gap-6 items-center">
           {navLinks.map((link) =>
             link.submenu ? (
               // Link WITH hover submenu
@@ -211,7 +211,7 @@ export default function Header() {
         </nav>
 
         {/* Desktop Apply Now */}
-        <div className="hidden md:block apply_button">
+        <div className="hidden lg:block apply_button">
           <Link
             href="/Contact"
             className="bg-[#B5FF5F] text-[#154617] py-[10px] px-[20px] hover:bg-white flex items-center justify-center rounded-3xl font-bold text-[16px] transition-colors duration-300"
@@ -226,7 +226,7 @@ export default function Header() {
         {!isMenuOpen && (
           <button
             aria-label="Open navigation menu"
-            className="md:hidden text-white focus:outline-none z-50 min-w-[48px] min-h-[48px] flex items-center justify-center"
+            className="lg:hidden text-white focus:outline-none z-50 min-w-[48px] min-h-[48px] flex items-center justify-center"
             onClick={() => setIsMenuOpen(true)}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -246,7 +246,7 @@ export default function Header() {
 
       {/* ── Mobile Drawer ── */}
       <div
-        className={`fixed top-0 left-0 right-0 w-full bg-[#002802] shadow-lg z-50 transform h-full transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-0 left-0 right-0 w-full bg-[#002802] shadow-lg z-50 transform h-full transition-transform duration-300 ease-in-out lg:hidden ${
           isMenuOpen ? "translate-y-0" : "-translate-y-full"
         }`}
       >

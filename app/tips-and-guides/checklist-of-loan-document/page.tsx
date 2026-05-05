@@ -49,7 +49,7 @@ const Page = () => {
         />
 
         <MeetingYourBroker 
-          badgeTitle="meeting your broker"
+          badgeTitle="Meeting your broker"
           title="What documents should I bring?"
           description="To keep the process moving forward, bring the documents listed below to your meeting with your broker. This is a general checklist – some may not apply to you and we can help you figure out which ones you need."
           buttonText="Chat with us today"

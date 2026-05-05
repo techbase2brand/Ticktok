@@ -40,7 +40,7 @@ const Page = () => {
       subtitle=""
       description2="That’s where ticktock comes in. While banks offer a limited selection, mortgage brokers have access to a large network of Australia’s lenders, giving you choice beyond a single bank. We take the time to understand your needs and search through a wide range of loans to find your perfect fit. We’re by your side every step of the way, so you can feel confident we’re securing the right loan without the legwork."
       whyUseBtn="Why use a broker guide"
-      whyUseBtnUrl="/TipsandGuides/why-use-a-broker"
+      whyUseBtnUrl="/tips-and-guides"
     />
 
     <AboutSupport 

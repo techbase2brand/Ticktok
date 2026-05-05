@@ -79,7 +79,7 @@ const FloatingFooterSocial = memo(() => {
           <button
             key={action.label}
             onClick={() => handleActionClick(action.href, action.external)}
-            className={`group cursor-pointer relative flex items-center gap-3 px-6 py-4 rounded-full bg-[#013003] border-2 border-[#B5FF5F] text-[#B5FF5F] font-medium shadow-lg hover:shadow-xl hover:bg-[#B5FF5F] hover:text-[#013003] transition-all duration-200 hover:scale-105 whitespace-nowrap text-sm md:text-base transform ${
+            className={`group cursor-pointer relative flex items-center gap-3 px-4 md:px-6 py-2 md:py-4 rounded-full bg-[#013003] border-2 border-[#B5FF5F] text-[#B5FF5F] font-medium shadow-lg hover:shadow-xl hover:bg-[#B5FF5F] hover:text-[#013003] transition-all duration-200 hover:scale-105 whitespace-nowrap text-sm md:text-base transform ${
               isOpen
                 ? 'translate-x-0 opacity-100'
                 : 'translate-x-4 opacity-0'
@@ -99,7 +99,7 @@ const FloatingFooterSocial = memo(() => {
       {/* Main Speak to Us Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-[#B5FF5F] text-[#013003] font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 w-max cursor-pointer"
+        className="group relative flex items-center justify-center gap-2 px-4 md:px-6 py-3 md:py-4 rounded-full bg-[#B5FF5F] text-[#013003] font-bold shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95 w-max cursor-pointer"
         aria-expanded={isOpen}
         aria-label="Open contact menu">
         {/* Glow effect on hover */}
@@ -155,7 +155,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                     
                     <div className="footer-branding flex flex-wrap items-center justify-start gap-2 pt-4">
                         {logos.map((logo, index) => (
-                            <div key={index} className="w-[70px] sm:w-[70px] md:w-[50px] flex justify-center">
+                            <div key={index} className="w-[39px] sm:w-[39px] md:w-[50px] flex justify-center">
                             <Image
                                 src={logo}
                                 alt={`brand-${index}`}
@@ -416,7 +416,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                                 <path d="M19.7289 3.94629H3.94601C2.85642 3.94629 1.97314 4.82957 1.97314 5.91915V17.7563C1.97314 18.8459 2.85642 19.7292 3.94601 19.7292H19.7289C20.8185 19.7292 21.7018 18.8459 21.7018 17.7563V5.91915C21.7018 4.82957 20.8185 3.94629 19.7289 3.94629Z" stroke="#B5FF5F" strokeWidth="1.97286" strokeLinecap="round" strokeLinejoin="round" />
                                 <path d="M21.7018 6.90576L12.8535 12.5284C12.5489 12.7192 12.1968 12.8204 11.8374 12.8204C11.4781 12.8204 11.126 12.7192 10.8214 12.5284L1.97314 6.90576" stroke="#B5FF5F" strokeWidth="1.97286" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <a href="mailto:sim@ticktockloans.com.au" className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:text-[#B5FF5F] transition-colors duration-300">
+                            <a href="mailto:sim@ticktockloans.com.au" className="text-[#e9e9e9e3] text-[12px] md:text-[13px] hover:underline hover:text-[#B5FF5F] transition-colors duration-300">
                                 sim@ticktockloans.com.au
                             </a>
                         </div>
@@ -425,8 +425,8 @@ const Footer = ({ copyRight }: FooterProps) => {
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="flex-shrink-0">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                            <a href="tel:+61433249678" className="text-[#e9e9e9e3] font-poppins text-[12px] md:text-[13px] hover:text-[#B5FF5F] transition-colors duration-300">
-                                + 0433 249 678
+                            <a href="tel:+61433249678" className="text-[#e9e9e9e3] font-poppins text-[12px] md:text-[13px] hover:underline hover:text-[#B5FF5F] transition-colors duration-300">
+                                +61433249678
                             </a>
                         </div>
 
@@ -436,7 +436,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                                 <path d="M12 2C7.58 2 4 5.58 4 10c0 5.25 8 13 8 13s8-7.75 8-13c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" stroke="#B5FF5F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <span className="text-[#e9e9e9e3] text-[12px] md:text-[13px]">
-                               <a target='_blank' href='https://www.google.com/maps/place/136+Green+Valley+Dr,+Greenwith+SA+5125,+Australia/@-34.7715352,138.7006255,17z/data=!3m1!4b1!4m6!3m5!1s0x6ab0b2de72200d53:0x23b071f82d1df8b0!8m2!3d-34.7715352!4d138.7006255!16s%2Fg%2F11c4txjgt6?entry=ttu&g_ep=EgoyMDI2MDMzMC4wIKXMDSoASAFQAw%3D%3D' title=' 136 GreenValley Drive Greenwith, SA, 5125' aria-label=' 136 GreenValley Drive Greenwith, SA, 5125'>
+                               <a className="text-[#e9e9e9e3] font-poppins text-[12px] md:text-[13px] hover:text-[#B5FF5F] hover:underline transition-colors duration-300" target='_blank' href='https://www.google.com/maps/place/136+Green+Valley+Dr,+Greenwith+SA+5125,+Australia/@-34.7715352,138.7006255,17z/data=!3m1!4b1!4m6!3m5!1s0x6ab0b2de72200d53:0x23b071f82d1df8b0!8m2!3d-34.7715352!4d138.7006255!16s%2Fg%2F11c4txjgt6?entry=ttu&g_ep=EgoyMDI2MDMzMC4wIKXMDSoASAFQAw%3D%3D' title=' 136 GreenValley Drive Greenwith, SA, 5125' aria-label=' 136 GreenValley Drive Greenwith, SA, 5125'>
                                     136 GreenValley Drive Greenwith, SA, 5125
                                </a>
                             </span>
@@ -604,7 +604,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                     </div>
             </div>
             <div className="max-w-[1440px] mx-auto py-[20px] md:py-[25px] border-t border-[#816f6f40] text-center mt-[20px] md:mt-[50px]">
-                <p className="text-white text-left text-[10px] md:text-[12px] text-center w-full flex justify-center gap-2">{copyRight} <a href="https://base2brand.com" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-[#B5FF5F] transition-colors duration-300">Base2Brand Infotech Pvt Ltd</a></p>
+                <p className="text-white text-left text-[10px] md:text-[12px] text-center w-full flex justify-center gap-2">{copyRight} Website developed by <a href="https://base2brand.com" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-[#B5FF5F] transition-colors duration-300">Base2Brand Infotech Pvt. Ltd.</a></p>
             </div>
 
             {/* Floating Footer Social - Built-in Component */}

@@ -698,7 +698,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
                         A shift in circumstances may mean it is time to revisit your home finances. For many, the idea of refinancing a mortgage can be daunting. Fees and fixed versus variable interest rates need to be considered.
                     </p>
                 </div>
-                <div className="grid grid-cols-2 mt-10 md:mt-12 gap-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-12 gap-10 md:gap-20">
                     <div className="how-can-help">
                         <h2 className="text-2xl text-white sm:text-3xl md:text-4xl lg:text-[35px] font-bold text-left leading-tight mb-3 md:mb-4">Changing circumstances <span className="text-[#B5FF5F]">may mean</span> it is time to revisit your home finances</h2>
                         <p className="text-left text-gray-300 text-sm sm:text-base md:text-lg mb-0 md:mb-3 leading-relaxed">Refinancing a mortgage can feel overwhelming for many people. This is where our expertise comes in. We can clarify the nuances of fees and the choice between fixed and variable interest rates. Opting for the right refinanced loan could pave the way to quicker mortgage repayment, reduced costs, elimination of unhealthy debt, or the enhancement and increased value of your home, all of which are steps in the right direction.</p>
@@ -802,7 +802,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
                         title="Feeling overwhelmed? We are here to simplify it."
                         description="If you're feeling unsure, you're not alone. We'll help you make sense of your options and find a loan that fits."
                         buttonName="Let’s have a chat"
-                        buttonUrl="/Contact"
+                        buttonUrl="https://api.whatsapp.com/send/?phone=61433249678&text&type=phone_number&app_absent=0"
                     />
                     <Sixtipsforhomebuyers
                         title="Split Rate Loans"
@@ -836,7 +836,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
                     />
                     <InnerNeedHomeLoan
                         heading="Ready to find the perfect loan for your needs?"
-                        description="Whatever your circumstances, we will find the deal that’s right for you.Send through a quick enquiry and we will be in touch."
+                        description="Whatever your circumstances, we will find the deal that’s right for you. Send through a quick enquiry and we will be in touch."
                         buttonText="Speak to us today"
                         buttonTextUrl="/Contact"
                     />

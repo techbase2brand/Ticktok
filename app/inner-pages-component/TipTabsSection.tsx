@@ -80,10 +80,10 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     services: {
         component: (
             <>
-                <div className="header-inner py-10 md:py-20">
-                    <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
+                <div className="header-inner py-8 md:py-12">
+                    {/* <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}Download our free guide
-                    </p>
+                    </p> */}
                     <h2 className="text-3xl text-white sm:text-4xl md:text-[55px] max-w-5xl mx-auto font-bold text-center py-3 md:py-5 leading-tight">
                         Looking <span className="text-[#B5FF5F]">to</span> buy your first home?
                     </h2>
@@ -100,10 +100,10 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     solutions: {
         component: (
             <>
-                <div className="header-inner py-10 md:py-20">
-                    <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
+                <div className="header-inner py-8 md:py-12">
+                    {/* <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}Download our free guide
-                    </p>
+                    </p> */}
                     <h2 className="text-3xl text-white sm:text-4xl md:text-[55px] max-w-5xl mx-auto font-bold text-center py-3 md:py-5 leading-tight">
                         Is <span className="text-[#B5FF5F]">your</span> home loan still right for you?
                     </h2>
@@ -120,10 +120,10 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     news: {
         component: (
             <>
-                <div className="header-inner py-10 md:py-20">
-                    <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
+                <div className="header-inner py-8 md:py-12">
+                    {/* <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}Download our free guide
-                    </p>
+                    </p> */}
                     <h2 className="text-3xl text-white sm:text-4xl md:text-[55px] max-w-5xl mx-auto font-bold text-center py-3 md:py-5 leading-tight">
                         Looking <span className="text-[#B5FF5F]">to</span> invest in property?
                     </h2>
@@ -140,10 +140,10 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     investing: {
         component: (
             <>
-                <div className="header-inner py-10 md:py-20">
-                    <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
+                <div className="header-inner py-8 md:py-12">
+                    {/* <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}Download our free guide
-                    </p>
+                    </p> */}
                     <h2 className="text-3xl text-white sm:text-4xl md:text-[55px] max-w-5xl mx-auto font-bold text-center py-3 md:py-5 leading-tight">
                         Looking <span className="text-[#B5FF5F]">for</span> the right business finance?
                     </h2>
@@ -160,10 +160,10 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     different: {
         component: (
             <>
-                <div className="header-inner py-10 md:py-20">
-                    <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
+                <div className="header-inner py-8 md:py-12">
+                    {/* <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}Download our free guide
-                    </p>
+                    </p> */}
                     <h2 className="text-3xl text-white sm:text-4xl md:text-[55px] max-w-5xl mx-auto font-bold text-center py-3 md:py-5 leading-tight">
                         Got <span className="text-[#B5FF5F]">some</span> questions about the loan process?
                     </h2>
@@ -187,10 +187,10 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
     typical: {
         component: (
             <>
-                <div className="header-inner py-10 md:py-20">
-                    <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
+                <div className="header-inner py-8 md:py-12">
+                    {/* <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                         {badgeSvg}Checklist of loan documents
-                    </p>
+                    </p> */}
                     <h2 className="text-3xl text-white sm:text-4xl max-w-5xl mx-auto md:text-[55px] font-bold text-center py-3 md:py-5 leading-tight">
                         Get <span className="text-[#B5FF5F]">organised</span> with our suggested document checklist
                     </h2>
@@ -201,7 +201,7 @@ const tabContent: Record<Exclude<TabId, "company">, TabContent> = {
 
                 <div className='bg-gradient-to-r from-[#1c290e] to-[#0D2611] rounded-2xl py-[50px] px-4 sm:px-6 lg:px-8 first-rich-text'>
                     <p className='text-[#B5FF5F] bg-[#384329] text-sm font-bold mb-4 px-4 py-2 rounded-3xl w-fit mx-auto'>
-                        meeting your broker
+                        Meeting your broker
                     </p>
                     <h2 className='text-white text-2xl sm:text-3xl md:text-[45px] max-w-5xl mx-auto font-bold text-center pb-2 md:pb-4 leading-tight'>
                         What <span className='text-[#B5FF5F]'>documents should</span> I bring?
@@ -237,10 +237,10 @@ const TipTabsSection = () => {
                     {/* Company Tab */}
                     {active === "company" ? (
                         <>
-                            <div className="header-inner py-10 md:py-20">
-                                <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
+                            <div className="header-inner py-8 md:py-12">
+                                {/* <p className="flex items-center justify-center gap-[7px] text-[#B5FF5F] bg-[#20360e] text-xs sm:text-sm font-regular w-fit mx-auto border py-2 px-4 sm:py-[10px] sm:px-[20px] rounded-3xl">
                                     {badgeSvg}Download our free guide
-                                </p>
+                                </p> */}
                                 <h2 className="text-3xl text-white sm:text-4xl md:text-[55px] font-bold text-center py-3 md:py-5 leading-tight">
                                     Why <span className="text-[#B5FF5F]">use</span> a broker?
                                 </h2>

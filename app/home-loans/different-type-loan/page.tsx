@@ -214,7 +214,7 @@ const Page = () => {
           title="Feeling overwhelmed? We are here to simplify it."
           description="If you're feeling unsure, you're not alone. We'll help you make sense of your options and find a loan that fits."
           buttonName="Let’s have a chat"
-          buttonUrl="/Contact"
+          buttonUrl="https://api.whatsapp.com/send/?phone=61433249678&text&type=phone_number&app_absent=0"
         />
         <Sixtipsforhomebuyers
           title="Split Rate Loans"
@@ -248,7 +248,7 @@ const Page = () => {
         />
         <InnerNeedHomeLoan
           heading ="Ready to find the perfect loan for your needs?"
-          description="Whatever your circumstances, we will find the deal that’s right for you.Send through a quick enquiry and we will be in touch."
+          description="Whatever your circumstances, we will find the deal that’s right for you. Send through a quick enquiry and we will be in touch."
           buttonText="Speak to us today"
           buttonTextUrl="/Contact"
         />
