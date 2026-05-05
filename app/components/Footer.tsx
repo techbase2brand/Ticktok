@@ -604,7 +604,7 @@ const Footer = ({ copyRight }: FooterProps) => {
                     </div>
             </div>
             <div className="max-w-[1440px] mx-auto py-[20px] md:py-[25px] border-t border-[#816f6f40] text-center mt-[20px] md:mt-[50px]">
-                <p className="text-white text-left text-[10px] md:text-[12px] text-center w-full flex justify-center gap-2">{copyRight} Website developed by <a href="https://base2brand.com" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-[#B5FF5F] transition-colors duration-300">Base2Brand Infotech Pvt. Ltd.</a></p>
+                <p className="text-white text-left text-[10px] flex-wrap md:text-[12px] text-center w-full flex justify-center gap-2">{copyRight} Website developed by <a href="https://base2brand.com" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-[#B5FF5F] transition-colors duration-300">Base2Brand Infotech Pvt. Ltd.</a></p>
             </div>
 
             {/* Floating Footer Social - Built-in Component */}
